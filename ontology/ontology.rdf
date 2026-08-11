@@ -1,0 +1,408 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/luciasanchez/ontologies/2026/6/untitled-ontology-41/"
+     xml:base="http://www.semanticweb.org/luciasanchez/ontologies/2026/6/untitled-ontology-41/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/miUrba">
+        <owl:versionIRI rdf:resource="https://w3id.org/miUrba/1.0.0"/>
+        <terms:creator xml:lang="es">Lucía Sánchez-González</terms:creator>
+        <terms:creator xml:lang="es">Oscar Corcho</terms:creator>
+        <terms:title rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:title>miUrba Ontology</terms:title>
+        <vann:preferredNamespacePrefix rdf:resource="https://w3id.org/miUrba#"/>
+        <vann:preferredNamespacePrefix>miUrba</vann:preferredNamespacePrefix>
+        <owl:versionIRI>1.0.0</owl:versionIRI>
+        <owl:versionIRI xml:lang="es">Ontología para describir comunidades de vecinos.</owl:versionIRI>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionIRI -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionIRI"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://schema.org/address -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/address">
+        <rdfs:comment xml:lang="es">Dirección física del elemento</rdfs:comment>
+        <rdfs:comment xml:lang="en">Physical address of the item.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://schema.org/"/>
+        <rdfs:label xml:lang="en">address</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/miUrba#tieneInmueble -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/miUrba#tieneInmueble">
+        <rdfs:domain rdf:resource="https://w3id.org/miUrba#Edificio"/>
+        <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralProperty"/>
+        <rdfs:label rdf:resource="tiene inmueble"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/miUrba#tieneReferenciaCatastral -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/miUrba#tieneReferenciaCatastral">
+        <rdfs:domain rdf:resource="https://w3id.org/miUrba#Edificio"/>
+        <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralReference"/>
+        <rdfs:label xml:lang="es">tiene referencia catastral</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralProperty -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralProperty">
+        <rdfs:comment xml:lang="es">Bien inmueble inscrito en el Catastro. Puede ser un local, vivienda, o cualquier unidad de uso independiente dentro de una parcela. Un inmueble catastral puede tener una o más construcciones asociadas.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Real estate property registered in the Cadastre. Can be a premises, dwelling, or any independent use unit within a parcel. A cadastral property may have one or more constructions associated.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/catastro"/>
+        <rdfs:label xml:lang="en">Cadastral Property</rdfs:label>
+        <rdfs:label xml:lang="es">Inmueble Catastral</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralReference -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralReference">
+        <rdfs:comment xml:lang="en">Abstract parent class for cadastral reference types</rdfs:comment>
+        <rdfs:comment xml:lang="es">Clase padre abstracta para los tipos de referencia catastral.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/catastro/"/>
+        <rdfs:label xml:lang="en">Cadastral Reference</rdfs:label>
+        <rdfs:label xml:lang="es">Referencia Catastral</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:comment xml:lang="en">A neighborhood is each of the parts into which large towns or their districts are divided [source: Dictionary of the Royal Spanish Academy (RAE) 2011]</rdfs:comment>
+        <rdfs:comment xml:lang="es">Un barrio es cada una de las partes en que se dividen los pueblos grandes o sus distritos [fuente: Diccionario de la Real Academia (DRAE) 2011]</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"/>
+        <rdfs:label xml:lang="es">Barrio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Ciudad -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Ciudad">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:comment xml:lang="en">A city is an urban area where industry and services predominate [source: Wikipedia]</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una ciudad es un área urbana en la que predominan fundamentalmente la industria y los servicios [fuente: Wikipedia]</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"/>
+        <rdfs:label xml:lang="es">Ciudad</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:comment xml:lang="en">A district is each of the demarcations into which a territory or population is subdivided to distribute and order the exercise of civil and political rights, or public functions, or administrative services [source: Dictionary of the Royal Spanish Academy 2011]</rdfs:comment>
+        <rdfs:comment xml:lang="es">Un distrito es cada una de las demarcaciones en que se subdivide un territorio o una población para distribuir y ordenar el ejercicio de los derechos civiles y políticos, o de las funciones públicas, o de los servicios administrativos [fuente: Diccionario de la Real Academia (DRAE) 2011]</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"/>
+        <rdfs:label xml:lang="es">Distrito</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal">
+        <rdfs:comment xml:lang="en">A postal address in Spain. It is defined as a specialization of the classes vcard:Address, schema:PostalAddress, and locn:Address. In addition to the properties associated with these classes, and defined in their corresponding vocabulary, those defined in the Spanish administrative division vocabularies and the street directory can also be used.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una dirección postal en España. Se define como una especialización de las clases vcard:Address, schema:PostalAddress y locn:Address Además de las propiedades asociadas a estas clases, y definidas en su correspondiente vocabulario, también se pueden utilizar las definidas en los vocabularios de división administrativa española y en el callejero</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal"/>
+        <rdfs:label xml:lang="es">Dirección postal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#Feature -->
+
+    <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#Feature">
+        <rdfs:comment xml:lang="en">A discrete spatial phenomenon that a user interacts with or considers unique in the real world.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Un fenómeno espacial discreto con el que un usuario interactúa o que considera único en el mundo real.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql"/>
+        <rdfs:label xml:lang="en">Feature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#Geometry -->
+
+    <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#Geometry">
+        <rdfs:comment xml:lang="en">A coherent, systematic arrangement of geometric points or cells that represents a spatial location, extent or shape.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Un ordenamiento coherente y sistemático de puntos o celdas geométricas que representa una ubicación, extensión o forma espacial</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql"/>
+        <rdfs:label xml:lang="en">Geometry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    
+
+
+    <!-- https://schema.org/Organization -->
+
+    <owl:Class rdf:about="https://schema.org/Organization">
+        <rdfs:comment xml:lang="en">An organization such as a school, NGO, corporation, club, etc.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una organización como una escuela, una ONG, una corporación, un club, etc.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://schema.org"/>
+        <rdfs:label xml:lang="en">Organization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Person -->
+
+    <owl:Class rdf:about="https://schema.org/Person">
+        <rdfs:comment xml:lang="en">A person (alive, dead, undead, or fictional).</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una persona (viva, muerta, no muerta o ficticia).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://schema.org/"/>
+        <rdfs:label xml:lang="en">Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/miUrba#AdministradorFincas -->
+
+    <owl:Class rdf:about="https://w3id.org/miUrba#AdministradorFincas">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/miUrba#RolComunitario"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/miUrba#ComunidaDeVecinos -->
+
+    <owl:Class rdf:about="https://w3id.org/miUrba#ComunidaDeVecinos"/>
+    
+
+
+    <!-- https://w3id.org/miUrba#Contrato -->
+
+    <owl:Class rdf:about="https://w3id.org/miUrba#Contrato">
+        <rdfs:label xml:lang="es">Contrato</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/miUrba#CuotaComunitaria -->
+
+    <owl:Class rdf:about="https://w3id.org/miUrba#CuotaComunitaria"/>
+    
+
+
+    <!-- https://w3id.org/miUrba#Edificio -->
+
+    <owl:Class rdf:about="https://w3id.org/miUrba#Edificio">
+        <rdfs:comment>Construcción estable, hecha con materiales resistentes, para ser habitada o para otros usos.</rdfs:comment>
+        <rdfs:label xml:lang="en">Building</rdfs:label>
+        <rdfs:label xml:lang="es">Edificio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/miUrba#GastoComunitario -->
+
+    <owl:Class rdf:about="https://w3id.org/miUrba#GastoComunitario">
+        <rdfs:label xml:lang="es">Gasto Comunitario</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/miUrba#GastoExtraordinario -->
+
+    <owl:Class rdf:about="https://w3id.org/miUrba#GastoExtraordinario">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/miUrba#GastoComunitario"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/miUrba#GastoOrdinario -->
+
+    <owl:Class rdf:about="https://w3id.org/miUrba#GastoOrdinario">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/miUrba#GastoComunitario"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/miUrba#InstalacionComun -->
+
+    <owl:Class rdf:about="https://w3id.org/miUrba#InstalacionComun">
+        <rdfs:label xml:lang="es">Instalación Común</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/miUrba#PresidenteComunidad -->
+
+    <owl:Class rdf:about="https://w3id.org/miUrba#PresidenteComunidad">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/miUrba#RolComunitario"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/miUrba#Propietario -->
+
+    <owl:Class rdf:about="https://w3id.org/miUrba#Propietario">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/miUrba#RolComunitario"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/miUrba#Proveedor -->
+
+    <owl:Class rdf:about="https://w3id.org/miUrba#Proveedor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Organization"/>
+                    <rdf:Description rdf:about="https://schema.org/Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="es">Proveedor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/miUrba#RolComunitario -->
+
+    <owl:Class rdf:about="https://w3id.org/miUrba#RolComunitario">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Organization"/>
+                    <rdf:Description rdf:about="https://schema.org/Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="es">Rol Comunitario</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/miUrba#Servicio -->
+
+    <owl:Class rdf:about="https://w3id.org/miUrba#Servicio">
+        <rdfs:label xml:lang="es">Servicio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/miUrba#ServicioContratado -->
+
+    <owl:Class rdf:about="https://w3id.org/miUrba#ServicioContratado">
+        <rdfs:label xml:lang="es">Servicio Contratado</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/miUrba#SistemaDeCalefaccion -->
+
+    <owl:Class rdf:about="https://w3id.org/miUrba#SistemaDeCalefaccion">
+        <rdfs:label xml:lang="es">Sistema de calefacción</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
