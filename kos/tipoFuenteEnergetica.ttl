@@ -1,0 +1,139 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+@prefix miurba: <https://w3id.org/def/miUrba#> .
+@prefix miurbakos: <https://w3id.org/def/kos/miUrba/> .
+@prefix miurbafuenteenergia: <https://w3id.org/def/kos/miUrba/TipoFuenteEnergetica/> .
+
+
+#################################################################
+#
+#    Concept Scheme
+#
+#################################################################
+
+miurbakos:TipoFuenteEnergetica
+    a skos:ConceptScheme ;
+    dct:issued "2026-08-17"^^xsd:date ;
+    dct:modified "2026-08-17"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+
+    rdfs:comment
+        "This concept scheme belongs to the set of SKOS-based controlled vocabularies used by the miUrba ontology to represent homeowners' communities."@en ;
+    rdfs:comment
+        "Este esquema de conceptos pertenece al conjunto de vocabularios controlados basados en SKOS utilizados por la ontología miUrba para representar comunidades de vecinos."@es ;
+
+    rdfs:label "Tipos de fuente energética"@es ;
+    rdfs:label "Energy source types"@en ;
+
+    dct:title
+        "Concept scheme grouping types of energy sources used in residential building systems"@en ;
+    dct:title
+        "Esquema de conceptos que agrupa tipos de fuentes energéticas utilizadas en sistemas de edificios residenciales"@es .
+
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+
+miurbafuenteenergia:gasNatural
+    a skos:Concept ;
+    skos:inScheme miurbakos:TipoFuenteEnergetica ;
+    skos:prefLabel "Gas natural"@es ;
+    skos:prefLabel "Natural gas"@en ;
+    skos:definition
+        "Fuente energética fósil gaseosa distribuida habitualmente mediante red y utilizada, entre otros usos, en sistemas comunitarios de calefacción y agua caliente sanitaria."@es ;
+    skos:definition
+        "Gaseous fossil energy source commonly distributed through a network and used, among other purposes, in communal heating and domestic hot water systems."@en .
+
+miurbafuenteenergia:electricidad
+    a skos:Concept ;
+    skos:inScheme miurbakos:TipoFuenteEnergetica ;
+    skos:prefLabel "Electricidad"@es ;
+    skos:prefLabel "Electricity"@en ;
+    skos:definition
+        "Energía eléctrica suministrada habitualmente desde la red general y utilizada para alimentar sistemas de calefacción, agua caliente sanitaria u otros equipos energéticos del edificio."@es ;
+    skos:definition
+        "Electrical energy commonly supplied from the general grid and used to power heating, domestic hot water or other building energy systems."@en .
+
+miurbafuenteenergia:aerotermia
+    a skos:Concept ;
+    skos:inScheme miurbakos:TipoFuenteEnergetica ;
+    skos:prefLabel "Aerotermia"@es ;
+    skos:prefLabel "Aerothermal energy"@en ;
+    skos:definition
+        "Fuente de energía térmica ambiental obtenida del aire exterior mediante sistemas de bomba de calor, utilizada para calefacción, refrigeración o producción de agua caliente sanitaria."@es ;
+    skos:definition
+        "Ambient thermal energy obtained from outdoor air through heat pump systems and used for heating, cooling or domestic hot water production."@en .
+
+miurbafuenteenergia:energiaSolarTermica
+    a skos:Concept ;
+    skos:inScheme miurbakos:TipoFuenteEnergetica ;
+    skos:prefLabel "Energía solar térmica"@es ;
+    skos:prefLabel "Solar thermal energy"@en ;
+    skos:definition
+        "Energía térmica obtenida de la radiación solar mediante captadores solares y utilizada principalmente para la producción de agua caliente sanitaria o como apoyo a sistemas de calefacción."@es ;
+    skos:definition
+        "Thermal energy obtained from solar radiation through solar collectors and mainly used for domestic hot water production or as support for heating systems."@en .
+
+miurbafuenteenergia:biomasa
+    a skos:Concept ;
+    skos:inScheme miurbakos:TipoFuenteEnergetica ;
+    skos:prefLabel "Biomasa"@es ;
+    skos:prefLabel "Biomass"@en ;
+    skos:definition
+        "Fuente energética de origen orgánico utilizada como combustible, como pellets, astillas de madera u otros biocombustibles sólidos, para la producción de calor."@es ;
+    skos:definition
+        "Energy source of organic origin used as fuel, such as pellets, wood chips or other solid biofuels, for heat production."@en .
+
+miurbafuenteenergia:gasoleoC
+    a skos:Concept ;
+    skos:inScheme miurbakos:TipoFuenteEnergetica ;
+    skos:prefLabel "Gasóleo C"@es ;
+    skos:prefLabel "Heating oil"@en ;
+    skos:altLabel "Gasoil C"@es ;
+    skos:definition
+        "Combustible líquido derivado del petróleo, normalmente almacenado en depósitos, utilizado en calderas para calefacción y producción de agua caliente sanitaria."@es ;
+    skos:definition
+        "Liquid petroleum-derived fuel, normally stored in tanks, used in boilers for heating and domestic hot water production."@en .
+
+miurbafuenteenergia:geotermia
+    a skos:Concept ;
+    skos:inScheme miurbakos:TipoFuenteEnergetica ;
+    skos:prefLabel "Geotermia"@es ;
+    skos:prefLabel "Geothermal energy"@en ;
+    skos:definition
+        "Fuente de energía térmica obtenida del subsuelo, habitualmente mediante sistemas de bomba de calor, y utilizada para calefacción, refrigeración o producción de agua caliente sanitaria."@es ;
+    skos:definition
+        "Thermal energy source obtained from the ground, commonly through heat pump systems, and used for heating, cooling or domestic hot water production."@en .
+
+miurbafuenteenergia:gasLicuadoPetroleo
+    a skos:Concept ;
+    skos:inScheme miurbakos:TipoFuenteEnergetica ;
+    skos:prefLabel "Gas licuado del petróleo"@es ;
+    skos:prefLabel "Liquefied petroleum gas"@en ;
+    skos:altLabel "GLP"@es ;
+    skos:altLabel "LPG"@en ;
+    skos:altLabel "Propano"@es ;
+    skos:altLabel "Propane"@en ;
+    skos:definition
+        "Combustible gaseoso licuado derivado del petróleo, como el propano, almacenado habitualmente en depósitos y utilizado para calefacción o producción de agua caliente sanitaria."@es ;
+    skos:definition
+        "Liquefied gaseous fuel derived from petroleum, such as propane, commonly stored in tanks and used for heating or domestic hot water production."@en .
+
+miurbafuenteenergia:energiaSolarFotovoltaica
+    a skos:Concept ;
+    skos:inScheme miurbakos:TipoFuenteEnergetica ;
+    skos:prefLabel "Energía solar fotovoltaica"@es ;
+    skos:prefLabel "Solar photovoltaic energy"@en ;
+    skos:definition
+        "Energía eléctrica generada a partir de la radiación solar mediante paneles fotovoltaicos y utilizada para alimentar equipos o sistemas energéticos del edificio."@es ;
+    skos:definition
+        "Electrical energy generated from solar radiation through photovoltaic panels and used to power building equipment or energy systems."@en .

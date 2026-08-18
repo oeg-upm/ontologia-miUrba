@@ -1,0 +1,334 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+@prefix miurba: <https://w3id.org/def/miUrba#> .
+@prefix miurbakos: <https://w3id.org/def/kos/miUrba/> .
+@prefix miurbaservicio: <https://w3id.org/def/kos/miUrba/TipoServicio/> .
+
+
+#################################################################
+#
+#    Concept Scheme
+#
+#################################################################
+
+miurbakos:TipoServicio
+    a skos:ConceptScheme ;
+    dct:issued "2026-08-17"^^xsd:date ;
+    dct:modified "2026-08-17"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+
+    rdfs:comment
+        "This concept scheme belongs to the set of SKOS-based controlled vocabularies used by the miUrba ontology to represent homeowners' communities."@en ;
+    rdfs:comment
+        "Este esquema de conceptos pertenece al conjunto de vocabularios controlados basados en SKOS utilizados por la ontología miUrba para representar comunidades de vecinos."@es ;
+
+    rdfs:label "Tipos de servicio"@es ;
+    rdfs:label "Service types"@en ;
+
+    dct:title
+        "Concept scheme grouping types of services contracted by homeowners' communities"@en ;
+    dct:title
+        "Esquema de conceptos que agrupa tipos de servicios contratados por comunidades de vecinos"@es .
+
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+
+miurbaservicio:mantenimientoAscensores
+    a skos:Concept ;
+    skos:inScheme miurbakos:TipoServicio ;
+    skos:prefLabel "Mantenimiento de ascensores"@es ;
+    skos:prefLabel "Lift maintenance"@en ;
+    skos:definition
+        "Servicio destinado a la revisión, conservación y reparación de los ascensores de la comunidad."@es ;
+    skos:definition
+        "Service intended for the inspection, upkeep and repair of lifts in the homeowners' community."@en .
+
+miurbaservicio:mantenimientoPuertasGaraje
+    a skos:Concept ;
+    skos:inScheme miurbakos:TipoServicio ;
+    skos:prefLabel "Mantenimiento de puertas de garaje"@es ;
+    skos:prefLabel "Garage door maintenance"@en ;
+    skos:definition
+        "Servicio destinado a la revisión, conservación y reparación de las puertas de acceso a garajes comunitarios."@es ;
+    skos:definition
+        "Service intended for the inspection, upkeep and repair of doors providing access to communal garages."@en .
+
+miurbaservicio:mantenimientoInstalacionesElectricas
+    a skos:Concept ;
+    skos:inScheme miurbakos:TipoServicio ;
+    skos:prefLabel "Mantenimiento de instalaciones eléctricas"@es ;
+    skos:prefLabel "Electrical installation maintenance"@en ;
+    skos:definition
+        "Servicio destinado a la revisión, conservación y reparación de las instalaciones eléctricas comunes."@es ;
+    skos:definition
+        "Service intended for the inspection, upkeep and repair of communal electrical installations."@en .
+
+miurbaservicio:mantenimientoFontaneria
+    a skos:Concept ;
+    skos:inScheme miurbakos:TipoServicio ;
+    skos:prefLabel "Mantenimiento de fontanería"@es ;
+    skos:prefLabel "Plumbing maintenance"@en ;
+    skos:definition
+        "Servicio destinado a la conservación y reparación de las instalaciones de fontanería de uso comunitario."@es ;
+    skos:definition
+        "Service intended for the upkeep and repair of communal plumbing installations."@en .
+
+miurbaservicio:mantenimientoSistemasCalefaccion
+    a skos:Concept ;
+    skos:inScheme miurbakos:TipoServicio ;
+    skos:prefLabel "Mantenimiento de sistemas de calefacción"@es ;
+    skos:prefLabel "Heating system maintenance"@en ;
+    skos:definition
+        "Servicio destinado a la revisión, conservación y reparación de los sistemas comunitarios de calefacción."@es ;
+    skos:definition
+        "Service intended for the inspection, upkeep and repair of communal heating systems."@en .
+
+miurbaservicio:mantenimientoSistemasClimatizacion
+    a skos:Concept ;
+    skos:inScheme miurbakos:TipoServicio ;
+    skos:prefLabel "Mantenimiento de sistemas de climatización"@es ;
+    skos:prefLabel "HVAC system maintenance"@en ;
+    skos:definition
+        "Servicio destinado a la revisión, conservación y reparación de los sistemas comunitarios de climatización."@es ;
+    skos:definition
+        "Service intended for the inspection, upkeep and repair of communal heating, ventilation and air-conditioning systems."@en .
+
+miurbaservicio:mantenimientoPiscinas
+    a skos:Concept ;
+    skos:inScheme miurbakos:TipoServicio ;
+    skos:prefLabel "Mantenimiento de piscinas"@es ;
+    skos:prefLabel "Swimming pool maintenance"@en ;
+    skos:definition
+        "Servicio destinado a la conservación, limpieza técnica y correcto funcionamiento de las piscinas comunitarias."@es ;
+    skos:definition
+        "Service intended for the upkeep, technical cleaning and proper operation of communal swimming pools."@en .
+
+miurbaservicio:jardineria
+    a skos:Concept ;
+    skos:inScheme miurbakos:TipoServicio ;
+    skos:prefLabel "Jardinería"@es ;
+    skos:prefLabel "Gardening"@en ;
+    skos:definition
+        "Servicio destinado al cuidado y conservación de jardines y zonas verdes comunitarias."@es ;
+    skos:definition
+        "Service intended for the care and upkeep of communal gardens and green areas."@en .
+
+miurbaservicio:mantenimientoSistemasContraIncendios
+    a skos:Concept ;
+    skos:inScheme miurbakos:TipoServicio ;
+    skos:prefLabel "Mantenimiento de sistemas contra incendios"@es ;
+    skos:prefLabel "Fire protection system maintenance"@en ;
+    skos:definition
+        "Servicio destinado a la revisión y conservación de los sistemas comunitarios de protección contra incendios."@es ;
+    skos:definition
+        "Service intended for the inspection and upkeep of communal fire protection systems."@en .
+
+miurbaservicio:mantenimientoSistemasVideovigilancia
+    a skos:Concept ;
+    skos:inScheme miurbakos:TipoServicio ;
+    skos:prefLabel "Mantenimiento de sistemas de videovigilancia"@es ;
+    skos:prefLabel "Video surveillance system maintenance"@en ;
+    skos:definition
+        "Servicio destinado a la revisión, conservación y reparación de los sistemas comunitarios de videovigilancia."@es ;
+    skos:definition
+        "Service intended for the inspection, upkeep and repair of communal video surveillance systems."@en .
+
+miurbaservicio:mantenimientoSistemasAlarma
+    a skos:Concept ;
+    skos:inScheme miurbakos:TipoServicio ;
+    skos:prefLabel "Mantenimiento de sistemas de alarma"@es ;
+    skos:prefLabel "Alarm system maintenance"@en ;
+    skos:definition
+        "Servicio destinado a la revisión, conservación y reparación de los sistemas comunitarios de alarma."@es ;
+    skos:definition
+        "Service intended for the inspection, upkeep and repair of communal alarm systems."@en .
+
+miurbaservicio:mantenimientoAntenasTelecomunicaciones
+    a skos:Concept ;
+    skos:inScheme miurbakos:TipoServicio ;
+    skos:prefLabel "Mantenimiento de antenas y telecomunicaciones"@es ;
+    skos:prefLabel "Antenna and telecommunications maintenance"@en ;
+    skos:definition
+        "Servicio destinado a la revisión, conservación y reparación de antenas e infraestructuras comunes de telecomunicaciones."@es ;
+    skos:definition
+        "Service intended for the inspection, upkeep and repair of communal antennas and telecommunications infrastructure."@en .
+
+miurbaservicio:mantenimientoBombasAgua
+    a skos:Concept ;
+    skos:inScheme miurbakos:TipoServicio ;
+    skos:prefLabel "Mantenimiento de bombas de agua"@es ;
+    skos:prefLabel "Water pump maintenance"@en ;
+    skos:definition
+        "Servicio destinado a la revisión, conservación y reparación de bombas de agua de uso comunitario."@es ;
+    skos:definition
+        "Service intended for the inspection, upkeep and repair of communal water pumps."@en .
+
+miurbaservicio:mantenimientoInstalacionesSolares
+    a skos:Concept ;
+    skos:inScheme miurbakos:TipoServicio ;
+    skos:prefLabel "Mantenimiento de instalaciones solares"@es ;
+    skos:prefLabel "Solar installation maintenance"@en ;
+    skos:definition
+        "Servicio destinado a la revisión y conservación de instalaciones solares de uso comunitario."@es ;
+    skos:definition
+        "Service intended for the inspection and upkeep of communal solar installations."@en .
+
+miurbaservicio:mantenimientoZonasDeportivas
+    a skos:Concept ;
+    skos:inScheme miurbakos:TipoServicio ;
+    skos:prefLabel "Mantenimiento de zonas deportivas"@es ;
+    skos:prefLabel "Sports area maintenance"@en ;
+    skos:definition
+        "Servicio destinado a la conservación y reparación de pistas, equipamientos y zonas deportivas comunitarias."@es ;
+    skos:definition
+        "Service intended for the upkeep and repair of communal sports courts, equipment and sports areas."@en .
+
+miurbaservicio:mantenimientoGeneralEdificio
+    a skos:Concept ;
+    skos:inScheme miurbakos:TipoServicio ;
+    skos:prefLabel "Mantenimiento general del edificio"@es ;
+    skos:prefLabel "General building maintenance"@en ;
+    skos:definition
+        "Servicio general de conservación y mantenimiento de elementos comunes del edificio no cubiertos por un servicio más específico."@es ;
+    skos:definition
+        "General service for the upkeep and maintenance of common building elements not covered by a more specific service."@en .
+
+miurbaservicio:limpiezaZonasComunes
+    a skos:Concept ;
+    skos:inScheme miurbakos:TipoServicio ;
+    skos:prefLabel "Limpieza de zonas comunes"@es ;
+    skos:prefLabel "Common area cleaning"@en ;
+    skos:definition
+        "Servicio de limpieza de espacios y elementos comunes de la comunidad."@es ;
+    skos:definition
+        "Service for cleaning spaces and elements shared by the homeowners' community."@en .
+
+miurbaservicio:limpiezaGarajes
+    a skos:Concept ;
+    skos:inScheme miurbakos:TipoServicio ;
+    skos:prefLabel "Limpieza de garajes"@es ;
+    skos:prefLabel "Garage cleaning"@en ;
+    skos:definition
+        "Servicio de limpieza de garajes y aparcamientos comunitarios."@es ;
+    skos:definition
+        "Service for cleaning communal garages and parking areas."@en .
+
+miurbaservicio:limpiezaCristales
+    a skos:Concept ;
+    skos:inScheme miurbakos:TipoServicio ;
+    skos:prefLabel "Limpieza de cristales"@es ;
+    skos:prefLabel "Window cleaning"@en ;
+    skos:definition
+        "Servicio especializado de limpieza de cristales y superficies acristaladas comunes."@es ;
+    skos:definition
+        "Specialised service for cleaning communal windows and glazed surfaces."@en .
+
+miurbaservicio:limpiezaFachadas
+    a skos:Concept ;
+    skos:inScheme miurbakos:TipoServicio ;
+    skos:prefLabel "Limpieza de fachadas"@es ;
+    skos:prefLabel "Façade cleaning"@en ;
+    skos:definition
+        "Servicio de limpieza de fachadas y paramentos exteriores del edificio."@es ;
+    skos:definition
+        "Service for cleaning building façades and exterior wall surfaces."@en .
+
+miurbaservicio:vigilanciaSeguridad
+    a skos:Concept ;
+    skos:inScheme miurbakos:TipoServicio ;
+    skos:prefLabel "Vigilancia y seguridad"@es ;
+    skos:prefLabel "Surveillance and security"@en ;
+    skos:definition
+        "Servicio destinado a la vigilancia y protección de personas, accesos y espacios comunes."@es ;
+    skos:definition
+        "Service intended for the surveillance and protection of people, access points and common areas."@en .
+
+miurbaservicio:controlAccesos
+    a skos:Concept ;
+    skos:inScheme miurbakos:TipoServicio ;
+    skos:prefLabel "Control de accesos"@es ;
+    skos:prefLabel "Access control"@en ;
+    skos:definition
+        "Servicio destinado a supervisar y controlar el acceso de personas y vehículos a los espacios comunitarios."@es ;
+    skos:definition
+        "Service intended to monitor and control access by people and vehicles to communal spaces."@en .
+
+miurbaservicio:conserjeria
+    a skos:Concept ;
+    skos:inScheme miurbakos:TipoServicio ;
+    skos:prefLabel "Conserjería"@es ;
+    skos:prefLabel "Concierge service"@en ;
+    skos:definition
+        "Servicio de atención, supervisión y apoyo general prestado en los espacios comunes de la comunidad."@es ;
+    skos:definition
+        "Service providing assistance, supervision and general support in the common areas of the homeowners' community."@en .
+
+miurbaservicio:porteria
+    a skos:Concept ;
+    skos:inScheme miurbakos:TipoServicio ;
+    skos:prefLabel "Portería"@es ;
+    skos:prefLabel "Doorman service"@en ;
+    skos:definition
+        "Servicio prestado por personal encargado de la atención y supervisión habitual del acceso y de determinados espacios comunes del edificio."@es ;
+    skos:definition
+        "Service provided by personnel responsible for the regular supervision of building access and certain common areas."@en .
+
+miurbaservicio:socorrismo
+    a skos:Concept ;
+    skos:inScheme miurbakos:TipoServicio ;
+    skos:prefLabel "Socorrismo"@es ;
+    skos:prefLabel "Lifeguard service"@en ;
+    skos:definition
+        "Servicio de vigilancia, prevención y asistencia ante emergencias en piscinas comunitarias."@es ;
+    skos:definition
+        "Service providing surveillance, prevention and emergency assistance at communal swimming pools."@en .
+
+miurbaservicio:controlPlagas
+    a skos:Concept ;
+    skos:inScheme miurbakos:TipoServicio ;
+    skos:prefLabel "Control de plagas"@es ;
+    skos:prefLabel "Pest control"@en ;
+    skos:definition
+        "Servicio destinado a prevenir, detectar y eliminar plagas en los espacios comunes de la comunidad."@es ;
+    skos:definition
+        "Service intended to prevent, detect and eliminate pests in the common areas of the homeowners' community."@en .
+
+miurbaservicio:reparacionesGenerales
+    a skos:Concept ;
+    skos:inScheme miurbakos:TipoServicio ;
+    skos:prefLabel "Reparaciones generales"@es ;
+    skos:prefLabel "General repairs"@en ;
+    skos:definition
+        "Servicio destinado a realizar reparaciones diversas en elementos comunes que no requieren un servicio especializado específico."@es ;
+    skos:definition
+        "Service intended to carry out various repairs to common elements that do not require a specific specialised service."@en .
+
+miurbaservicio:pinturaZonasComunes
+    a skos:Concept ;
+    skos:inScheme miurbakos:TipoServicio ;
+    skos:prefLabel "Pintura de zonas comunes"@es ;
+    skos:prefLabel "Common area painting"@en ;
+    skos:definition
+        "Servicio de preparación y pintura de superficies situadas en zonas comunes de la comunidad."@es ;
+    skos:definition
+        "Service for preparing and painting surfaces located in the common areas of the homeowners' community."@en .
+
+miurbaservicio:impermeabilizacion
+    a skos:Concept ;
+    skos:inScheme miurbakos:TipoServicio ;
+    skos:prefLabel "Impermeabilización"@es ;
+    skos:prefLabel "Waterproofing"@en ;
+    skos:definition
+        "Servicio destinado a prevenir o corregir filtraciones de agua mediante la impermeabilización de elementos comunes."@es ;
+    skos:definition
+        "Service intended to prevent or correct water ingress by waterproofing common building elements."@en .

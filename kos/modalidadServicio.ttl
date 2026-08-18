@@ -1,0 +1,124 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+@prefix miurba: <https://w3id.org/def/miUrba#> .
+@prefix miurbakos: <https://w3id.org/def/kos/miUrba/> .
+@prefix miurbamodalidad: <https://w3id.org/def/kos/miUrba/ModalidadServicio/> .
+
+
+#################################################################
+#
+#    Concept Scheme
+#
+#################################################################
+
+miurbakos:ModalidadServicio
+    a skos:ConceptScheme ;
+    dct:issued "2026-08-17"^^xsd:date ;
+    dct:modified "2026-08-17"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+
+    rdfs:comment
+        "This concept scheme belongs to the set of SKOS-based controlled vocabularies used by the miUrba ontology to represent homeowners' communities."@en ;
+    rdfs:comment
+        "Este esquema de conceptos pertenece al conjunto de vocabularios controlados basados en SKOS utilizados por la ontología miUrba para representar comunidades de vecinos."@es ;
+
+    rdfs:label "Modalidades de servicio"@es ;
+    rdfs:label "Service modalities"@en ;
+
+    dct:title
+        "Concept scheme grouping service provision modalities in homeowners' communities"@en ;
+    dct:title
+        "Esquema de conceptos que agrupa modalidades de prestación de servicios en comunidades de vecinos"@es .
+
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+
+miurbamodalidad:permanente
+    a skos:Concept ;
+    skos:inScheme miurbakos:ModalidadServicio ;
+    skos:prefLabel "Permanente"@es ;
+    skos:prefLabel "Permanent"@en ;
+    skos:definition
+        "Modalidad de servicio prestado de forma continuada durante un periodo estable o indefinido."@es ;
+    skos:definition
+        "Service modality provided continuously over a stable or indefinite period."@en .
+
+miurbamodalidad:temporal
+    a skos:Concept ;
+    skos:inScheme miurbakos:ModalidadServicio ;
+    skos:prefLabel "Temporal"@es ;
+    skos:prefLabel "Temporary"@en ;
+    skos:definition
+        "Modalidad de servicio prestado únicamente durante un periodo limitado previamente determinado."@es ;
+    skos:definition
+        "Service modality provided only for a previously determined limited period."@en .
+
+miurbamodalidad:estacional
+    a skos:Concept ;
+    skos:inScheme miurbakos:ModalidadServicio ;
+    skos:prefLabel "Estacional"@es ;
+    skos:prefLabel "Seasonal"@en ;
+    skos:definition
+        "Modalidad de servicio cuya prestación se limita a una determinada temporada o época del año."@es ;
+    skos:definition
+        "Service modality whose provision is limited to a particular season or period of the year."@en .
+
+miurbamodalidad:puntual
+    a skos:Concept ;
+    skos:inScheme miurbakos:ModalidadServicio ;
+    skos:prefLabel "Puntual"@es ;
+    skos:prefLabel "One-off"@en ;
+    skos:definition
+        "Modalidad de servicio correspondiente a una actuación concreta que finaliza una vez realizada."@es ;
+    skos:definition
+        "Service modality corresponding to a specific intervention that ends once the task has been completed."@en .
+
+miurbamodalidad:programado
+    a skos:Concept ;
+    skos:inScheme miurbakos:ModalidadServicio ;
+    skos:prefLabel "Programado"@es ;
+    skos:prefLabel "Scheduled"@en ;
+    skos:definition
+        "Modalidad de servicio cuya prestación se planifica previamente conforme a un calendario o planificación establecida."@es ;
+    skos:definition
+        "Service modality whose provision is planned in advance according to an established schedule or plan."@en .
+
+miurbamodalidad:bajoDemanda
+    a skos:Concept ;
+    skos:inScheme miurbakos:ModalidadServicio ;
+    skos:prefLabel "Bajo demanda"@es ;
+    skos:prefLabel "On demand"@en ;
+    skos:definition
+        "Modalidad de servicio que se activa cuando la comunidad solicita expresamente una intervención."@es ;
+    skos:definition
+        "Service modality activated when the homeowners' community explicitly requests an intervention."@en .
+
+miurbamodalidad:deUrgencia
+    a skos:Concept ;
+    skos:inScheme miurbakos:ModalidadServicio ;
+    skos:prefLabel "De urgencia"@es ;
+    skos:prefLabel "Emergency"@en ;
+    skos:definition
+        "Modalidad de servicio destinada a atender incidencias que requieren una respuesta inmediata o prioritaria."@es ;
+    skos:definition
+        "Service modality intended to address incidents requiring an immediate or priority response."@en .
+
+miurbamodalidad:deGuardia
+    a skos:Concept ;
+    skos:inScheme miurbakos:ModalidadServicio ;
+    skos:prefLabel "De guardia"@es ;
+    skos:prefLabel "On-call"@en ;
+    skos:definition
+        "Modalidad de servicio en la que el proveedor mantiene disponibilidad para atender incidencias durante determinados periodos."@es ;
+    skos:definition
+        "Service modality in which the provider remains available to respond to incidents during specified periods."@en .

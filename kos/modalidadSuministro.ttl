@@ -1,0 +1,74 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+@prefix miurba: <https://w3id.org/def/miUrba#> .
+@prefix miurbakos: <https://w3id.org/def/kos/miUrba/> .
+@prefix miurbamodalidadtermica: <https://w3id.org/def/kos/miUrba/ModalidadSuministroTermico/> .
+
+
+#################################################################
+#
+#    Concept Scheme
+#
+#################################################################
+
+miurbakos:ModalidadSuministroTermico
+    a skos:ConceptScheme ;
+    dct:issued "2026-08-17"^^xsd:date ;
+    dct:modified "2026-08-17"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+
+    rdfs:comment
+        "This concept scheme belongs to the set of SKOS-based controlled vocabularies used by the miUrba ontology to represent homeowners' communities."@en ;
+    rdfs:comment
+        "Este esquema de conceptos pertenece al conjunto de vocabularios controlados basados en SKOS utilizados por la ontología miUrba para representar comunidades de vecinos."@es ;
+
+    rdfs:label "Modalidad de suministro térmico"@es ;
+    rdfs:label "Thermal supply modality"@en ;
+
+    dct:title
+        "Concept scheme grouping thermal supply modalities for heating and domestic hot water systems in residential buildings"@en ;
+    dct:title
+        "Esquema de conceptos que agrupa modalidades de suministro térmico para sistemas de calefacción y agua caliente sanitaria en edificios residenciales"@es .
+
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+
+miurbamodalidadtermica:individual
+    a skos:Concept ;
+    skos:inScheme miurbakos:ModalidadSuministroTermico ;
+    skos:prefLabel "Individual"@es ;
+    skos:prefLabel "Individual"@en ;
+    skos:definition
+        "Modalidad de suministro térmico en la que cada vivienda dispone de un sistema propio para cubrir sus necesidades de calefacción o agua caliente sanitaria."@es ;
+    skos:definition
+        "Thermal supply modality in which each dwelling has its own system to meet its heating or domestic hot water needs."@en .
+
+miurbamodalidadtermica:centralizada
+    a skos:Concept ;
+    skos:inScheme miurbakos:ModalidadSuministroTermico ;
+    skos:prefLabel "Centralizada"@es ;
+    skos:prefLabel "Centralised"@en ;
+    skos:definition
+        "Modalidad de suministro térmico en la que un sistema común del edificio produce o distribuye energía térmica para varias o todas las viviendas."@es ;
+    skos:definition
+        "Thermal supply modality in which a common building system produces or distributes thermal energy for several or all dwellings."@en .
+
+miurbamodalidadtermica:centralizadaContabilizacionIndividual
+    a skos:Concept ;
+    skos:inScheme miurbakos:ModalidadSuministroTermico ;
+    skos:prefLabel "Centralizada con contabilización individual"@es ;
+    skos:prefLabel "Centralised with individual metering"@en ;
+    skos:definition
+        "Modalidad de suministro térmico en la que la producción o distribución es común para varias viviendas, pero el consumo correspondiente a cada vivienda se contabiliza de forma individual."@es ;
+    skos:definition
+        "Thermal supply modality in which production or distribution is shared by several dwellings, while the consumption attributable to each dwelling is individually metered."@en .

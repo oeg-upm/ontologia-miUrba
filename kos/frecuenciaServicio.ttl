@@ -1,0 +1,144 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+@prefix miurba: <https://w3id.org/def/miUrba#> .
+@prefix miurbakos: <https://w3id.org/def/kos/miUrba/> .
+@prefix miurbafrecuencia: <https://w3id.org/def/kos/miUrba/FrecuenciaServicio/> .
+
+
+#################################################################
+#
+#    Concept Scheme
+#
+#################################################################
+
+miurbakos:FrecuenciaServicio
+    a skos:ConceptScheme ;
+    dct:issued "2026-08-17"^^xsd:date ;
+    dct:modified "2026-08-17"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+
+    rdfs:comment
+        "This concept scheme belongs to the set of SKOS-based controlled vocabularies used by the miUrba ontology to represent homeowners' communities."@en ;
+    rdfs:comment
+        "Este esquema de conceptos pertenece al conjunto de vocabularios controlados basados en SKOS utilizados por la ontología miUrba para representar comunidades de vecinos."@es ;
+
+    rdfs:label "Frecuencias de servicio"@es ;
+    rdfs:label "Service frequencies"@en ;
+
+    dct:title
+        "Concept scheme grouping frequencies at which services are provided in homeowners' communities"@en ;
+    dct:title
+        "Esquema de conceptos que agrupa las frecuencias con las que se prestan servicios en comunidades de vecinos"@es .
+
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+
+miurbafrecuencia:diaria
+    a skos:Concept ;
+    skos:inScheme miurbakos:FrecuenciaServicio ;
+    skos:prefLabel "Diaria"@es ;
+    skos:prefLabel "Daily"@en ;
+    skos:definition
+        "Frecuencia de servicio en la que la prestación se realiza una vez al día."@es ;
+    skos:definition
+        "Service frequency in which the service is provided once a day."@en .
+
+miurbafrecuencia:variasVecesPorSemana
+    a skos:Concept ;
+    skos:inScheme miurbakos:FrecuenciaServicio ;
+    skos:prefLabel "Varias veces por semana"@es ;
+    skos:prefLabel "Several times a week"@en ;
+    skos:definition
+        "Frecuencia de servicio en la que la prestación se realiza más de una vez por semana, sin llegar necesariamente a realizarse diariamente."@es ;
+    skos:definition
+        "Service frequency in which the service is provided more than once a week without necessarily being provided daily."@en .
+
+miurbafrecuencia:semanal
+    a skos:Concept ;
+    skos:inScheme miurbakos:FrecuenciaServicio ;
+    skos:prefLabel "Semanal"@es ;
+    skos:prefLabel "Weekly"@en ;
+    skos:definition
+        "Frecuencia de servicio en la que la prestación se realiza una vez por semana."@es ;
+    skos:definition
+        "Service frequency in which the service is provided once a week."@en .
+
+miurbafrecuencia:quincenal
+    a skos:Concept ;
+    skos:inScheme miurbakos:FrecuenciaServicio ;
+    skos:prefLabel "Quincenal"@es ;
+    skos:prefLabel "Fortnightly"@en ;
+    skos:definition
+        "Frecuencia de servicio en la que la prestación se realiza aproximadamente cada dos semanas."@es ;
+    skos:definition
+        "Service frequency in which the service is provided approximately every two weeks."@en .
+
+miurbafrecuencia:mensual
+    a skos:Concept ;
+    skos:inScheme miurbakos:FrecuenciaServicio ;
+    skos:prefLabel "Mensual"@es ;
+    skos:prefLabel "Monthly"@en ;
+    skos:definition
+        "Frecuencia de servicio en la que la prestación se realiza una vez al mes."@es ;
+    skos:definition
+        "Service frequency in which the service is provided once a month."@en .
+
+miurbafrecuencia:bimestral
+    a skos:Concept ;
+    skos:inScheme miurbakos:FrecuenciaServicio ;
+    skos:prefLabel "Bimestral"@es ;
+    skos:prefLabel "Every two months"@en ;
+    skos:definition
+        "Frecuencia de servicio en la que la prestación se realiza una vez cada dos meses."@es ;
+    skos:definition
+        "Service frequency in which the service is provided once every two months."@en .
+
+miurbafrecuencia:trimestral
+    a skos:Concept ;
+    skos:inScheme miurbakos:FrecuenciaServicio ;
+    skos:prefLabel "Trimestral"@es ;
+    skos:prefLabel "Quarterly"@en ;
+    skos:definition
+        "Frecuencia de servicio en la que la prestación se realiza una vez cada tres meses."@es ;
+    skos:definition
+        "Service frequency in which the service is provided once every three months."@en .
+
+miurbafrecuencia:cuatrimestral
+    a skos:Concept ;
+    skos:inScheme miurbakos:FrecuenciaServicio ;
+    skos:prefLabel "Cuatrimestral"@es ;
+    skos:prefLabel "Every four months"@en ;
+    skos:definition
+        "Frecuencia de servicio en la que la prestación se realiza una vez cada cuatro meses."@es ;
+    skos:definition
+        "Service frequency in which the service is provided once every four months."@en .
+
+miurbafrecuencia:semestral
+    a skos:Concept ;
+    skos:inScheme miurbakos:FrecuenciaServicio ;
+    skos:prefLabel "Semestral"@es ;
+    skos:prefLabel "Semi-annual"@en ;
+    skos:definition
+        "Frecuencia de servicio en la que la prestación se realiza una vez cada seis meses."@es ;
+    skos:definition
+        "Service frequency in which the service is provided once every six months."@en .
+
+miurbafrecuencia:anual
+    a skos:Concept ;
+    skos:inScheme miurbakos:FrecuenciaServicio ;
+    skos:prefLabel "Anual"@es ;
+    skos:prefLabel "Annual"@en ;
+    skos:definition
+        "Frecuencia de servicio en la que la prestación se realiza una vez al año."@es ;
+    skos:definition
+        "Service frequency in which the service is provided once a year."@en .
