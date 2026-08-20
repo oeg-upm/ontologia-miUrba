@@ -1,0 +1,14 @@
+# miUrba31: Una comunidad de vecinos establece cuotas comunitarias con un determinado importe y periodicidad
+
+PREFIX miUrba: <https://w3id.org/miUrba#>
+
+
+SELECT ?comunidad ?cuota ?importe ?periodicidad
+WHERE {
+    ?comunidad a miUrba:ComunidaDeVecinos ;
+               miUrba:tieneCuotaComunitaria ?cuota .
+
+
+    ?cuota miUrba:importeTotal ?importe ;
+           miUrba:periodicidad ?periodicidad .
+}

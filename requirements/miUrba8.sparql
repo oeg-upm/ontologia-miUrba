@@ -1,0 +1,9 @@
+# miUrba8: Un edificio dispone o no de ascensor
+
+PREFIX miUrba: <https://w3id.org/miUrba#>
+
+SELECT ?edificio ?tieneAscensor
+WHERE {
+    ?edificio a miUrba:Edificio ;
+              miUrba:tieneAscensor ?tieneAscensor .
+}

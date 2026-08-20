@@ -1,0 +1,13 @@
+# miUrba27 — Es posible conocer qué servicios contratados cubren una determinada instalación común
+
+PREFIX miUrba: <https://w3id.org/miUrba#>
+
+
+SELECT ?instalacion ?servicioContratado
+WHERE {
+    ?servicioContratado a miUrba:ServicioContratado ;
+                        miUrba:cubreInstalacionComun ?instalacion .
+
+
+    ?instalacion a miUrba:InstalacionComun .
+}

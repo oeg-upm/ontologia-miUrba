@@ -1,0 +1,30 @@
+# miUrba34: Es posible conocer qué sistema de agua caliente sanitaria utiliza un edificio, su modalidad de suministro y su fuente energética
+
+PREFIX miUrba: <https://w3id.org/miUrba#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+
+SELECT ?edificio
+       ?sistemaACS
+       ?modalidad ?modalidadLabel
+       ?fuenteEnergetica ?fuenteLabel
+WHERE {
+    ?edificio a miUrba:Edificio ;
+              miUrba:tieneSistemaDeACS ?sistemaACS .
+
+
+    ?sistemaACS miUrba:modalidadDeSuministro ?modalidad ;
+                miUrba:tipoDeFuenteEnergetica ?fuenteEnergetica .
+
+
+    OPTIONAL {
+        ?modalidad skos:prefLabel ?modalidadLabel .
+        FILTER(LANG(?modalidadLabel) = "es")
+    }
+
+
+    OPTIONAL {
+        ?fuenteEnergetica skos:prefLabel ?fuenteLabel .
+        FILTER(LANG(?fuenteLabel) = "es")
+    }
+}

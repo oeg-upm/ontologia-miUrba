@@ -1,0 +1,10 @@
+# miUrba28 — Un gasto comunitario puede corresponder a un servicio contratado
+
+PREFIX miUrba: <https://w3id.org/miUrba#>
+
+
+SELECT ?gasto ?servicioContratado
+WHERE {
+    ?gasto a miUrba:GastoComunitario ;
+           miUrba:correspondeAServicioContratado ?servicioContratado .
+}

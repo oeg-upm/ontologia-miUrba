@@ -1,0 +1,20 @@
+# miUrba24: Las instalaciones comunes de un edificio se clasifican según su tipo
+
+PREFIX miUrba: <https://w3id.org/miUrba#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+
+SELECT ?edificio ?instalacion ?tipoInstalacion ?tipoLabel
+WHERE {
+    ?edificio a miUrba:Edificio ;
+              miUrba:disponeDeInstalacionComun ?instalacion .
+
+
+    ?instalacion miUrba:tipoDeInstalacionComun ?tipoInstalacion .
+
+
+    OPTIONAL {
+        ?tipoInstalacion skos:prefLabel ?tipoLabel .
+        FILTER(LANG(?tipoLabel) = "es")
+    }
+}

@@ -1,0 +1,10 @@
+# miUrba7: Un edificio tiene un determinado número de plantas
+
+PREFIX miUrba: <https://w3id.org/miUrba#>
+
+
+SELECT ?edificio ?numeroPlantas
+WHERE {
+    ?edificio a miUrba:Edificio ;
+              miUrba:numeroDePlantas ?numeroPlantas .
+}

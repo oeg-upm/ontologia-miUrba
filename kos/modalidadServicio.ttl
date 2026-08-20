@@ -6,9 +6,9 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix cc: <http://creativecommons.org/ns#> .
 
-@prefix miurba: <https://w3id.org/def/miUrba#> .
-@prefix miurbakos: <https://w3id.org/def/kos/miUrba/> .
-@prefix miurbamodalidad: <https://w3id.org/def/kos/miUrba/ModalidadServicio/> .
+@prefix miUrba: <https://w3id.org/def/miUrba#> .
+@prefix miUrbakos: <https://w3id.org/def/kos/miUrba/> .
+@prefix miUrbamodalidad: <https://w3id.org/def/kos/miUrba/ModalidadServicio/> .
 
 
 #################################################################
@@ -17,7 +17,7 @@
 #
 #################################################################
 
-miurbakos:ModalidadServicio
+miUrbakos:ModalidadServicio
     a skos:ConceptScheme ;
     dct:issued "2026-08-17"^^xsd:date ;
     dct:modified "2026-08-17"^^xsd:date ;
@@ -43,9 +43,9 @@ miurbakos:ModalidadServicio
 #
 #################################################################
 
-miurbamodalidad:permanente
+miUrbamodalidad:permanente
     a skos:Concept ;
-    skos:inScheme miurbakos:ModalidadServicio ;
+    skos:inScheme miUrbakos:ModalidadServicio ;
     skos:prefLabel "Permanente"@es ;
     skos:prefLabel "Permanent"@en ;
     skos:definition
@@ -53,9 +53,9 @@ miurbamodalidad:permanente
     skos:definition
         "Service modality provided continuously over a stable or indefinite period."@en .
 
-miurbamodalidad:temporal
+miUrbamodalidad:temporal
     a skos:Concept ;
-    skos:inScheme miurbakos:ModalidadServicio ;
+    skos:inScheme miUrbakos:ModalidadServicio ;
     skos:prefLabel "Temporal"@es ;
     skos:prefLabel "Temporary"@en ;
     skos:definition
@@ -63,9 +63,9 @@ miurbamodalidad:temporal
     skos:definition
         "Service modality provided only for a previously determined limited period."@en .
 
-miurbamodalidad:estacional
+miUrbamodalidad:estacional
     a skos:Concept ;
-    skos:inScheme miurbakos:ModalidadServicio ;
+    skos:inScheme miUrbakos:ModalidadServicio ;
     skos:prefLabel "Estacional"@es ;
     skos:prefLabel "Seasonal"@en ;
     skos:definition
@@ -73,9 +73,9 @@ miurbamodalidad:estacional
     skos:definition
         "Service modality whose provision is limited to a particular season or period of the year."@en .
 
-miurbamodalidad:puntual
+miUrbamodalidad:puntual
     a skos:Concept ;
-    skos:inScheme miurbakos:ModalidadServicio ;
+    skos:inScheme miUrbakos:ModalidadServicio ;
     skos:prefLabel "Puntual"@es ;
     skos:prefLabel "One-off"@en ;
     skos:definition
@@ -83,9 +83,9 @@ miurbamodalidad:puntual
     skos:definition
         "Service modality corresponding to a specific intervention that ends once the task has been completed."@en .
 
-miurbamodalidad:programado
+miUrbamodalidad:programado
     a skos:Concept ;
-    skos:inScheme miurbakos:ModalidadServicio ;
+    skos:inScheme miUrbakos:ModalidadServicio ;
     skos:prefLabel "Programado"@es ;
     skos:prefLabel "Scheduled"@en ;
     skos:definition
@@ -93,9 +93,9 @@ miurbamodalidad:programado
     skos:definition
         "Service modality whose provision is planned in advance according to an established schedule or plan."@en .
 
-miurbamodalidad:bajoDemanda
+miUrbamodalidad:bajoDemanda
     a skos:Concept ;
-    skos:inScheme miurbakos:ModalidadServicio ;
+    skos:inScheme miUrbakos:ModalidadServicio ;
     skos:prefLabel "Bajo demanda"@es ;
     skos:prefLabel "On demand"@en ;
     skos:definition
@@ -103,9 +103,9 @@ miurbamodalidad:bajoDemanda
     skos:definition
         "Service modality activated when the homeowners' community explicitly requests an intervention."@en .
 
-miurbamodalidad:deUrgencia
+miUrbamodalidad:deUrgencia
     a skos:Concept ;
-    skos:inScheme miurbakos:ModalidadServicio ;
+    skos:inScheme miUrbakos:ModalidadServicio ;
     skos:prefLabel "De urgencia"@es ;
     skos:prefLabel "Emergency"@en ;
     skos:definition
@@ -113,9 +113,9 @@ miurbamodalidad:deUrgencia
     skos:definition
         "Service modality intended to address incidents requiring an immediate or priority response."@en .
 
-miurbamodalidad:deGuardia
+miUrbamodalidad:deGuardia
     a skos:Concept ;
-    skos:inScheme miurbakos:ModalidadServicio ;
+    skos:inScheme miUrbakos:ModalidadServicio ;
     skos:prefLabel "De guardia"@es ;
     skos:prefLabel "On-call"@en ;
     skos:definition

@@ -1,0 +1,17 @@
+# miUrba18: Un servicio contratado se presta bajo una determinada modalidad
+
+PREFIX miUrba: <https://w3id.org/miUrba#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+
+SELECT ?servicioContratado ?modalidad ?modalidadLabel
+WHERE {
+    ?servicioContratado a miUrba:ServicioContratado ;
+                        miUrba:modalidadDeServicio ?modalidad .
+
+
+    OPTIONAL {
+        ?modalidad skos:prefLabel ?modalidadLabel .
+        FILTER(LANG(?modalidadLabel) = "es")
+    }
+}

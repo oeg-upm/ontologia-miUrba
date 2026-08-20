@@ -1,0 +1,15 @@
+# miUrba12: Un sistema de calefacción utiliza un determinado tipo de fuente energética
+
+PREFIX miUrba: <https://w3id.org/miUrba#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?sistemaCalefaccion ?fuenteEnergetica ?fuenteLabel
+WHERE {
+    ?sistemaCalefaccion a miUrba:SistemaDeCalefaccion ;
+                        miUrba:tipoDeFuenteEnergetica ?fuenteEnergetica .
+
+    OPTIONAL {
+        ?fuenteEnergetica skos:prefLabel ?fuenteLabel .
+        FILTER(LANG(?fuenteLabel) = "es")
+    }
+}

@@ -1,0 +1,19 @@
+# miUrba21: Una comunidad de vecinos registra gastos comunitarios ordinarios y extraordinarios
+
+PREFIX miUrba: <https://w3id.org/miUrba#>
+
+
+SELECT ?comunidad ?gasto ?tipoGasto
+WHERE {
+    ?comunidad a miUrba:ComunidaDeVecinos ;
+               miUrba:tieneGastoComunitario ?gasto .
+
+
+    ?gasto a ?tipoGasto .
+
+
+    VALUES ?tipoGasto {
+        miUrba:GastoOrdinario
+        miUrba:GastoExtraordinario
+    }
+}

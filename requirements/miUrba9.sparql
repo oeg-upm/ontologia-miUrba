@@ -1,0 +1,13 @@
+# miUrba9: Un edificio tiene una fecha de construcción y puede haber sido reformado en una fecha posterior
+
+PREFIX miUrba: <https://w3id.org/miUrba#>
+
+SELECT ?edificio ?fechaConstruccion ?fechaReforma
+WHERE {
+    ?edificio a miUrba:Edificio ;
+              miUrba:fechaConstruccion ?fechaConstruccion .
+
+    OPTIONAL {
+        ?edificio miUrba:fechaReforma ?fechaReforma .
+    }
+}

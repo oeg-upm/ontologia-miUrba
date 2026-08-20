@@ -6,9 +6,9 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix cc: <http://creativecommons.org/ns#> .
 
-@prefix miurba: <https://w3id.org/def/miUrba#> .
-@prefix miurbakos: <https://w3id.org/def/kos/miUrba/> .
-@prefix miurbamodalidadtermica: <https://w3id.org/def/kos/miUrba/ModalidadSuministroTermico/> .
+@prefix miUrba: <https://w3id.org/def/miUrba#> .
+@prefix miUrbakos: <https://w3id.org/def/kos/miUrba/> .
+@prefix miUrbamodalidadtermica: <https://w3id.org/def/kos/miUrba/ModalidadSuministroTermico/> .
 
 
 #################################################################
@@ -17,7 +17,7 @@
 #
 #################################################################
 
-miurbakos:ModalidadSuministroTermico
+miUrbakos:ModalidadSuministroTermico
     a skos:ConceptScheme ;
     dct:issued "2026-08-17"^^xsd:date ;
     dct:modified "2026-08-17"^^xsd:date ;
@@ -43,9 +43,9 @@ miurbakos:ModalidadSuministroTermico
 #
 #################################################################
 
-miurbamodalidadtermica:individual
+miUrbamodalidadtermica:individual
     a skos:Concept ;
-    skos:inScheme miurbakos:ModalidadSuministroTermico ;
+    skos:inScheme miUrbakos:ModalidadSuministroTermico ;
     skos:prefLabel "Individual"@es ;
     skos:prefLabel "Individual"@en ;
     skos:definition
@@ -53,9 +53,9 @@ miurbamodalidadtermica:individual
     skos:definition
         "Thermal supply modality in which each dwelling has its own system to meet its heating or domestic hot water needs."@en .
 
-miurbamodalidadtermica:centralizada
+miUrbamodalidadtermica:centralizada
     a skos:Concept ;
-    skos:inScheme miurbakos:ModalidadSuministroTermico ;
+    skos:inScheme miUrbakos:ModalidadSuministroTermico ;
     skos:prefLabel "Centralizada"@es ;
     skos:prefLabel "Centralised"@en ;
     skos:definition
@@ -63,9 +63,9 @@ miurbamodalidadtermica:centralizada
     skos:definition
         "Thermal supply modality in which a common building system produces or distributes thermal energy for several or all dwellings."@en .
 
-miurbamodalidadtermica:centralizadaContabilizacionIndividual
+miUrbamodalidadtermica:centralizadaContabilizacionIndividual
     a skos:Concept ;
-    skos:inScheme miurbakos:ModalidadSuministroTermico ;
+    skos:inScheme miUrbakos:ModalidadSuministroTermico ;
     skos:prefLabel "Centralizada con contabilización individual"@es ;
     skos:prefLabel "Centralised with individual metering"@en ;
     skos:definition

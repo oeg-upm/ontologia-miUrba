@@ -1,0 +1,10 @@
+# miUrba20: La prestación de un servicio contratado está regulada por un contrato
+
+PREFIX miUrba: <https://w3id.org/miUrba#>
+
+
+SELECT ?servicioContratado ?contrato
+WHERE {
+    ?servicioContratado a miUrba:ServicioContratado ;
+                        miUrba:tieneContrato ?contrato .
+}

@@ -1,0 +1,11 @@
+# miUrba30: Cada gasto comunitario registra un concepto y un importe
+
+PREFIX miUrba: <https://w3id.org/miUrba#>
+
+
+SELECT ?gasto ?concepto ?importe
+WHERE {
+    ?gasto a miUrba:GastoComunitario ;
+           miUrba:conceptoGasto ?concepto ;
+           miUrba:importe ?importe .
+}

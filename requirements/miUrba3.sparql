@@ -1,0 +1,23 @@
+# miUrba3: Un edificio pertenece a un barrio, distrito, ciudad o municipio
+
+PREFIX miUrba: <https://w3id.org/miUrba#>
+PREFIX edintinf: <https://edint.es/def/infraestructura#>
+PREFIX esadm: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#>
+
+
+SELECT ?edificio ?divisionTerritorial
+WHERE {
+    ?edificio a miUrba:Edificio ;
+              edintinf:belongsTo ?divisionTerritorial .
+
+
+    VALUES ?tipo {
+        esadm:Barrio
+        esadm:Distrito
+        esadm:Ciudad
+        esadm:Municipio
+    }
+
+
+    ?divisionTerritorial a ?tipo .
+}

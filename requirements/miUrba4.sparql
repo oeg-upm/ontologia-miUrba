@@ -1,0 +1,13 @@
+# miUrba4: Los edificios que forman una comunidad de vecinos disponen de instalaciones comunes
+
+PREFIX miUrba: <https://w3id.org/miUrba#>
+
+
+SELECT ?comunidad ?edificio ?instalacion
+WHERE {
+    ?comunidad a miUrba:ComunidaDeVecinos ;
+               miUrba:formadaPor ?edificio .
+
+
+    ?edificio miUrba:disponeDeInstalacionComun ?instalacion .
+}

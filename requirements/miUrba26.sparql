@@ -1,0 +1,26 @@
+# miUrba26: Es posible conocer la modalidad y la frecuencia con la que se presta un servicio contratado
+
+PREFIX miUrba: <https://w3id.org/miUrba#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+
+SELECT ?servicioContratado
+       ?modalidad ?modalidadLabel
+       ?frecuencia ?frecuenciaLabel
+WHERE {
+    ?servicioContratado a miUrba:ServicioContratado ;
+                        miUrba:modalidadDeServicio ?modalidad ;
+                        miUrba:tieneFrecuenciaDeServicio ?frecuencia .
+
+
+    OPTIONAL {
+        ?modalidad skos:prefLabel ?modalidadLabel .
+        FILTER(LANG(?modalidadLabel) = "es")
+    }
+
+
+    OPTIONAL {
+        ?frecuencia skos:prefLabel ?frecuenciaLabel .
+        FILTER(LANG(?frecuenciaLabel) = "es")
+    }
+}

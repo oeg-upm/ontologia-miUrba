@@ -1,0 +1,11 @@
+# miUrba5: Una comunidad de vecinos puede estar formada por varios edificios
+
+PREFIX miUrba: <https://w3id.org/miUrba#>
+
+SELECT ?comunidad (COUNT(?edificio) AS ?numeroEdificios)
+WHERE {
+    ?comunidad a miUrba:ComunidaDeVecinos ;
+               miUrba:formadaPor ?edificio .
+}
+GROUP BY ?comunidad
+HAVING (COUNT(?edificio) > 1)

@@ -1,0 +1,10 @@
+# miUrba2: Un edificio tiene asociada una dirección postal
+PREFIX miUrba: <https://w3id.org/miUrba#>
+PREFIX schema: <https://schema.org/>
+
+
+SELECT ?edificio ?direccion
+WHERE {
+    ?edificio a miUrba:Edificio ;
+              schema:address ?direccion .
+}

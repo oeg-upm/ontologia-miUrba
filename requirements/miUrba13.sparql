@@ -1,0 +1,10 @@
+# miUrba13: Una comunidad de vecinos cuenta con una serie de roles comunitarios
+
+PREFIX miUrba: <https://w3id.org/miUrba#>
+
+
+SELECT ?comunidad ?rol
+WHERE {
+    ?comunidad a miUrba:ComunidaDeVecinos ;
+               miUrba:tieneRol ?rol .
+}

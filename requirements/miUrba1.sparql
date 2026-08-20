@@ -1,0 +1,9 @@
+# miUrba1: Una comunidad de vecinos está formada por uno o más edificios
+
+PREFIX miUrba: <https://w3id.org/miUrba#>
+
+SELECT ?comunidad ?edificio
+WHERE {
+    ?comunidad a miUrba:ComunidaDeVecinos ;
+               miUrba:formadaPor ?edificio .
+}

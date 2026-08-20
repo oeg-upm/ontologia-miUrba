@@ -1,0 +1,11 @@
+# miUrba32 — Un proveedor se identifica mediante su nombre y su identificador fiscal
+
+PREFIX miUrba: <https://w3id.org/miUrba#>
+
+
+SELECT ?proveedor ?nombre ?identificadorFiscal
+WHERE {
+    ?proveedor a miUrba:Proveedor ;
+               miUrba:nombreProveedor ?nombre ;
+               miUrba:identificadorFiscal ?identificadorFiscal .
+}

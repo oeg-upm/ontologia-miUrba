@@ -1,0 +1,14 @@
+# miUrba15: La presidencia de una comunidad de vecinos es ejercida por una persona u organización
+
+PREFIX miUrba: <https://w3id.org/miUrba#>
+
+
+SELECT ?comunidad ?presidente
+WHERE {
+    ?comunidad a miUrba:ComunidaDeVecinos ;
+               miUrba:tieneRol ?rol .
+
+
+    ?rol a miUrba:PresidenteComunidad ;
+         miUrba:ejercidoPor ?presidente .
+}

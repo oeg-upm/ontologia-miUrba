@@ -6,9 +6,9 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix cc: <http://creativecommons.org/ns#> .
 
-@prefix miurba: <https://w3id.org/def/miUrba#> .
-@prefix miurbakos: <https://w3id.org/def/kos/miUrba/> .
-@prefix miurbafuenteenergia: <https://w3id.org/def/kos/miUrba/TipoFuenteEnergetica/> .
+@prefix miUrba: <https://w3id.org/def/miUrba#> .
+@prefix miUrbakos: <https://w3id.org/def/kos/miUrba/> .
+@prefix miUrbafuenteenergia: <https://w3id.org/def/kos/miUrba/TipoFuenteEnergetica/> .
 
 
 #################################################################
@@ -17,7 +17,7 @@
 #
 #################################################################
 
-miurbakos:TipoFuenteEnergetica
+miUrbakos:TipoFuenteEnergetica
     a skos:ConceptScheme ;
     dct:issued "2026-08-17"^^xsd:date ;
     dct:modified "2026-08-17"^^xsd:date ;
@@ -43,9 +43,9 @@ miurbakos:TipoFuenteEnergetica
 #
 #################################################################
 
-miurbafuenteenergia:gasNatural
+miUrbafuenteenergia:gasNatural
     a skos:Concept ;
-    skos:inScheme miurbakos:TipoFuenteEnergetica ;
+    skos:inScheme miUrbakos:TipoFuenteEnergetica ;
     skos:prefLabel "Gas natural"@es ;
     skos:prefLabel "Natural gas"@en ;
     skos:definition
@@ -53,9 +53,9 @@ miurbafuenteenergia:gasNatural
     skos:definition
         "Gaseous fossil energy source commonly distributed through a network and used, among other purposes, in communal heating and domestic hot water systems."@en .
 
-miurbafuenteenergia:electricidad
+miUrbafuenteenergia:electricidad
     a skos:Concept ;
-    skos:inScheme miurbakos:TipoFuenteEnergetica ;
+    skos:inScheme miUrbakos:TipoFuenteEnergetica ;
     skos:prefLabel "Electricidad"@es ;
     skos:prefLabel "Electricity"@en ;
     skos:definition
@@ -63,9 +63,9 @@ miurbafuenteenergia:electricidad
     skos:definition
         "Electrical energy commonly supplied from the general grid and used to power heating, domestic hot water or other building energy systems."@en .
 
-miurbafuenteenergia:aerotermia
+miUrbafuenteenergia:aerotermia
     a skos:Concept ;
-    skos:inScheme miurbakos:TipoFuenteEnergetica ;
+    skos:inScheme miUrbakos:TipoFuenteEnergetica ;
     skos:prefLabel "Aerotermia"@es ;
     skos:prefLabel "Aerothermal energy"@en ;
     skos:definition
@@ -73,9 +73,9 @@ miurbafuenteenergia:aerotermia
     skos:definition
         "Ambient thermal energy obtained from outdoor air through heat pump systems and used for heating, cooling or domestic hot water production."@en .
 
-miurbafuenteenergia:energiaSolarTermica
+miUrbafuenteenergia:energiaSolarTermica
     a skos:Concept ;
-    skos:inScheme miurbakos:TipoFuenteEnergetica ;
+    skos:inScheme miUrbakos:TipoFuenteEnergetica ;
     skos:prefLabel "Energía solar térmica"@es ;
     skos:prefLabel "Solar thermal energy"@en ;
     skos:definition
@@ -83,9 +83,9 @@ miurbafuenteenergia:energiaSolarTermica
     skos:definition
         "Thermal energy obtained from solar radiation through solar collectors and mainly used for domestic hot water production or as support for heating systems."@en .
 
-miurbafuenteenergia:biomasa
+miUrbafuenteenergia:biomasa
     a skos:Concept ;
-    skos:inScheme miurbakos:TipoFuenteEnergetica ;
+    skos:inScheme miUrbakos:TipoFuenteEnergetica ;
     skos:prefLabel "Biomasa"@es ;
     skos:prefLabel "Biomass"@en ;
     skos:definition
@@ -93,9 +93,9 @@ miurbafuenteenergia:biomasa
     skos:definition
         "Energy source of organic origin used as fuel, such as pellets, wood chips or other solid biofuels, for heat production."@en .
 
-miurbafuenteenergia:gasoleoC
+miUrbafuenteenergia:gasoleoC
     a skos:Concept ;
-    skos:inScheme miurbakos:TipoFuenteEnergetica ;
+    skos:inScheme miUrbakos:TipoFuenteEnergetica ;
     skos:prefLabel "Gasóleo C"@es ;
     skos:prefLabel "Heating oil"@en ;
     skos:altLabel "Gasoil C"@es ;
@@ -104,9 +104,9 @@ miurbafuenteenergia:gasoleoC
     skos:definition
         "Liquid petroleum-derived fuel, normally stored in tanks, used in boilers for heating and domestic hot water production."@en .
 
-miurbafuenteenergia:geotermia
+miUrbafuenteenergia:geotermia
     a skos:Concept ;
-    skos:inScheme miurbakos:TipoFuenteEnergetica ;
+    skos:inScheme miUrbakos:TipoFuenteEnergetica ;
     skos:prefLabel "Geotermia"@es ;
     skos:prefLabel "Geothermal energy"@en ;
     skos:definition
@@ -114,9 +114,9 @@ miurbafuenteenergia:geotermia
     skos:definition
         "Thermal energy source obtained from the ground, commonly through heat pump systems, and used for heating, cooling or domestic hot water production."@en .
 
-miurbafuenteenergia:gasLicuadoPetroleo
+miUrbafuenteenergia:gasLicuadoPetroleo
     a skos:Concept ;
-    skos:inScheme miurbakos:TipoFuenteEnergetica ;
+    skos:inScheme miUrbakos:TipoFuenteEnergetica ;
     skos:prefLabel "Gas licuado del petróleo"@es ;
     skos:prefLabel "Liquefied petroleum gas"@en ;
     skos:altLabel "GLP"@es ;
@@ -128,9 +128,9 @@ miurbafuenteenergia:gasLicuadoPetroleo
     skos:definition
         "Liquefied gaseous fuel derived from petroleum, such as propane, commonly stored in tanks and used for heating or domestic hot water production."@en .
 
-miurbafuenteenergia:energiaSolarFotovoltaica
+miUrbafuenteenergia:energiaSolarFotovoltaica
     a skos:Concept ;
-    skos:inScheme miurbakos:TipoFuenteEnergetica ;
+    skos:inScheme miUrbakos:TipoFuenteEnergetica ;
     skos:prefLabel "Energía solar fotovoltaica"@es ;
     skos:prefLabel "Solar photovoltaic energy"@en ;
     skos:definition

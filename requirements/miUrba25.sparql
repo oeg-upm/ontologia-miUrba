@@ -1,0 +1,20 @@
+# miUrba25: Es posible conocer qué proveedor presta un determinado tipo de servicio contratado
+PREFIX miUrba: <https://w3id.org/miUrba#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+
+SELECT ?servicioContratado ?servicio ?tipoServicio ?tipoLabel ?proveedor
+WHERE {
+    ?servicioContratado a miUrba:ServicioContratado ;
+                        miUrba:correspondeAServicio ?servicio ;
+                        miUrba:prestadoPor ?proveedor .
+
+
+    ?servicio miUrba:tieneTipoDeServicio ?tipoServicio .
+
+
+    OPTIONAL {
+        ?tipoServicio skos:prefLabel ?tipoLabel .
+        FILTER(LANG(?tipoLabel) = "es")
+    }
+}

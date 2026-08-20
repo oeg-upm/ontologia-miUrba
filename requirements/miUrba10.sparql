@@ -1,0 +1,17 @@
+# miUrba10: Un edificio dispone de un sistema de calefacción caracterizado por su modalidad de suministro
+
+PREFIX miUrba: <https://w3id.org/miUrba#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?edificio ?sistemaCalefaccion ?modalidad ?modalidadLabel
+WHERE {
+    ?edificio a miUrba:Edificio ;
+              miUrba:tieneSistemaDeCalefaccion ?sistemaCalefaccion .
+
+    ?sistemaCalefaccion miUrba:modalidadDeSuministro ?modalidad .
+
+    OPTIONAL {
+        ?modalidad skos:prefLabel ?modalidadLabel .
+        FILTER(LANG(?modalidadLabel) = "es")
+    }
+}

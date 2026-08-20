@@ -1,0 +1,10 @@
+# miUrba16: Un servicio contratado corresponde a un determinado servicio
+
+PREFIX miUrba: <https://w3id.org/miUrba#>
+
+
+SELECT ?servicioContratado ?servicio
+WHERE {
+    ?servicioContratado a miUrba:ServicioContratado ;
+                        miUrba:correspondeAServicio ?servicio .
+}

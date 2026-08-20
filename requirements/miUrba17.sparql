@@ -1,0 +1,10 @@
+# miUrba17: Un servicio contratado es prestado por un proveedor
+
+PREFIX miUrba: <https://w3id.org/miUrba#>
+
+
+SELECT ?servicioContratado ?proveedor
+WHERE {
+    ?servicioContratado a miUrba:ServicioContratado ;
+                        miUrba:prestadoPor ?proveedor .
+}

@@ -1,0 +1,17 @@
+# miUrba11: Un edificio dispone de un sistema de agua caliente sanitaria caracterizado por su modalidad de suministro
+
+PREFIX miUrba: <https://w3id.org/miUrba#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?edificio ?sistemaACS ?modalidad ?modalidadLabel
+WHERE {
+    ?edificio a miUrba:Edificio ;
+              miUrba:tieneSistemaDeACS ?sistemaACS .
+
+    ?sistemaACS miUrba:modalidadDeSuministro ?modalidad .
+
+    OPTIONAL {
+        ?modalidad skos:prefLabel ?modalidadLabel .
+        FILTER(LANG(?modalidadLabel) = "es")
+    }
+}

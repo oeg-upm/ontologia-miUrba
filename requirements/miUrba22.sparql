@@ -1,0 +1,17 @@
+# miUrba22: Los servicios se clasifican según el tipo de necesidad que cubren
+
+PREFIX miUrba: <https://w3id.org/miUrba#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+
+SELECT ?servicio ?tipoServicio ?tipoLabel
+WHERE {
+    ?servicio a miUrba:Servicio ;
+              miUrba:tieneTipoDeServicio ?tipoServicio .
+
+
+    OPTIONAL {
+        ?tipoServicio skos:prefLabel ?tipoLabel .
+        FILTER(LANG(?tipoLabel) = "es")
+    }
+}

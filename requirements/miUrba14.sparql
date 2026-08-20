@@ -1,0 +1,13 @@
+# miUrba14: Los roles de una comunidad de vecinos son ejercidos por personas u organizaciones
+
+PREFIX miUrba: <https://w3id.org/miUrba#>
+
+
+SELECT ?comunidad ?rol ?personaOrganizacion
+WHERE {
+    ?comunidad a miUrba:ComunidaDeVecinos ;
+               miUrba:tieneRol ?rol .
+
+
+    ?rol miUrba:ejercidoPor ?personaOrganizacion .
+}

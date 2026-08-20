@@ -1,0 +1,9 @@
+# miUrba6: Un edificio comprende uno o varios inmuebles catastrales
+
+PREFIX miUrba: <https://w3id.org/miUrba#>
+
+SELECT ?edificio ?inmueble
+WHERE {
+    ?edificio a miUrba:Edificio ;
+              miUrba:tieneInmueble ?inmueble .
+}

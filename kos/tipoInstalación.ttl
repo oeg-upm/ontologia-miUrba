@@ -1,190 +1,410 @@
-@prefix miurba: <https://w3id.org/def/miUrba#> .
-@prefix miurba-kos: <https://w3id.org/def/kos/miUrba/> .
-@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
 
-miurba-kos:tipoInstalacion
+@prefix miUrba: <https://w3id.org/def/miUrba#> .
+@prefix miUrbakos: <https://w3id.org/def/kos/miUrba/> .
+@prefix miUrbainstalacion: <https://w3id.org/def/kos/miUrba/TipoInstalacion/> .
+
+
+#################################################################
+#
+#    Concept Scheme
+#
+#################################################################
+
+miUrbakos:TipoInstalacion
     a skos:ConceptScheme ;
-    skos:prefLabel "Tipos de instalación comunitaria"@es ;
-    skos:definition "Esquema de conceptos que clasifica las instalaciones y dotaciones de uso común disponibles en una comunidad de vecinos."@es .
+    dct:issued "2026-08-17"^^xsd:date ;
+    dct:modified "2026-08-17"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
 
-miurba-kos:piscina
+    rdfs:comment
+        "This concept scheme belongs to the set of SKOS-based controlled vocabularies used by the miUrba ontology to represent homeowners' communities."@en ;
+    rdfs:comment
+        "Este esquema de conceptos pertenece al conjunto de vocabularios controlados basados en SKOS utilizados por la ontología miUrba para representar comunidades de vecinos."@es ;
+
+    rdfs:label "Tipos de instalación comunitaria"@es ;
+    rdfs:label "Community facility types"@en ;
+
+    dct:title
+        "Concept scheme grouping types of communal facilities available in homeowners' communities"@en ;
+    dct:title
+        "Esquema de conceptos que agrupa tipos de instalaciones comunitarias disponibles en comunidades de vecinos"@es .
+
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+
+miUrbainstalacion:piscina
     a skos:Concept ;
-    skos:inScheme miurba:tipoInstalacion ;
+    skos:inScheme miUrbakos:TipoInstalacion ;
     skos:prefLabel "Piscina"@es ;
-    skos:definition "Instalación acuática común destinada al baño, la natación o el ocio de las personas residentes."@es .
+    skos:prefLabel "Swimming pool"@en ;
+    skos:definition
+        "Instalación acuática común destinada al baño, la natación o el ocio de las personas residentes."@es ;
+    skos:definition
+        "Communal aquatic facility intended for bathing, swimming or leisure activities by residents."@en .
 
-miurba-kos:piscinaInfantil
+miUrbainstalacion:piscinaInfantil
     a skos:Concept ;
-    skos:inScheme miurba:tipoInstalacion ;
+    skos:inScheme miUrbakos:TipoInstalacion ;
     skos:prefLabel "Piscina infantil"@es ;
-    skos:definition "Piscina comunitaria diseñada o acondicionada para el uso de menores."@es .
+    skos:prefLabel "Children's swimming pool"@en ;
+    skos:definition
+        "Piscina comunitaria diseñada o acondicionada para el uso de menores."@es ;
+    skos:definition
+        "Communal swimming pool designed or adapted for use by children."@en .
 
-miurba-kos:piscinaCubierta
+miUrbainstalacion:piscinaCubierta
     a skos:Concept ;
-    skos:inScheme miurba:tipoInstalacion ;
+    skos:inScheme miUrbakos:TipoInstalacion ;
     skos:prefLabel "Piscina cubierta"@es ;
-    skos:definition "Piscina comunitaria situada en un recinto cubierto."@es .
+    skos:prefLabel "Indoor swimming pool"@en ;
+    skos:definition
+        "Piscina comunitaria situada en un recinto cubierto."@es ;
+    skos:definition
+        "Communal swimming pool located within a covered or enclosed space."@en .
 
-miurba-kos:piscinaClimatizada
+miUrbainstalacion:piscinaClimatizada
     a skos:Concept ;
-    skos:inScheme miurba:tipoInstalacion ;
+    skos:inScheme miUrbakos:TipoInstalacion ;
     skos:prefLabel "Piscina climatizada"@es ;
-    skos:definition "Piscina comunitaria equipada con un sistema de regulación de la temperatura del agua."@es .
+    skos:prefLabel "Heated swimming pool"@en ;
+    skos:definition
+        "Piscina comunitaria equipada con un sistema de regulación de la temperatura del agua."@es ;
+    skos:definition
+        "Communal swimming pool equipped with a system for regulating water temperature."@en .
 
-miurba-kos:spa
+miUrbainstalacion:jacuzzi
     a skos:Concept ;
-    skos:inScheme miurba:tipoInstalacion ;
+    skos:inScheme miUrbakos:TipoInstalacion ;
+    skos:prefLabel "Jacuzzi"@es ;
+    skos:prefLabel "Hot tub"@en ;
+    skos:altLabel "Bañera de hidromasaje"@es ;
+    skos:altLabel "Whirlpool bath"@en ;
+    skos:definition
+        "Instalación comunitaria de baño equipada con chorros de agua o aire a presión."@es ;
+    skos:definition
+        "Communal bathing facility equipped with pressurised water or air jets."@en .
+
+miUrbainstalacion:spa
+    a skos:Concept ;
+    skos:inScheme miUrbakos:TipoInstalacion ;
     skos:prefLabel "Spa"@es ;
-    skos:definition "Espacio comunitario acondicionado con instalaciones destinadas al bienestar y la relajación."@es .
+    skos:prefLabel "Spa"@en ;
+    skos:definition
+        "Espacio comunitario acondicionado con instalaciones destinadas al bienestar y la relajación."@es ;
+    skos:definition
+        "Communal space equipped with facilities intended for wellness and relaxation."@en .
 
-miurba-kos:sauna
+miUrbainstalacion:sauna
     a skos:Concept ;
-    skos:inScheme miurba:tipoInstalacion ;
+    skos:inScheme miUrbakos:TipoInstalacion ;
     skos:prefLabel "Sauna"@es ;
-    skos:definition "Recinto comunitario acondicionado para baños de calor."@es .
+    skos:prefLabel "Sauna"@en ;
+    skos:definition
+        "Recinto comunitario acondicionado para baños de calor."@es ;
+    skos:definition
+        "Communal room designed for heat bathing."@en .
 
-miurba-kos:gimnasio
+miUrbainstalacion:gimnasio
     a skos:Concept ;
-    skos:inScheme miurba:tipoInstalacion ;
+    skos:inScheme miUrbakos:TipoInstalacion ;
     skos:prefLabel "Gimnasio"@es ;
-    skos:definition "Recinto comunitario equipado para la práctica de ejercicio físico."@es .
+    skos:prefLabel "Gym"@en ;
+    skos:definition
+        "Recinto comunitario equipado para la práctica de ejercicio físico."@es ;
+    skos:definition
+        "Communal room equipped for physical exercise."@en .
 
-miurba-kos:pistaPadel
+miUrbainstalacion:pistaPadel
     a skos:Concept ;
-    skos:inScheme miurba:tipoInstalacion ;
+    skos:inScheme miUrbakos:TipoInstalacion ;
     skos:prefLabel "Pista de pádel"@es ;
-    skos:definition "Instalación deportiva comunitaria acondicionada para la práctica del pádel."@es .
+    skos:prefLabel "Padel court"@en ;
+    skos:definition
+        "Instalación deportiva comunitaria acondicionada para la práctica del pádel."@es ;
+    skos:definition
+        "Communal sports facility designed for playing padel."@en .
 
-miurba-kos:pistaTenis
+miUrbainstalacion:pistaTenis
     a skos:Concept ;
-    skos:inScheme miurba:tipoInstalacion ;
+    skos:inScheme miUrbakos:TipoInstalacion ;
     skos:prefLabel "Pista de tenis"@es ;
-    skos:definition "Instalación deportiva comunitaria acondicionada para la práctica del tenis."@es .
+    skos:prefLabel "Tennis court"@en ;
+    skos:definition
+        "Instalación deportiva comunitaria acondicionada para la práctica del tenis."@es ;
+    skos:definition
+        "Communal sports facility designed for playing tennis."@en .
 
-miurba-kos:pistaSquash
+miUrbainstalacion:pistaSquash
     a skos:Concept ;
-    skos:inScheme miurba:tipoInstalacion ;
+    skos:inScheme miUrbakos:TipoInstalacion ;
     skos:prefLabel "Pista de squash"@es ;
-    skos:definition "Instalación deportiva comunitaria acondicionada para la práctica del squash."@es .
+    skos:prefLabel "Squash court"@en ;
+    skos:definition
+        "Instalación deportiva comunitaria acondicionada para la práctica del squash."@es ;
+    skos:definition
+        "Communal sports facility designed for playing squash."@en .
 
-miurba-kos:pistaPolideportiva
+miUrbainstalacion:pistaPolideportiva
     a skos:Concept ;
-    skos:inScheme miurba:tipoInstalacion ;
+    skos:inScheme miUrbakos:TipoInstalacion ;
     skos:prefLabel "Pista polideportiva"@es ;
-    skos:definition "Instalación deportiva comunitaria acondicionada para la práctica de diferentes deportes."@es .
+    skos:prefLabel "Multi-sport court"@en ;
+    skos:definition
+        "Instalación deportiva comunitaria acondicionada para la práctica de diferentes deportes."@es ;
+    skos:definition
+        "Communal sports facility designed for the practice of different sports."@en .
 
-miurba-kos:zonaEjercicioAireLibre
+miUrbainstalacion:zonaEjercicioAireLibre
     a skos:Concept ;
-    skos:inScheme miurba:tipoInstalacion ;
+    skos:inScheme miUrbakos:TipoInstalacion ;
     skos:prefLabel "Zona de ejercicio al aire libre"@es ;
-    skos:definition "Espacio comunitario exterior equipado o acondicionado para la práctica de ejercicio físico."@es .
+    skos:prefLabel "Outdoor exercise area"@en ;
+    skos:definition
+        "Espacio comunitario exterior equipado o acondicionado para la práctica de ejercicio físico."@es ;
+    skos:definition
+        "Outdoor communal area equipped or adapted for physical exercise."@en .
 
-miurba-kos:salaInfantil
+miUrbainstalacion:zonaJuegosInfantiles
     a skos:Concept ;
-    skos:inScheme miurba:tipoInstalacion ;
+    skos:inScheme miUrbakos:TipoInstalacion ;
+    skos:prefLabel "Zona de juegos infantiles"@es ;
+    skos:prefLabel "Children's play area"@en ;
+    skos:altLabel "Parque infantil"@es ;
+    skos:altLabel "Playground"@en ;
+    skos:definition
+        "Espacio comunitario acondicionado con elementos de juego destinados a menores."@es ;
+    skos:definition
+        "Communal area equipped with play elements intended for children."@en .
+
+miUrbainstalacion:salaInfantil
+    a skos:Concept ;
+    skos:inScheme miUrbakos:TipoInstalacion ;
     skos:prefLabel "Sala infantil"@es ;
-    skos:definition "Recinto comunitario interior acondicionado para el uso y entretenimiento de menores."@es .
+    skos:prefLabel "Children's room"@en ;
+    skos:definition
+        "Recinto comunitario interior acondicionado para el uso y entretenimiento de menores."@es ;
+    skos:definition
+        "Indoor communal room designed for children's use and recreation."@en .
 
-miurba-kos:ludoteca
+miUrbainstalacion:ludoteca
     a skos:Concept ;
-    skos:inScheme miurba:tipoInstalacion ;
+    skos:inScheme miUrbakos:TipoInstalacion ;
     skos:prefLabel "Ludoteca"@es ;
-    skos:definition "Espacio comunitario acondicionado para el juego y la realización de actividades infantiles."@es .
+    skos:prefLabel "Playroom"@en ;
+    skos:definition
+        "Espacio comunitario acondicionado para el juego y la realización de actividades infantiles."@es ;
+    skos:definition
+        "Communal space designed for play and children's activities."@en .
 
-miurba-kos:salaMultiusos
+miUrbainstalacion:salaMultiusos
     a skos:Concept ;
-    skos:inScheme miurba:tipoInstalacion ;
+    skos:inScheme miUrbakos:TipoInstalacion ;
     skos:prefLabel "Sala multiusos"@es ;
-    skos:definition "Recinto comunitario acondicionado para la realización de diferentes actividades sociales, vecinales o recreativas."@es .
+    skos:prefLabel "Multipurpose room"@en ;
+    skos:definition
+        "Recinto comunitario acondicionado para la realización de diferentes actividades sociales, vecinales o recreativas."@es ;
+    skos:definition
+        "Communal room designed for different social, community or recreational activities."@en .
 
-miurba-kos:salaReuniones
+miUrbainstalacion:clubSocial
     a skos:Concept ;
-    skos:inScheme miurba:tipoInstalacion ;
+    skos:inScheme miUrbakos:TipoInstalacion ;
+    skos:prefLabel "Club social"@es ;
+    skos:prefLabel "Residents' club"@en ;
+    skos:definition
+        "Espacio comunitario acondicionado para la convivencia, reunión y ocio de las personas residentes."@es ;
+    skos:definition
+        "Communal space designed for residents' social interaction, gatherings and leisure."@en .
+
+miUrbainstalacion:salaReuniones
+    a skos:Concept ;
+    skos:inScheme miUrbakos:TipoInstalacion ;
     skos:prefLabel "Sala de reuniones"@es ;
-    skos:definition "Recinto comunitario acondicionado para la celebración de reuniones."@es .
+    skos:prefLabel "Meeting room"@en ;
+    skos:definition
+        "Recinto comunitario acondicionado para la celebración de reuniones."@es ;
+    skos:definition
+        "Communal room designed for holding meetings."@en .
 
-miurba-kos:salaJuegos
+miUrbainstalacion:salaJuegos
     a skos:Concept ;
-    skos:inScheme miurba:tipoInstalacion ;
+    skos:inScheme miUrbakos:TipoInstalacion ;
     skos:prefLabel "Sala de juegos"@es ;
-    skos:definition "Recinto comunitario acondicionado para actividades recreativas y juegos."@es .
+    skos:prefLabel "Games room"@en ;
+    skos:definition
+        "Recinto comunitario acondicionado para actividades recreativas y juegos."@es ;
+    skos:definition
+        "Communal room designed for games and recreational activities."@en .
 
-miurba-kos:salaCine
+miUrbainstalacion:salaCine
     a skos:Concept ;
-    skos:inScheme miurba:tipoInstalacion ;
+    skos:inScheme miUrbakos:TipoInstalacion ;
     skos:prefLabel "Sala de cine"@es ;
-    skos:definition "Recinto comunitario equipado para la proyección y visualización de contenidos audiovisuales."@es .
+    skos:prefLabel "Cinema room"@en ;
+    skos:definition
+        "Recinto comunitario equipado para la proyección y visualización de contenidos audiovisuales."@es ;
+    skos:definition
+        "Communal room equipped for the projection and viewing of audiovisual content."@en .
 
-miurba-kos:zonaCelebracionEventos
+miUrbainstalacion:gastroteca
     a skos:Concept ;
-    skos:inScheme miurba:tipoInstalacion ;
+    skos:inScheme miUrbakos:TipoInstalacion ;
+    skos:prefLabel "Gastroteca"@es ;
+    skos:prefLabel "Communal kitchen and dining area"@en ;
+    skos:definition
+        "Espacio comunitario equipado para cocinar, comer y celebrar encuentros gastronómicos."@es ;
+    skos:definition
+        "Communal space equipped for cooking, dining and holding food-related gatherings."@en .
+
+miUrbainstalacion:zonaCelebracionEventos
+    a skos:Concept ;
+    skos:inScheme miUrbakos:TipoInstalacion ;
     skos:prefLabel "Zona de celebración de eventos"@es ;
-    skos:definition "Espacio comunitario acondicionado para la organización de celebraciones o eventos."@es .
+    skos:prefLabel "Event area"@en ;
+    skos:definition
+        "Espacio comunitario acondicionado para la organización de celebraciones o eventos."@es ;
+    skos:definition
+        "Communal space designed for organising celebrations or events."@en .
 
-miurba-kos:espacioCoworking
+miUrbainstalacion:espacioCoworking
     a skos:Concept ;
-    skos:inScheme miurba:tipoInstalacion ;
+    skos:inScheme miUrbakos:TipoInstalacion ;
     skos:prefLabel "Espacio de coworking"@es ;
-    skos:definition "Espacio comunitario acondicionado para el trabajo individual o compartido de las personas residentes."@es .
+    skos:prefLabel "Coworking space"@en ;
+    skos:definition
+        "Espacio comunitario acondicionado para el trabajo individual o compartido de las personas residentes."@es ;
+    skos:definition
+        "Communal space designed for individual or shared work by residents."@en .
 
-miurba-kos:salaEstudio
+miUrbainstalacion:salaEstudio
     a skos:Concept ;
-    skos:inScheme miurba:tipoInstalacion ;
+    skos:inScheme miUrbakos:TipoInstalacion ;
     skos:prefLabel "Sala de estudio"@es ;
-    skos:definition "Recinto comunitario acondicionado para el estudio, la lectura o el trabajo individual."@es .
+    skos:prefLabel "Study room"@en ;
+    skos:definition
+        "Recinto comunitario acondicionado para el estudio, la lectura o el trabajo individual."@es ;
+    skos:definition
+        "Communal room designed for studying, reading or individual work."@en .
 
-miurba-kos:jardinComunitario
+miUrbainstalacion:jardinComunitario
     a skos:Concept ;
-    skos:inScheme miurba:tipoInstalacion ;
+    skos:inScheme miUrbakos:TipoInstalacion ;
     skos:prefLabel "Jardín comunitario"@es ;
-    skos:definition "Espacio común ajardinado destinado al uso y disfrute de las personas residentes."@es .
+    skos:prefLabel "Communal garden"@en ;
+    skos:definition
+        "Espacio común ajardinado destinado al uso y disfrute de las personas residentes."@es ;
+    skos:definition
+        "Landscaped communal space intended for residents' use and enjoyment."@en .
 
-miurba-kos:solarium
+miUrbainstalacion:zonaAjardinada
     a skos:Concept ;
-    skos:inScheme miurba:tipoInstalacion ;
+    skos:inScheme miUrbakos:TipoInstalacion ;
+    skos:prefLabel "Zona ajardinada"@es ;
+    skos:prefLabel "Landscaped area"@en ;
+    skos:definition
+        "Área común provista de vegetación ornamental, no necesariamente destinada a la estancia o al uso recreativo."@es ;
+    skos:definition
+        "Common area containing ornamental vegetation, not necessarily intended for recreation or prolonged use."@en .
+
+miUrbainstalacion:solarium
+    a skos:Concept ;
+    skos:inScheme miUrbakos:TipoInstalacion ;
     skos:prefLabel "Solárium"@es ;
-    skos:definition "Espacio comunitario acondicionado para tomar el sol y descansar."@es .
+    skos:prefLabel "Solarium"@en ;
+    skos:definition
+        "Espacio comunitario acondicionado para tomar el sol y descansar."@es ;
+    skos:definition
+        "Communal space designed for sunbathing and relaxation."@en .
 
-miurba-kos:terrazaComunitaria
+miUrbainstalacion:terrazaComunitaria
     a skos:Concept ;
-    skos:inScheme miurba:tipoInstalacion ;
+    skos:inScheme miUrbakos:TipoInstalacion ;
     skos:prefLabel "Terraza comunitaria"@es ;
-    skos:definition "Espacio exterior común y accesible acondicionado para el uso de las personas residentes."@es .
+    skos:prefLabel "Communal terrace"@en ;
+    skos:definition
+        "Espacio exterior común y accesible acondicionado para el uso de las personas residentes."@es ;
+    skos:definition
+        "Accessible outdoor communal space designed for residents' use."@en .
 
-miurba-kos:zonaBarbacoa
+miUrbainstalacion:zonaChillOut
     a skos:Concept ;
-    skos:inScheme miurba:tipoInstalacion ;
+    skos:inScheme miUrbakos:TipoInstalacion ;
+    skos:prefLabel "Zona chill-out"@es ;
+    skos:prefLabel "Chill-out area"@en ;
+    skos:definition
+        "Espacio comunitario acondicionado para el descanso y la convivencia informal."@es ;
+    skos:definition
+        "Communal space designed for relaxation and informal social interaction."@en .
+
+miUrbainstalacion:zonaBarbacoa
+    a skos:Concept ;
+    skos:inScheme miUrbakos:TipoInstalacion ;
     skos:prefLabel "Zona de barbacoa"@es ;
-    skos:definition "Espacio comunitario acondicionado para la preparación de alimentos mediante barbacoa."@es .
+    skos:prefLabel "Barbecue area"@en ;
+    skos:definition
+        "Espacio comunitario acondicionado para la preparación de alimentos mediante barbacoa."@es ;
+    skos:definition
+        "Communal space equipped for preparing food using a barbecue."@en .
 
-miurba-kos:huertoComunitario
+miUrbainstalacion:huertoComunitario
     a skos:Concept ;
-    skos:inScheme miurba:tipoInstalacion ;
+    skos:inScheme miUrbakos:TipoInstalacion ;
     skos:prefLabel "Huerto comunitario"@es ;
-    skos:definition "Espacio común acondicionado para el cultivo de plantas por parte de las personas residentes."@es .
+    skos:prefLabel "Communal vegetable garden"@en ;
+    skos:definition
+        "Espacio común acondicionado para el cultivo de plantas por parte de las personas residentes."@es ;
+    skos:definition
+        "Communal space prepared for residents to grow plants or vegetables."@en .
 
-miurba-kos:parqueCanino
+miUrbainstalacion:parqueCanino
     a skos:Concept ;
-    skos:inScheme miurba:tipoInstalacion ;
+    skos:inScheme miUrbakos:TipoInstalacion ;
     skos:prefLabel "Parque canino"@es ;
-    skos:definition "Espacio común delimitado y acondicionado para el ejercicio y esparcimiento de perros."@es .
+    skos:prefLabel "Dog park"@en ;
+    skos:definition
+        "Espacio común delimitado y acondicionado para el ejercicio y esparcimiento de perros."@es ;
+    skos:definition
+        "Delimited communal space designed for dogs to exercise and play."@en .
 
-miurba-kos:aparcamientoBicicletas
+miUrbainstalacion:aparcamientoBicicletas
     a skos:Concept ;
-    skos:inScheme miurba:tipoInstalacion ;
+    skos:inScheme miUrbakos:TipoInstalacion ;
     skos:prefLabel "Aparcamiento para bicicletas"@es ;
+    skos:prefLabel "Bicycle parking"@en ;
     skos:altLabel "Aparcabicicletas"@es ;
-    skos:definition "Espacio comunitario acondicionado para estacionar bicicletas."@es .
+    skos:definition
+        "Espacio comunitario acondicionado para estacionar bicicletas."@es ;
+    skos:definition
+        "Communal space designed for parking bicycles."@en .
 
-miurba-kos:cuartoBicicletas
+miUrbainstalacion:cuartoBicicletas
     a skos:Concept ;
-    skos:inScheme miurba:tipoInstalacion ;
+    skos:inScheme miUrbakos:TipoInstalacion ;
     skos:prefLabel "Cuarto de bicicletas"@es ;
+    skos:prefLabel "Bicycle storage room"@en ;
     skos:altLabel "Cuarto de bicis"@es ;
-    skos:definition "Recinto comunitario cerrado destinado al almacenamiento de bicicletas."@es .
+    skos:definition
+        "Recinto comunitario cerrado destinado al almacenamiento de bicicletas."@es ;
+    skos:definition
+        "Enclosed communal room intended for bicycle storage."@en .
 
-miurba-kos:aparcamientoPatinetes
+miUrbainstalacion:aparcamientoPatinetes
     a skos:Concept ;
-    skos:inScheme miurba:tipoInstalacion ;
+    skos:inScheme miUrbakos:TipoInstalacion ;
     skos:prefLabel "Aparcamiento para patinetes"@es ;
-    skos:definition "Espacio comunitario acondicionado para estacionar patinetes."@es .
+    skos:prefLabel "Scooter parking"@en ;
+    skos:definition
+        "Espacio comunitario acondicionado para estacionar patinetes."@es ;
+    skos:definition
+        "Communal space designed for parking scooters."@en .

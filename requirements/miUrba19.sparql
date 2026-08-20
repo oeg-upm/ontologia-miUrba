@@ -1,0 +1,17 @@
+# miUrba19: Un servicio contratado se presta con una determinada frecuencia
+
+PREFIX miUrba: <https://w3id.org/miUrba#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+
+SELECT ?servicioContratado ?frecuencia ?frecuenciaLabel
+WHERE {
+    ?servicioContratado a miUrba:ServicioContratado ;
+                        miUrba:tieneFrecuenciaDeServicio ?frecuencia .
+
+
+    OPTIONAL {
+        ?frecuencia skos:prefLabel ?frecuenciaLabel .
+        FILTER(LANG(?frecuenciaLabel) = "es")
+    }
+}

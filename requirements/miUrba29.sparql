@@ -1,0 +1,14 @@
+# miUrba29: Es posible conocer el servicio y el proveedor relacionados con un gasto comunitario
+
+PREFIX miUrba: <https://w3id.org/miUrba#>
+
+
+SELECT ?gasto ?servicioContratado ?servicio ?proveedor
+WHERE {
+    ?gasto a miUrba:GastoComunitario ;
+           miUrba:correspondeAServicioContratado ?servicioContratado .
+
+
+    ?servicioContratado miUrba:correspondeAServicio ?servicio ;
+                        miUrba:prestadoPor ?proveedor .
+}

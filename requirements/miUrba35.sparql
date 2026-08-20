@@ -1,0 +1,39 @@
+# miUrba35: Es posible conocer las características principales de un edificio, incluyendo número de plantas, número de viviendas, ascensor, fecha de construcción y calificación energética
+
+PREFIX miUrba: <https://w3id.org/miUrba#>
+
+
+SELECT ?edificio
+       ?numeroPlantas
+       ?numeroViviendas
+       ?ascensor
+       ?fechaConstruccion
+       ?calificacionEnergetica
+WHERE {
+    ?edificio a miUrba:Edificio .
+
+
+    OPTIONAL {
+        ?edificio miUrba:numeroDePlantas ?numeroPlantas .
+    }
+
+
+    OPTIONAL {
+        ?edificio miUrba:numeroDeViviendas ?numeroViviendas .
+    }
+
+
+    OPTIONAL {
+        ?edificio miUrba:tieneAscensor ?ascensor .
+    }
+
+
+    OPTIONAL {
+        ?edificio miUrba:fechaConstruccion ?fechaConstruccion .
+    }
+
+
+    OPTIONAL {
+        ?edificio miUrba:calificacionEnergetica ?calificacionEnergetica .
+    }
+}

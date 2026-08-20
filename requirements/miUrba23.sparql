@@ -1,0 +1,10 @@
+# miUrba23 — Un servicio contratado puede actuar sobre una instalación común del edificio
+
+PREFIX miUrba: <https://w3id.org/miUrba#>
+
+
+SELECT ?servicioContratado ?instalacion
+WHERE {
+    ?servicioContratado a miUrba:ServicioContratado ;
+                        miUrba:cubreInstalacionComun ?instalacion .
+}
