@@ -1,4 +1,4 @@
-# Ontología XXX
+# Ontología miUrba
 
 La ontología miUrba representa el dominio de las comunidades de vecinos, incluyendo información sobre los edificios, los inmuebles, las instalaciones, los servicios, los gastos y los agentes relacionados con su gestión.
 
@@ -8,18 +8,18 @@ El propósito de la ontología miUrba es representar de forma estructurada la in
 
 La ontología se organiza en varios ámbitos principales:
 
-- Comunidad y edificio: información general sobre la comunidad de vecinos y el edificio.
-- Inmuebles: representación de las viviendas, locales y otros inmuebles que forman parte del edificio.
-- Instalaciones y sistemas: información sobre las instalaciones y sistemas comunes del edificio, como la calefacción o el agua caliente sanitaria.
-- Servicios: representación de los servicios contratados por la comunidad.
-- Agentes y roles: personas u organizaciones relacionadas con la comunidad y los roles que desempeñan.
-- Gastos: información sobre los gastos comunitarios, incluidos los gastos ordinarios y extraordinarios.
-- Información catastral: datos relacionados con la identificación y descripción catastral de los inmuebles.
-- Vocabularios controlados: listas de conceptos definidas mediante SKOS para representar determinados valores de la ontología, como la modalidad de suministro térmico de los sistemas de calefacción y agua caliente sanitaria (ASC), los tipos de servicios, los distintos tipos de instalaciones, etc. 
+- **Comunidad y edificio**: información general sobre la comunidad de vecinos y el edificio.
+- **Inmuebles**: representación de las viviendas, locales y otros inmuebles que forman parte del edificio.
+- **Instalaciones y sistemas**: información sobre las instalaciones y sistemas comunes del edificio, como la calefacción o el agua caliente sanitaria.
+- **Servicios**: representación de los servicios contratados por la comunidad.
+- **Agentes y roles**: personas u organizaciones relacionadas con la comunidad y los roles que desempeñan.
+- **Gastos**: información sobre los gastos comunitarios, incluidos los gastos ordinarios y extraordinarios.
+- **Información catastral**: datos relacionados con la identificación y descripción catastral de los inmuebles.
+- **Vocabularios controlados**: listas de conceptos definidas mediante SKOS para representar determinados valores de la ontología, como la modalidad de suministro térmico de los sistemas de calefacción y agua caliente sanitaria (ASC), los tipos de servicios, los distintos tipos de instalaciones, etc. 
 
 # Prefijo y espacio de nombres de la ontología
 
-El prefijo de la ontología es: miUrba y se encuentra publicada en el espacio de nombres: [https://w3id.org/miUrba#](https://w3id.org/miUrba#)
+El prefijo de la ontología es: **miUrba** y se encuentra publicada en el espacio de nombres: [https://w3id.org/miUrba#](https://w3id.org/miUrba#)
 
 # Modelo conceptual de la ontología
 
