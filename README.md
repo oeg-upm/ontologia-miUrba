@@ -1,28 +1,30 @@
 # Ontología XXX
 
-La ontología XXX represent el dominio XXXX.
-
+La ontología miUrba representa el dominio de las comunidades de vecinos, incluyendo información sobre los edificios, los inmuebles, las instalaciones, los servicios, los gastos y los agentes relacionados con su gestión.
 
 # Propósito y alcance de la ontología
 
-El propósito de la ontología XXX es YYYY. 
-El alcance de la ontología XXX está limitado a ZZZZ.
+El propósito de la ontología miUrba es representar de forma estructurada la información relacionada con las comunidades de vecinos.
+
+La ontología se organiza en varios ámbitos principales:
+
+- Comunidad y edificio: información general sobre la comunidad de vecinos y el edificio.
+- Inmuebles: representación de las viviendas, locales y otros inmuebles que forman parte del edificio.
+- Instalaciones y sistemas: información sobre las instalaciones y sistemas comunes del edificio, como la calefacción o el agua caliente sanitaria.
+- Servicios: representación de los servicios contratados por la comunidad.
+- Agentes y roles: personas u organizaciones relacionadas con la comunidad y los roles que desempeñan.
+- Gastos: información sobre los gastos comunitarios, incluidos los gastos ordinarios y extraordinarios.
+- Información catastral: datos relacionados con la identificación y descripción catastral de los inmuebles.
+- Vocabularios controlados: listas de conceptos definidas mediante SKOS para representar determinados valores de la ontología, como la modalidad de suministro térmico de los sistemas de calefacción y agua caliente sanitaria (ASC), los tipos de servicios, los distintos tipos de instalaciones, etc. 
 
 # Prefijo y espacio de nombres de la ontología
 
-El prefijo de la ontología es: XXX y se encuentra publicada en el espacio de nombres: https://webdomain.ext/def/domain/subdomain# 
+El prefijo de la ontología es: miUrba y se encuentra publicada en el espacio de nombres: [https://w3id.org/miUrba#](https://w3id.org/miUrba#)
 
 # Modelo conceptual de la ontología
 
-Cada repositorio de desarrollo de ontologías debe incluir, en este README principal, una representación visual de la conceptualización de la ontología.
-Esta imagen ayuda a los usuarios y colaboradores a comprender rápidamente la estructura de la ontología, sus conceptos clave y las relaciones entre ellos.
 
-- La imagen debe estar ubicada en la carpeta de conceptualización.
-- Formatos aceptados: .svg, .png o .drawio.
-- Debe referenciarse en este README usando la sintaxis de Markdown, por ejemplo:
-
-
-![Diagrama del modelo conceptual](diagrams/diagrama.png)
+![Diagrama del modelo conceptual](diagrams/conceptualización-general.png)
 
 # Estructura del repositorio
 
@@ -32,10 +34,9 @@ El repositorio debe contener (al menos) las siguientes carpetas
 |--------|--------------|
 | **diagrams/** | Contiene diagramas y otros recursos que representan el modelo conceptual de la ontología (por ejemplo, jerarquías de clases, relaciones). |
 | **documentation/** | Contiene la documentación de la ontología y artefactos relacionados en formato HTML o dirigida a usuarios. |
-| **tests/** | Contiene las pruebas para la evaluación de la ontología. |
 | **kos/** | Contiene la implementación de vocabularios controlados o KOS, generalmente implementaciones SKOS en RDF.|
 | **ontology/** | Contiene los archivos de implementación de la ontología en formatos como .owl, .rdf, .ttl o .jsonld |
-| **requirements/** | Contiene todos los documentos utilizados para definir los requisitos de la ontología: ejemplos de datos, preguntas de competencia, requisitos funcionales, casos de uso, etc. |
+| **requirements/** | Contiene todos los documentos utilizados para definir los requisitos de la ontología en formato de preguntas de competencia con sus respectivas consultas de SPARQL|
 | **shapes/** | Contiene las restricciones SHACL utilizad para validar datos respecto a la ontología.  |
 
 # Mantenimiento del proyecto
