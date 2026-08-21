@@ -7,8 +7,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:miUrba="https://w3id.org/miUrba#">
+     xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/miUrba">
         <owl:versionIRI rdf:resource="https://w3id.org/miUrba/1.0.0"/>
         <terms:creator xml:lang="es">Lucía Sánchez-González</terms:creator>
@@ -16,8 +15,8 @@
         <terms:description xml:lang="es">Ontología para describir comunidades de vecinos.</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:title>miUrba Ontology</terms:title>
-        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/miUrba#"/>
         <vann:preferredNamespacePrefix>miUrba</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/miUrba#"/>
     </owl:Ontology>
     
 
@@ -30,10 +29,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://purl.org/dc/terms/created -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
     
@@ -41,11 +42,13 @@
 
     <!-- http://purl.org/dc/terms/creator -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
     
 
 
     <!-- http://purl.org/dc/terms/description -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
     
@@ -53,11 +56,13 @@
 
     <!-- http://purl.org/dc/terms/license -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 
     <!-- http://purl.org/dc/terms/title -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
@@ -65,8 +70,20 @@
 
     <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
-<!-- http://www.w3.org/2002/07/owl#versionInfo -->
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
     
@@ -80,10 +97,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://www.w3.org/2001/XMLSchema#date -->
+
 
     <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
     
@@ -97,10 +116,23 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio -->
+
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio">
+        <rdfs:comment xml:lang="es">Municipio al que pertenece un fenómeno geográfico o una entidad administrativa</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#"/>
+        <rdfs:label xml:lang="es">pertenece al municipio</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.opengis.net/ont/geosparql#hasGeometry -->
+
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#hasGeometry">
         <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
@@ -115,6 +147,7 @@
 
     <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
 
+
     <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme">
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
     </owl:ObjectProperty>
@@ -122,6 +155,7 @@
 
 
     <!-- https://edint.es/def/infraestructura#belongsTo -->
+
 
     <owl:ObjectProperty rdf:about="https://edint.es/def/infraestructura#belongsTo">
         <rdfs:range>
@@ -145,6 +179,7 @@
 
     <!-- https://schema.org/address -->
 
+
     <owl:ObjectProperty rdf:about="https://schema.org/address">
         <rdfs:domain rdf:resource="https://w3id.org/miUrba#Edificio"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal"/>
@@ -157,6 +192,7 @@
 
 
     <!-- https://w3id.org/miUrba#correspondeAServicio -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/miUrba#correspondeAServicio">
         <rdfs:domain rdf:resource="https://w3id.org/miUrba#ServicioContratado"/>
@@ -171,6 +207,7 @@
 
     <!-- https://w3id.org/miUrba#correspondeAServicioContratado -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/miUrba#correspondeAServicioContratado">
         <rdfs:domain rdf:resource="https://w3id.org/miUrba#GastoComunitario"/>
         <rdfs:range rdf:resource="https://w3id.org/miUrba#ServicioContratado"/>
@@ -183,6 +220,7 @@
 
 
     <!-- https://w3id.org/miUrba#cubreInstalacionComun -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/miUrba#cubreInstalacionComun">
         <rdfs:domain rdf:resource="https://w3id.org/miUrba#ServicioContratado"/>
@@ -197,6 +235,7 @@
 
     <!-- https://w3id.org/miUrba#disponeDeInstalacionComun -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/miUrba#disponeDeInstalacionComun">
         <rdfs:domain rdf:resource="https://w3id.org/miUrba#Edificio"/>
         <rdfs:range rdf:resource="https://w3id.org/miUrba#InstalacionComun"/>
@@ -209,6 +248,7 @@
 
 
     <!-- https://w3id.org/miUrba#ejercidoPor -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/miUrba#ejercidoPor">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
@@ -231,6 +271,7 @@
 
     <!-- https://w3id.org/miUrba#formadaPor -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/miUrba#formadaPor">
         <rdfs:domain rdf:resource="https://w3id.org/miUrba#ComunidadDeVecinos"/>
         <rdfs:range rdf:resource="https://w3id.org/miUrba#Edificio"/>
@@ -243,6 +284,7 @@
 
 
     <!-- https://w3id.org/miUrba#modalidadDeServicio -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/miUrba#modalidadDeServicio">
         <rdfs:domain rdf:resource="https://w3id.org/miUrba#ServicioContratado"/>
@@ -266,6 +308,7 @@
 
 
     <!-- https://w3id.org/miUrba#modalidadDeSuministro -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/miUrba#modalidadDeSuministro">
         <rdfs:domain>
@@ -297,6 +340,7 @@
 
     <!-- https://w3id.org/miUrba#prestadoPor -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/miUrba#prestadoPor">
         <rdfs:domain rdf:resource="https://w3id.org/miUrba#ServicioContratado"/>
         <rdfs:range rdf:resource="https://w3id.org/miUrba#Proveedor"/>
@@ -309,6 +353,7 @@
 
 
     <!-- https://w3id.org/miUrba#tieneContrato -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/miUrba#tieneContrato">
         <rdfs:domain rdf:resource="https://w3id.org/miUrba#ServicioContratado"/>
@@ -323,6 +368,7 @@
 
     <!-- https://w3id.org/miUrba#tieneCuotaComunitaria -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/miUrba#tieneCuotaComunitaria">
         <rdfs:domain rdf:resource="https://w3id.org/miUrba#ComunidadDeVecinos"/>
         <rdfs:range rdf:resource="https://w3id.org/miUrba#CuotaComunitaria"/>
@@ -335,6 +381,7 @@
 
 
     <!-- https://w3id.org/miUrba#tieneFrecuenciaDeServicio -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/miUrba#tieneFrecuenciaDeServicio">
         <rdfs:domain rdf:resource="https://w3id.org/miUrba#ServicioContratado"/>
@@ -359,6 +406,7 @@
 
     <!-- https://w3id.org/miUrba#tieneGastoComunitario -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/miUrba#tieneGastoComunitario">
         <rdfs:domain rdf:resource="https://w3id.org/miUrba#ComunidadDeVecinos"/>
         <rdfs:range rdf:resource="https://w3id.org/miUrba#GastoComunitario"/>
@@ -371,6 +419,7 @@
 
 
     <!-- https://w3id.org/miUrba#tieneInmueble -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/miUrba#tieneInmueble">
         <rdfs:domain rdf:resource="https://w3id.org/miUrba#Edificio"/>
@@ -385,6 +434,7 @@
 
     <!-- https://w3id.org/miUrba#tieneReferenciaCatastral -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/miUrba#tieneReferenciaCatastral">
         <rdfs:domain rdf:resource="https://w3id.org/miUrba#Edificio"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralReference"/>
@@ -397,6 +447,7 @@
 
 
     <!-- https://w3id.org/miUrba#tieneRol -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/miUrba#tieneRol">
         <rdfs:domain rdf:resource="https://w3id.org/miUrba#ComunidadDeVecinos"/>
@@ -411,6 +462,7 @@
 
     <!-- https://w3id.org/miUrba#tieneSistemaDeACS -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/miUrba#tieneSistemaDeACS">
         <rdfs:domain rdf:resource="https://w3id.org/miUrba#Edificio"/>
         <rdfs:range rdf:resource="https://w3id.org/miUrba#SistemaACS"/>
@@ -424,6 +476,7 @@
 
     <!-- https://w3id.org/miUrba#tieneSistemaDeCalefaccion -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/miUrba#tieneSistemaDeCalefaccion">
         <rdfs:domain rdf:resource="https://w3id.org/miUrba#Edificio"/>
         <rdfs:range rdf:resource="https://w3id.org/miUrba#SistemaDeCalefaccion"/>
@@ -436,6 +489,7 @@
 
 
     <!-- https://w3id.org/miUrba#tieneTipoDeServicio -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/miUrba#tieneTipoDeServicio">
         <rdfs:domain rdf:resource="https://w3id.org/miUrba#Servicio"/>
@@ -459,6 +513,7 @@
 
 
     <!-- https://w3id.org/miUrba#tipoDeFuenteEnergetica -->
+
 
     <owl:ObjectProperty rdf:about="https://w3id.org/miUrba#tipoDeFuenteEnergetica">
         <rdfs:domain>
@@ -490,6 +545,7 @@
 
     <!-- https://w3id.org/miUrba#tipoDeInstalacionComun -->
 
+
     <owl:ObjectProperty rdf:about="https://w3id.org/miUrba#tipoDeInstalacionComun">
         <rdfs:domain rdf:resource="https://w3id.org/miUrba#InstalacionComun"/>
         <rdfs:range>
@@ -511,16 +567,6 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio -->
-
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio">
-        <rdfs:comment xml:lang="es">Municipio al que pertenece un fenómeno geográfico o una entidad administrativa</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#"/>
-        <rdfs:label xml:lang="es">pertenece al municipio</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -529,10 +575,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- https://w3id.org/miUrba#calificacionEnergetica -->
+
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/miUrba#calificacionEnergetica">
         <rdfs:domain rdf:resource="https://w3id.org/miUrba#Edificio"/>
@@ -547,6 +595,7 @@
 
     <!-- https://w3id.org/miUrba#conceptoGasto -->
 
+
     <owl:DatatypeProperty rdf:about="https://w3id.org/miUrba#conceptoGasto">
         <rdfs:domain rdf:resource="https://w3id.org/miUrba#GastoComunitario"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -559,6 +608,7 @@
 
 
     <!-- https://w3id.org/miUrba#fechaConstruccion -->
+
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/miUrba#fechaConstruccion">
         <rdfs:domain rdf:resource="https://w3id.org/miUrba#Edificio"/>
@@ -573,6 +623,7 @@
 
     <!-- https://w3id.org/miUrba#fechaReforma -->
 
+
     <owl:DatatypeProperty rdf:about="https://w3id.org/miUrba#fechaReforma">
         <rdfs:domain rdf:resource="https://w3id.org/miUrba#Edificio"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
@@ -585,6 +636,7 @@
 
 
     <!-- https://w3id.org/miUrba#identificadorFiscal -->
+
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/miUrba#identificadorFiscal">
         <rdfs:domain rdf:resource="https://w3id.org/miUrba#Proveedor"/>
@@ -599,6 +651,7 @@
 
     <!-- https://w3id.org/miUrba#importe -->
 
+
     <owl:DatatypeProperty rdf:about="https://w3id.org/miUrba#importe">
         <rdfs:domain rdf:resource="https://w3id.org/miUrba#GastoComunitario"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
@@ -611,6 +664,7 @@
 
 
     <!-- https://w3id.org/miUrba#importeTotal -->
+
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/miUrba#importeTotal">
         <rdfs:domain rdf:resource="https://w3id.org/miUrba#CuotaComunitaria"/>
@@ -625,6 +679,7 @@
 
     <!-- https://w3id.org/miUrba#nombreInstalacion -->
 
+
     <owl:DatatypeProperty rdf:about="https://w3id.org/miUrba#nombreInstalacion">
         <rdfs:domain rdf:resource="https://w3id.org/miUrba#InstalacionComun"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -637,6 +692,7 @@
 
 
     <!-- https://w3id.org/miUrba#nombreProveedor -->
+
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/miUrba#nombreProveedor">
         <rdfs:domain rdf:resource="https://w3id.org/miUrba#Proveedor"/>
@@ -651,6 +707,7 @@
 
     <!-- https://w3id.org/miUrba#numeroDePlantas -->
 
+
     <owl:DatatypeProperty rdf:about="https://w3id.org/miUrba#numeroDePlantas">
         <rdfs:domain rdf:resource="https://w3id.org/miUrba#Edificio"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
@@ -663,6 +720,7 @@
 
 
     <!-- https://w3id.org/miUrba#numeroDeViviendas -->
+
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/miUrba#numeroDeViviendas">
         <rdfs:domain rdf:resource="https://w3id.org/miUrba#Edificio"/>
@@ -677,6 +735,7 @@
 
     <!-- https://w3id.org/miUrba#observacionesServicio -->
 
+
     <owl:DatatypeProperty rdf:about="https://w3id.org/miUrba#observacionesServicio">
         <rdfs:domain rdf:resource="https://w3id.org/miUrba#ServicioContratado"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -690,6 +749,7 @@
 
     <!-- https://w3id.org/miUrba#periodicidad -->
 
+
     <owl:DatatypeProperty rdf:about="https://w3id.org/miUrba#periodicidad">
         <rdfs:domain rdf:resource="https://w3id.org/miUrba#CuotaComunitaria"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -702,6 +762,7 @@
 
 
     <!-- https://w3id.org/miUrba#tieneAscensor -->
+
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/miUrba#tieneAscensor">
         <rdfs:domain rdf:resource="https://w3id.org/miUrba#Edificio"/>
@@ -722,10 +783,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralProperty -->
+
 
     <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralProperty">
         <rdfs:comment xml:lang="es">Bien inmueble inscrito en el Catastro. Puede ser un local, vivienda, o cualquier unidad de uso independiente dentro de una parcela. Un inmueble catastral puede tener una o más construcciones asociadas.</rdfs:comment>
@@ -739,6 +802,7 @@
 
     <!-- http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralReference -->
 
+
     <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralReference">
         <rdfs:comment xml:lang="en">Abstract parent class for cadastral reference types</rdfs:comment>
         <rdfs:comment xml:lang="es">Clase padre abstracta para los tipos de referencia catastral.</rdfs:comment>
@@ -750,6 +814,7 @@
 
 
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio -->
+
 
     <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
@@ -763,6 +828,7 @@
 
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Ciudad -->
 
+
     <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Ciudad">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
         <rdfs:comment xml:lang="en">A city is an urban area where industry and services predominate [source: Wikipedia]</rdfs:comment>
@@ -774,6 +840,7 @@
 
 
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito -->
+
 
     <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
@@ -787,17 +854,19 @@
 
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio -->
 
+
     <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:comment xml:lang="en">A municipality is the local entity defined in Article 140 of the Spanish Constitution and the basic unit of the State&apos;s territorial organization according to Article 1 of Law 7/1985, of April 2, Regulating the Bases of Local Government. It has legal personality and full capacity to fulfill its purposes. The territorial boundaries of municipalities are recorded in the Central Cartographic Registry of the National Geographic Institute (IGN). Its name, specified with the property dct:title, is provided by the Registry of Local Entities of the Ministry of Territorial Policy, at http://www.ine.es/nomen2/index.do</rdfs:comment>
         <rdfs:comment xml:lang="es">Un Municipio es el ente local definido en el artículo 140 de la Constitución española y la entidad básica de la organización territorial del Estado según el artículo 1 de la Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local. Tiene personalidad jurídica y plena capacidad para el cumplimiento de sus fines. La delimitación territorial de Municipio está recogida del REgistro Central de Cartografía del IGN. Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por el Registro de Entidades Locales del Ministerio de Política Territorial, en http://www.ine.es/nomen2/index.do</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"/>
-        <rdfs:comment xml:lang="en">A municipality is the local entity defined in Article 140 of the Spanish Constitution and the basic unit of the State&apos;s territorial organization according to Article 1 of Law 7/1985, of April 2, Regulating the Bases of Local Government. It has legal personality and full capacity to fulfill its purposes. The territorial boundaries of municipalities are recorded in the Central Cartographic Registry of the National Geographic Institute (IGN). Its name, specified with the property dct:title, is provided by the Registry of Local Entities of the Ministry of Territorial Policy, at http://www.ine.es/nomen2/index.do</rdfs:comment>
         <rdfs:label xml:lang="es">Municipio</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal -->
+
 
     <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal">
         <rdfs:comment xml:lang="en">A postal address in Spain. It is defined as a specialization of the classes vcard:Address, schema:PostalAddress, and locn:Address. In addition to the properties associated with these classes, and defined in their corresponding vocabulary, those defined in the Spanish administrative division vocabularies and the street directory can also be used.</rdfs:comment>
@@ -810,6 +879,7 @@
 
     <!-- http://www.opengis.net/ont/geosparql#Feature -->
 
+
     <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#Feature">
         <rdfs:comment xml:lang="en">A discrete spatial phenomenon that a user interacts with or considers unique in the real world.</rdfs:comment>
         <rdfs:comment xml:lang="es">Un fenómeno espacial discreto con el que un usuario interactúa o que considera único en el mundo real.</rdfs:comment>
@@ -820,6 +890,7 @@
 
 
     <!-- http://www.opengis.net/ont/geosparql#Geometry -->
+
 
     <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#Geometry">
         <rdfs:comment xml:lang="en">A coherent, systematic arrangement of geometric points or cells that represents a spatial location, extent or shape.</rdfs:comment>
@@ -832,6 +903,7 @@
 
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
 
+
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
     </owl:Class>
@@ -840,6 +912,7 @@
 
     <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
 
+
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
     </owl:Class>
@@ -847,6 +920,7 @@
 
 
     <!-- https://schema.org/Organization -->
+
 
     <owl:Class rdf:about="https://schema.org/Organization">
         <rdfs:comment xml:lang="en">An organization such as a school, NGO, corporation, club, etc.</rdfs:comment>
@@ -859,6 +933,7 @@
 
     <!-- https://schema.org/Person -->
 
+
     <owl:Class rdf:about="https://schema.org/Person">
         <rdfs:comment xml:lang="en">A person (alive, dead, undead, or fictional).</rdfs:comment>
         <rdfs:comment xml:lang="es">Una persona (viva, muerta, no muerta o ficticia).</rdfs:comment>
@@ -869,6 +944,7 @@
 
 
     <!-- https://w3id.org/miUrba#AdministradorFincas -->
+
 
     <owl:Class rdf:about="https://w3id.org/miUrba#AdministradorFincas">
         <rdfs:subClassOf rdf:resource="https://w3id.org/miUrba#RolComunitario"/>
@@ -882,6 +958,7 @@
 
     <!-- https://w3id.org/miUrba#ComunidadDeVecinos -->
 
+
     <owl:Class rdf:about="https://w3id.org/miUrba#ComunidadDeVecinos">
         <rdfs:comment xml:lang="es">Entidad que representa a una comunidad formada por las personas propietarias de las viviendas.</rdfs:comment>
         <rdfs:comment xml:lang="en">Entity that represents a community made up of the people who own the homes.</rdfs:comment>
@@ -892,6 +969,7 @@
 
 
     <!-- https://w3id.org/miUrba#Contrato -->
+
 
     <owl:Class rdf:about="https://w3id.org/miUrba#Contrato">
         <rdfs:comment xml:lang="es">Acuerdo formal que regula la prestación de un servicio o suministro contratado por una comunidad de vecinos.</rdfs:comment>
@@ -904,6 +982,7 @@
 
     <!-- https://w3id.org/miUrba#CuotaComunitaria -->
 
+
     <owl:Class rdf:about="https://w3id.org/miUrba#CuotaComunitaria">
         <rdfs:comment xml:lang="en">Amount that a property owner must contribute to the homeowners&apos; community to cover common expenses.</rdfs:comment>
         <rdfs:comment xml:lang="es">Importe económico que una persona propietaria debe aportar a la comunidad de vecinos para contribuir a los gastos comunes.</rdfs:comment>
@@ -914,6 +993,7 @@
 
 
     <!-- https://w3id.org/miUrba#Edificio -->
+
 
     <owl:Class rdf:about="https://w3id.org/miUrba#Edificio">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
@@ -927,6 +1007,7 @@
 
     <!-- https://w3id.org/miUrba#GastoComunitario -->
 
+
     <owl:Class rdf:about="https://w3id.org/miUrba#GastoComunitario">
         <rdfs:comment xml:lang="en">Expense associated with the operation, maintenance or management of a homeowners&apos; community.</rdfs:comment>
         <rdfs:comment xml:lang="es">Gasto asociado al funcionamiento, mantenimiento o gestión de una comunidad de vecinos.</rdfs:comment>
@@ -938,6 +1019,7 @@
 
     <!-- https://w3id.org/miUrba#GastoExtraordinario -->
 
+
     <owl:Class rdf:about="https://w3id.org/miUrba#GastoExtraordinario">
         <rdfs:subClassOf rdf:resource="https://w3id.org/miUrba#GastoComunitario"/>
     </owl:Class>
@@ -946,6 +1028,7 @@
 
     <!-- https://w3id.org/miUrba#GastoOrdinario -->
 
+
     <owl:Class rdf:about="https://w3id.org/miUrba#GastoOrdinario">
         <rdfs:subClassOf rdf:resource="https://w3id.org/miUrba#GastoComunitario"/>
     </owl:Class>
@@ -953,6 +1036,7 @@
 
 
     <!-- https://w3id.org/miUrba#InstalacionComun -->
+
 
     <owl:Class rdf:about="https://w3id.org/miUrba#InstalacionComun">
         <rdfs:comment xml:lang="es">Espacio o instalación de uso compartido disponible para las personas residentes de una comunidad de vecinos.</rdfs:comment>
@@ -964,6 +1048,7 @@
 
 
     <!-- https://w3id.org/miUrba#PresidenteComunidad -->
+
 
     <owl:Class rdf:about="https://w3id.org/miUrba#PresidenteComunidad">
         <rdfs:subClassOf rdf:resource="https://w3id.org/miUrba#RolComunitario"/>
@@ -977,6 +1062,7 @@
 
     <!-- https://w3id.org/miUrba#Propietario -->
 
+
     <owl:Class rdf:about="https://w3id.org/miUrba#Propietario">
         <rdfs:subClassOf rdf:resource="https://w3id.org/miUrba#RolComunitario"/>
         <rdfs:comment xml:lang="es">Rol ejercido por una persona u organización que posee una vivienda, local u otra unidad privativa perteneciente a una comunidad de vecinos.</rdfs:comment>
@@ -988,6 +1074,7 @@
 
 
     <!-- https://w3id.org/miUrba#Proveedor -->
+
 
     <owl:Class rdf:about="https://w3id.org/miUrba#Proveedor">
         <rdfs:subClassOf>
@@ -1008,6 +1095,7 @@
 
     <!-- https://w3id.org/miUrba#RolComunitario -->
 
+
     <owl:Class rdf:about="https://w3id.org/miUrba#RolComunitario">
         <rdfs:comment xml:lang="es">Función o responsabilidad desempeñada por una persona u organización dentro de una comunidad de vecinos.</rdfs:comment>
         <rdfs:comment xml:lang="en">Function or responsibility performed by a person or organization within a homeowners&apos; community.</rdfs:comment>
@@ -1018,6 +1106,7 @@
 
 
     <!-- https://w3id.org/miUrba#Servicio -->
+
 
     <owl:Class rdf:about="https://w3id.org/miUrba#Servicio">
         <rdfs:comment xml:lang="en">A service contracted by a homeowners&apos; community to cover a common need.</rdfs:comment>
@@ -1030,6 +1119,7 @@
 
     <!-- https://w3id.org/miUrba#ServicioContratado -->
 
+
     <owl:Class rdf:about="https://w3id.org/miUrba#ServicioContratado">
         <rdfs:comment xml:lang="en">Service whose provision has been agreed through a contract with a homeowners&apos; community.</rdfs:comment>
         <rdfs:comment xml:lang="es">Servicio cuya prestación ha sido acordada mediante un contrato con una comunidad de vecinos.</rdfs:comment>
@@ -1041,6 +1131,7 @@
 
     <!-- https://w3id.org/miUrba#SistemaACS -->
 
+
     <owl:Class rdf:about="https://w3id.org/miUrba#SistemaACS">
         <rdfs:comment xml:lang="es">Sistema destinado a producir y suministrar agua caliente sanitaria a un edificio o a sus unidades privativas.</rdfs:comment>
         <rdfs:comment xml:lang="en">System intended to produce and supply domestic hot water to a building or its privately owned units.</rdfs:comment>
@@ -1051,6 +1142,7 @@
 
 
     <!-- https://w3id.org/miUrba#SistemaDeCalefaccion -->
+
 
     <owl:Class rdf:about="https://w3id.org/miUrba#SistemaDeCalefaccion">
         <rdfs:comment xml:lang="es">Sistema destinado a proporcionar calefacción a un edificio o a sus unidades privativas.</rdfs:comment>
@@ -1069,10 +1161,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- https://w3id.org/miUrba#frecuenciaServicio -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/miUrba#frecuenciaServicio">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
@@ -1086,6 +1180,7 @@
 
     <!-- https://w3id.org/miUrba#modalidadServicio -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/miUrba#modalidadServicio">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
         <rdfs:comment xml:lang="es">Este esquema de conceptos pertenece al conjunto de vocabularios controlados basados en SKOS utilizados por la ontología miUrba para representar comunidades de vecinos. Esquema de conceptos que agrupa modalidades de prestación de servicios en comunidades de vecinos</rdfs:comment>
@@ -1097,6 +1192,7 @@
 
 
     <!-- https://w3id.org/miUrba#modalidadSuministro -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/miUrba#modalidadSuministro">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
@@ -1110,6 +1206,7 @@
 
     <!-- https://w3id.org/miUrba#tipoFuenteEnergetica -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/miUrba#tipoFuenteEnergetica">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
         <rdfs:comment xml:lang="es">Este esquema de conceptos pertenece al conjunto de vocabularios controlados basados en SKOS utilizados por la ontología miUrba para representar comunidades de vecinos. Esquema de conceptos que agrupa tipos de fuentes energéticas utilizadas en sistemas de edificios residenciales.</rdfs:comment>
@@ -1121,6 +1218,7 @@
 
 
     <!-- https://w3id.org/miUrba#tipoInstalacion -->
+
 
     <owl:NamedIndividual rdf:about="https://w3id.org/miUrba#tipoInstalacion">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
@@ -1134,6 +1232,7 @@
 
     <!-- https://w3id.org/miUrba#tipoServicio -->
 
+
     <owl:NamedIndividual rdf:about="https://w3id.org/miUrba#tipoServicio">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
         <rdfs:comment xml:lang="es">Este esquema conceptual pertenece al conjunto de vocabularios controlados basados ​​en SKOS que utiliza la ontología miUrba para representar las comunidades de propietarios de viviendas. Esquema conceptual que agrupa los tipos de servicios contratados por los propietarios.</rdfs:comment>
@@ -1145,5 +1244,6 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
 

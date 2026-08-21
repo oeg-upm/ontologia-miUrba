@@ -1,0 +1,1738 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio"
+    }, {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Ciudad"
+    }, {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito"
+    }, {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://w3id.org/miUrba#modalidadServicio"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/miUrba#SistemaACS"
+    }, {
+      "@id" : "https://w3id.org/miUrba#SistemaDeCalefaccion"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    }, {
+      "@id" : "_:genid18"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://w3id.org/miUrba#modalidadSuministro"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    }, {
+      "@id" : "_:genid22"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://w3id.org/miUrba#frecuenciaServicio"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    }, {
+      "@id" : "_:genid26"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://w3id.org/miUrba#tipoServicio"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/miUrba#SistemaACS"
+    }, {
+      "@id" : "https://w3id.org/miUrba#SistemaDeCalefaccion"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    }, {
+      "@id" : "_:genid33"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://w3id.org/miUrba#tipoFuenteEnergetica"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    }, {
+      "@id" : "_:genid37"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://w3id.org/miUrba#tipoInstalacion"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://schema.org/Organization"
+    }, {
+      "@id" : "https://schema.org/Person"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://schema.org/Organization"
+    }, {
+      "@id" : "https://schema.org/Person"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    }, {
+      "@id" : "_:genid11"
+    } ]
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Bien inmueble inscrito en el Catastro. Puede ser un local, vivienda, o cualquier unidad de uso independiente dentro de una parcela. Un inmueble catastral puede tener una o más construcciones asociadas."
+  }, {
+    "@language" : "en",
+    "@value" : "Real estate property registered in the Cadastre. Can be a premises, dwelling, or any independent use unit within a parcel. A cadastral property may have one or more constructions associated."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/catastro"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Cadastral Property"
+  }, {
+    "@language" : "es",
+    "@value" : "Inmueble Catastral"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralReference",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Abstract parent class for cadastral reference types"
+  }, {
+    "@language" : "es",
+    "@value" : "Clase padre abstracta para los tipos de referencia catastral."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/catastro/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Cadastral Reference"
+  }, {
+    "@language" : "es",
+    "@value" : "Referencia Catastral"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A neighborhood is each of the parts into which large towns or their districts are divided [source: Dictionary of the Royal Spanish Academy (RAE) 2011]"
+  }, {
+    "@language" : "es",
+    "@value" : "Un barrio es cada una de las partes en que se dividen los pueblos grandes o sus distritos [fuente: Diccionario de la Real Academia (DRAE) 2011]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Barrio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#Feature"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Ciudad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A city is an urban area where industry and services predominate [source: Wikipedia]"
+  }, {
+    "@language" : "es",
+    "@value" : "Una ciudad es un área urbana en la que predominan fundamentalmente la industria y los servicios [fuente: Wikipedia]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Ciudad"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#Feature"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A district is each of the demarcations into which a territory or population is subdivided to distribute and order the exercise of civil and political rights, or public functions, or administrative services [source: Dictionary of the Royal Spanish Academy 2011]"
+  }, {
+    "@language" : "es",
+    "@value" : "Un distrito es cada una de las demarcaciones en que se subdivide un territorio o una población para distribuir y ordenar el ejercicio de los derechos civiles y políticos, o de las funciones públicas, o de los servicios administrativos [fuente: Diccionario de la Real Academia (DRAE) 2011]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Distrito"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#Feature"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A municipality is the local entity defined in Article 140 of the Spanish Constitution and the basic unit of the State's territorial organization according to Article 1 of Law 7/1985, of April 2, Regulating the Bases of Local Government. It has legal personality and full capacity to fulfill its purposes. The territorial boundaries of municipalities are recorded in the Central Cartographic Registry of the National Geographic Institute (IGN). Its name, specified with the property dct:title, is provided by the Registry of Local Entities of the Ministry of Territorial Policy, at http://www.ine.es/nomen2/index.do"
+  }, {
+    "@language" : "es",
+    "@value" : "Un Municipio es el ente local definido en el artículo 140 de la Constitución española y la entidad básica de la organización territorial del Estado según el artículo 1 de la Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local. Tiene personalidad jurídica y plena capacidad para el cumplimiento de sus fines. La delimitación territorial de Municipio está recogida del REgistro Central de Cartografía del IGN. Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por el Registro de Entidades Locales del Ministerio de Política Territorial, en http://www.ine.es/nomen2/index.do"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Municipio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#Feature"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Municipio al que pertenece un fenómeno geográfico o una entidad administrativa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "pertenece al municipio"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A postal address in Spain. It is defined as a specialization of the classes vcard:Address, schema:PostalAddress, and locn:Address. In addition to the properties associated with these classes, and defined in their corresponding vocabulary, those defined in the Spanish administrative division vocabularies and the street directory can also be used."
+  }, {
+    "@language" : "es",
+    "@value" : "Una dirección postal en España. Se define como una especialización de las clases vcard:Address, schema:PostalAddress y locn:Address Además de las propiedades asociadas a estas clases, y definidas en su correspondiente vocabulario, también se pueden utilizar las definidas en los vocabularios de división administrativa española y en el callejero"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Dirección postal"
+  } ]
+}, {
+  "@id" : "http://www.opengis.net/ont/geosparql#Feature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A discrete spatial phenomenon that a user interacts with or considers unique in the real world."
+  }, {
+    "@language" : "es",
+    "@value" : "Un fenómeno espacial discreto con el que un usuario interactúa o que considera único en el mundo real."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Feature"
+  } ]
+}, {
+  "@id" : "http://www.opengis.net/ont/geosparql#Geometry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A coherent, systematic arrangement of geometric points or cells that represents a spatial location, extent or shape."
+  }, {
+    "@language" : "es",
+    "@value" : "Un ordenamiento coherente y sistemático de puntos o celdas geométricas que representa una ubicación, extensión o forma espacial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Geometry"
+  } ]
+}, {
+  "@id" : "http://www.opengis.net/ont/geosparql#hasGeometry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Una representación espacial de un feature determinado."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#Feature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.opengis.net/spec/geosparql/1.0"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has geometry"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene geometría"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#Geometry"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#versionInfo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/infraestructura#belongsTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relación entre un elemento de infraestructura y la división administrativa a la cual pertenece, incluido un Barrio."
+  }, {
+    "@language" : "en",
+    "@value" : "Relationship between an infrastructure element and the administrative division to which it belongs, including a neighborhood."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://edint.es/def/infraestructura#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "belongs To"
+  }, {
+    "@language" : "es",
+    "@value" : "pertenece a"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "https://schema.org/Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An organization such as a school, NGO, corporation, club, etc."
+  }, {
+    "@language" : "es",
+    "@value" : "Una organización como una escuela, una ONG, una corporación, un club, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://schema.org"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Organization"
+  } ]
+}, {
+  "@id" : "https://schema.org/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A person (alive, dead, undead, or fictional)."
+  }, {
+    "@language" : "es",
+    "@value" : "Una persona (viva, muerta, no muerta o ficticia)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://schema.org/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Person"
+  } ]
+}, {
+  "@id" : "https://schema.org/address",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Dirección física del elemento"
+  }, {
+    "@language" : "en",
+    "@value" : "Physical address of the item."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/miUrba#Edificio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://schema.org/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@language" : "es",
+    "@value" : "Lucía Sánchez-González"
+  }, {
+    "@language" : "es",
+    "@value" : "Oscar Corcho"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "es",
+    "@value" : "Ontología para describir comunidades de vecinos."
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "miUrba Ontology"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "miUrba"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@id" : "https://w3id.org/miUrba#"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://w3id.org/miUrba/1.0.0"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#AdministradorFincas",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Community role responsible for the administrative and operational management of a homeowners' community."
+  }, {
+    "@language" : "es",
+    "@value" : "Rol comunitario responsable de la gestión administrativa y operativa de una comunidad de vecinos."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Administrador de Fincas"
+  }, {
+    "@language" : "en",
+    "@value" : "Property manager"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/miUrba#RolComunitario"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#ComunidadDeVecinos",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Entidad que representa a una comunidad formada por las personas propietarias de las viviendas."
+  }, {
+    "@language" : "en",
+    "@value" : "Entity that represents a community made up of the people who own the homes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Comunidad de Vecinos"
+  }, {
+    "@language" : "en",
+    "@value" : "Homeowners' community"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#Contrato",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Acuerdo formal que regula la prestación de un servicio o suministro contratado por una comunidad de vecinos."
+  }, {
+    "@language" : "en",
+    "@value" : "Formal agreement governing the provision of a service or supply contracted by a homeowners' community."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Contract"
+  }, {
+    "@language" : "es",
+    "@value" : "Contrato"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#CuotaComunitaria",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Amount that a property owner must contribute to the homeowners' community to cover common expenses."
+  }, {
+    "@language" : "es",
+    "@value" : "Importe económico que una persona propietaria debe aportar a la comunidad de vecinos para contribuir a los gastos comunes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Community Fee"
+  }, {
+    "@language" : "es",
+    "@value" : "Cuota Comunitaria"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#Edificio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Construcción que agrupa las unidades privativas y los elementos comunes asociados a una comunidad de vecinos."
+  }, {
+    "@language" : "en",
+    "@value" : "Construction that groups the privately owned units and common elements associated with a homeowners' community."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Building"
+  }, {
+    "@language" : "es",
+    "@value" : "Edificio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#Feature"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#GastoComunitario",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Expense associated with the operation, maintenance or management of a homeowners' community."
+  }, {
+    "@language" : "es",
+    "@value" : "Gasto asociado al funcionamiento, mantenimiento o gestión de una comunidad de vecinos."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Community expense"
+  }, {
+    "@language" : "es",
+    "@value" : "Gasto Comunitario"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#GastoExtraordinario",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/miUrba#GastoComunitario"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#GastoOrdinario",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/miUrba#GastoComunitario"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#InstalacionComun",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Espacio o instalación de uso compartido disponible para las personas residentes de una comunidad de vecinos."
+  }, {
+    "@language" : "en",
+    "@value" : "Shared space or facility available for use by the residents of a homeowners' community."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Communal facility"
+  }, {
+    "@language" : "es",
+    "@value" : "Instalación Común"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#PresidenteComunidad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Community role responsible for representing the homeowners' community and performing the duties associated with its presidency."
+  }, {
+    "@language" : "es",
+    "@value" : "Rol comunitario encargado de representar a la comunidad de vecinos y ejercer las funciones asociadas a su presidencia."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "President of the homeowners' community"
+  }, {
+    "@language" : "es",
+    "@value" : "Presidente de la Comunidad"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/miUrba#RolComunitario"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#Propietario",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Rol ejercido por una persona u organización que posee una vivienda, local u otra unidad privativa perteneciente a una comunidad de vecinos."
+  }, {
+    "@language" : "en",
+    "@value" : "Role performed by a person or organization that owns a dwelling, commercial premises or another privately owned unit within a homeowners' community."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Property owner"
+  }, {
+    "@language" : "es",
+    "@value" : "Propietario"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/miUrba#RolComunitario"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#Proveedor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Entidad que presta un servicio o suministra un recurso a una comunidad de vecinos"
+  }, {
+    "@language" : "en",
+    "@value" : "Entity that provides a service or supplies a resource to a homeowners' community."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Proveedor"
+  }, {
+    "@language" : "en",
+    "@value" : "Provider"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid39"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#RolComunitario",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Función o responsabilidad desempeñada por una persona u organización dentro de una comunidad de vecinos."
+  }, {
+    "@language" : "en",
+    "@value" : "Function or responsibility performed by a person or organization within a homeowners' community."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Community Role"
+  }, {
+    "@language" : "es",
+    "@value" : "Rol Comunitario"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#Servicio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A service contracted by a homeowners' community to cover a common need."
+  }, {
+    "@language" : "es",
+    "@value" : "Prestación contratada por una comunidad de vecinos para cubrir una necesidad común."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Service"
+  }, {
+    "@language" : "es",
+    "@value" : "Servicio"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#ServicioContratado",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Service whose provision has been agreed through a contract with a homeowners' community."
+  }, {
+    "@language" : "es",
+    "@value" : "Servicio cuya prestación ha sido acordada mediante un contrato con una comunidad de vecinos."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Contracted Service"
+  }, {
+    "@language" : "es",
+    "@value" : "Servicio Contratado"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#SistemaACS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Sistema destinado a producir y suministrar agua caliente sanitaria a un edificio o a sus unidades privativas."
+  }, {
+    "@language" : "en",
+    "@value" : "System intended to produce and supply domestic hot water to a building or its privately owned units."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Domestic hot water system"
+  }, {
+    "@language" : "es",
+    "@value" : "Sistema ACS"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#SistemaDeCalefaccion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Sistema destinado a proporcionar calefacción a un edificio o a sus unidades privativas."
+  }, {
+    "@language" : "en",
+    "@value" : "System intended to provide heating to a building or its private units."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Heating system"
+  }, {
+    "@language" : "es",
+    "@value" : "Sistema de calefacción"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#calificacionEnergetica",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Indica la calificación energética asignada a un edificio."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates the energy rating assigned to a building."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/miUrba#Edificio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "calificación energética"
+  }, {
+    "@language" : "en",
+    "@value" : "energy rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#conceptoGasto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Indica el concepto o motivo asociado a un gasto comunitario."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates the concept or purpose associated with an expense."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/miUrba#GastoComunitario"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "concepto del gasto"
+  }, {
+    "@language" : "en",
+    "@value" : "expense concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#correspondeAServicio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona un servicio contratado con el servicio al que corresponde"
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a contracted service to the service it corresponds to"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/miUrba#ServicioContratado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "corresponde a servicio"
+  }, {
+    "@language" : "en",
+    "@value" : "corresponds to service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/miUrba#Servicio"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#correspondeAServicioContratado",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "It links a community expense to the contracted service it corresponds to."
+  }, {
+    "@language" : "es",
+    "@value" : "Relaciona un gasto de la comunidad con el servicio contratado al que corresponde."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/miUrba#GastoComunitario"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "corresponde a servicio contratado"
+  }, {
+    "@language" : "en",
+    "@value" : "corresponds to contracted service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/miUrba#ServicioContratado"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#cubreInstalacionComun",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona un servicio con la instalación común sobre la que se presta o actúa."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a service to the communal facility on which it is provided or acts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/miUrba#ServicioContratado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "covers communal facility"
+  }, {
+    "@language" : "es",
+    "@value" : "cubre instalación común"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/miUrba#InstalacionComun"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#disponeDeInstalacionComun",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona un edificio con una instalación común disponible para sus residentes."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a building to a communal facility available to its residents."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/miUrba#Edificio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "dispone de instalación común"
+  }, {
+    "@language" : "en",
+    "@value" : "has communal facility"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/miUrba#InstalacionComun"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#ejercidoPor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona un rol comunitario con la persona u organización que lo ejerce."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a community role to the person or organization that performs it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/miUrba#RolComunitario"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "ejercido por"
+  }, {
+    "@language" : "en",
+    "@value" : "performed by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid6"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#fechaConstruccion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Indica la fecha de construcción de un edificio."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates the construction date of a building."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/miUrba#Edificio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "construction date"
+  }, {
+    "@language" : "es",
+    "@value" : "fecha de construcción"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#fechaReforma",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Indica la fecha en la que se realizó una reforma en el edificio."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates the date on which a renovation was carried out in the building."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/miUrba#Edificio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "fecha de reforma"
+  }, {
+    "@language" : "en",
+    "@value" : "renovation date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#formadaPor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona una comunidad de vecinos con los edificios que la conforman."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a homeowners' community to the buildings that compose it"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/miUrba#ComunidadDeVecinos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "composed of"
+  }, {
+    "@language" : "es",
+    "@value" : "formado por"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/miUrba#Edificio"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#frecuenciaServicio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Este esquema de conceptos pertenece al conjunto de vocabularios controlados basados en SKOS utilizados por la ontología miUrba para representar comunidades de vecinos"
+  }, {
+    "@language" : "en",
+    "@value" : "This concept scheme belongs to the set of SKOS-based controlled vocabularies used by the miUrba ontology to represent homeowners' communities."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Frecuencia de Servicio"
+  }, {
+    "@language" : "en",
+    "@value" : "Service frequency"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#identificadorFiscal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Indica el identificador fiscal de un proveedor."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates the tax identifier of a provider."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/miUrba#Proveedor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "identificador fiscal"
+  }, {
+    "@language" : "en",
+    "@value" : "tax identifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#importe",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Indica el importe económico asociado a un gasto comunitario."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates the economic amount associated with an expense."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/miUrba#GastoComunitario"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "amount"
+  }, {
+    "@language" : "es",
+    "@value" : "importe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#importeTotal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Indica el importe total correspondiente a una cuota comunitaria."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates the total amount corresponding to a community fee."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/miUrba#CuotaComunitaria"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "importe total"
+  }, {
+    "@language" : "en",
+    "@value" : "total amount"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#modalidadDeServicio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona un servicio contratado con la modalidad bajo la que se presta."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a contracted service to the modality under which it is provided."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/miUrba#ServicioContratado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "modalidad de servicio"
+  }, {
+    "@language" : "en",
+    "@value" : "service modality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid9"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#modalidadDeSuministro",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona un sistema térmico con la modalidad mediante la que se suministra calefacción o agua caliente sanitaria."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a thermal system to the modality through which heating or domestic hot water is supplied."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid13"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "modalidad de suministro"
+  }, {
+    "@language" : "en",
+    "@value" : "supply modality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid16"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#modalidadServicio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Este esquema de conceptos pertenece al conjunto de vocabularios controlados basados en SKOS utilizados por la ontología miUrba para representar comunidades de vecinos. Esquema de conceptos que agrupa modalidades de prestación de servicios en comunidades de vecinos"
+  }, {
+    "@language" : "en",
+    "@value" : "This concept scheme belongs to the set of SKOS-based controlled vocabularies used by the miUrba ontology to represent homeowners' communities. Concept scheme grouping service provision modalities in homeowners"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Modalidad de Servicio"
+  }, {
+    "@language" : "en",
+    "@value" : "Service Modality"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#modalidadSuministro",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Este esquema de conceptos pertenece al conjunto de vocabularios controlados basados en SKOS utilizados por la ontología miUrba para representar comunidades de vecinos. Esquema de conceptos que agrupa modalidades de suministro térmico para sistemas de calefacción y agua caliente sanitaria en edificios residenciales."
+  }, {
+    "@language" : "en",
+    "@value" : "This concept scheme belongs to the set of controlled vocabularies based on SKOS used by the miUrba ontology to represent residential communities. It groups thermal supply modalities for heating and domestic hot water systems in residential buildings."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Modalidad de Suministro Térmico"
+  }, {
+    "@language" : "en",
+    "@value" : "Thermal supply modality"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#nombreInstalacion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Indica el nombre asignado a una instalación común"
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates the name assigned to a communal facility."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/miUrba#InstalacionComun"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "facility name"
+  }, {
+    "@language" : "es",
+    "@value" : "nombre de la instalación"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#nombreProveedor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Indica el nombre del proveedor del servicio contratado."
+  }, {
+    "@language" : "en",
+    "@value" : "It indicates the name of the service provider."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/miUrba#Proveedor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "nombre del proveedor"
+  }, {
+    "@language" : "en",
+    "@value" : "provider name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#numeroDePlantas",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Indica el número de plantas de un edificio"
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates the number of floors in a building."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/miUrba#Edificio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "number of floors"
+  }, {
+    "@language" : "es",
+    "@value" : "número de plantas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#numeroDeViviendas",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Indica el número de viviendas existente en un edificio."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates the number of dwellings in a building"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/miUrba#Edificio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "number of dwellings"
+  }, {
+    "@language" : "es",
+    "@value" : "número de viviendas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#observacionesServicio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Provides additional notes about a contracted service"
+  }, {
+    "@language" : "es",
+    "@value" : "Recoge observaciones adicionales sobre un servicio contratado."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/miUrba#ServicioContratado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "observaciones del servicio"
+  }, {
+    "@language" : "en",
+    "@value" : "service notes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#periodicidad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Indica la periodicidad con la que debe abonarse una cuota comunitaria."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates how often a community fee must be paid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/miUrba#CuotaComunitaria"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "periodicidad"
+  }, {
+    "@language" : "en",
+    "@value" : "periodicity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#prestadoPor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona un servicio contratado con el proveedor encargado de prestarlo."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a contracted service to the provider responsible for delivering it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/miUrba#ServicioContratado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "prestado por"
+  }, {
+    "@language" : "en",
+    "@value" : "provided by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/miUrba#Proveedor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#tieneAscensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Indica si un edificio dispone de ascensor"
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates whether a building has a lift"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/miUrba#Edificio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has lift"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene ascensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#tieneContrato",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona un servicio contratado con el contrato que regula su prestación."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a contracted service to the contract that governs its provision."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/miUrba#ServicioContratado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has contract"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene contrato"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/miUrba#Contrato"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#tieneCuotaComunitaria",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona una comunidad de vecinos con una cuota comunitaria asociada."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a homeowners' community to an associated community fee."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/miUrba#ComunidadDeVecinos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has community fee"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene cuota comunitaria"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/miUrba#CuotaComunitaria"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#tieneFrecuenciaDeServicio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona un servicio contratado con la frecuencia con la que se presta."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a contracted service to the frequency at which it is provided."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/miUrba#ServicioContratado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has service frequency"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene frecuencia de servicio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid20"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#tieneGastoComunitario",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona una comunidad de vecinos con un gasto comunitario asociado."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a homeowners' community to an associated community expense"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/miUrba#ComunidadDeVecinos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has community expense"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene gasto comunitario"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/miUrba#GastoComunitario"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#tieneInmueble",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona un edificio con el inmueble catastral que lo representa."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a building to the cadastral property that represents it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/miUrba#Edificio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has cadastral property"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene inmueble"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#tieneReferenciaCatastral",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona un edificio con su referencia catastral."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a building to its cadastral reference."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/miUrba#Edificio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has cadastral reference"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene referencia catastral"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralReference"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#tieneRol",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona una comunidad de vecinos con un rol comunitario asociado."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a homeowners' community to an associated community role."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/miUrba#ComunidadDeVecinos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has role"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene rol"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/miUrba#RolComunitario"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#tieneSistemaDeACS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona un edificio con su sistema de agua caliente sanitaria."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a building to its domestic hot water system."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/miUrba#Edificio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has domestic hot water system"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene sistema de ACS"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/miUrba#SistemaACS"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#tieneSistemaDeCalefaccion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona un edificio con su sistema de calefacción."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a building to its heating system."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/miUrba#Edificio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has heating system"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene sistema de calefacción"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/miUrba#SistemaDeCalefaccion"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#tieneTipoDeServicio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona un servicio con el tipo de servicio que lo clasifica."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a service to the service type used to classify it"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/miUrba#Servicio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has service type"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene tipo de servicio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid24"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#tipoDeFuenteEnergetica",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona un sistema energético con el tipo de fuente energética que utiliza."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates an energy system to the type of energy source it uses."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid28"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "energy source type"
+  }, {
+    "@language" : "es",
+    "@value" : "tipo de fuente energética"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid31"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#tipoDeInstalacionComun",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona una instalación común con el tipo de instalación que la clasifica."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a communal facility to the facility type used to classify it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/miUrba#InstalacionComun"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "communal facility type"
+  }, {
+    "@language" : "es",
+    "@value" : "tipo de instalación común"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid35"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#tipoFuenteEnergetica",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Este esquema de conceptos pertenece al conjunto de vocabularios controlados basados en SKOS utilizados por la ontología miUrba para representar comunidades de vecinos. Esquema de conceptos que agrupa tipos de fuentes energéticas utilizadas en sistemas de edificios residenciales."
+  }, {
+    "@language" : "en",
+    "@value" : "This concept scheme belongs to the set of controlled vocabularies based on SKOS used by the miUrba ontology to represent residential communities. It groups types of energy sources used in residential building systems."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Energy Source Type"
+  }, {
+    "@language" : "es",
+    "@value" : "Tipo de Fuente Energética"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#tipoInstalacion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Este esquema de conceptos pertenece al conjunto de vocabularios controlados basados en SKOS utilizados por la ontología miUrba para representar comunidades de vecinos. Esquema de conceptos que agrupa tipos de instalaciones comunitarias disponibles en comunidades de vecinos."
+  }, {
+    "@language" : "en",
+    "@value" : "This concept scheme belongs to the set of controlled vocabularies based on SKOS used by the miUrba ontology to represent residential communities. It groups the types of community facilities available in residential communities."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Community Facility Type"
+  }, {
+    "@language" : "es",
+    "@value" : "Tipo de Instalación Común"
+  } ]
+}, {
+  "@id" : "https://w3id.org/miUrba#tipoServicio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Este esquema conceptual pertenece al conjunto de vocabularios controlados basados ​​en SKOS que utiliza la ontología miUrba para representar las comunidades de propietarios de viviendas. Esquema conceptual que agrupa los tipos de servicios contratados por los propietarios."
+  }, {
+    "@language" : "en",
+    "@value" : "This concept scheme belongs to the set of SKOS-based controlled vocabularies used by the miUrba ontology to represent homeowners' communities. Concept scheme grouping types of services contracted by homeowners."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Service Type"
+  }, {
+    "@language" : "es",
+    "@value" : "Tipo de Servicio"
+  } ]
+} ]

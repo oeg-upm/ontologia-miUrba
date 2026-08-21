@@ -1,0 +1,878 @@
+@prefix : <https://w3id.org/miUrba#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://astrea.linkeddata.es/shapes#0a6a1ddc8a7e7145f26c653d979ca5c0> a sh:NodeShape ;
+    rdfs:label "Cadastral Reference"@en,
+        "Referencia Catastral"@es ;
+    rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/catastro/> ;
+    sh:description "Abstract parent class for cadastral reference types"@en,
+        "Clase padre abstracta para los tipos de referencia catastral."@es ;
+    sh:name "Cadastral Reference"@en,
+        "Referencia Catastral"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralReference> .
+
+<https://astrea.linkeddata.es/shapes#109de91bbd812817cc0d3c68f0c8a086> a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass :GastoExtraordinario .
+
+<https://astrea.linkeddata.es/shapes#1e8465292841a656bfc933418c84e810> a sh:NodeShape ;
+    rdfs:label "Homeowners' community"@en,
+        "Comunidad de Vecinos"@es ;
+    sh:description "Entity that represents a community made up of the people who own the homes."@en,
+        "Entidad que representa a una comunidad formada por las personas propietarias de las viviendas."@es ;
+    sh:name "Homeowners' community"@en,
+        "Comunidad de Vecinos"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#00c51c2642b428bb5aed3bf3604b1d76>,
+        <https://astrea.linkeddata.es/shapes#34eaceb85485ec0ca0affa5e4d0d39e1>,
+        <https://astrea.linkeddata.es/shapes#cb689cda342344b2b8580204f86069c1>,
+        <https://astrea.linkeddata.es/shapes#d95daad30f3ae6edf3f3d37c0ac09922> ;
+    sh:targetClass :ComunidadDeVecinos .
+
+<https://astrea.linkeddata.es/shapes#28962e8764020c0efc7fe757dba375fb> a sh:NodeShape ;
+    rdfs:label "Contract"@en,
+        "Contrato"@es ;
+    sh:description "Formal agreement governing the provision of a service or supply contracted by a homeowners' community."@en,
+        "Acuerdo formal que regula la prestación de un servicio o suministro contratado por una comunidad de vecinos."@es ;
+    sh:name "Contract"@en,
+        "Contrato"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass :Contrato .
+
+<https://astrea.linkeddata.es/shapes#2e9b54f9ea252c6f0ef4a90faed34b85> a sh:NodeShape ;
+    rdfs:label "Ciudad"@es ;
+    rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+    sh:description "A city is an urban area where industry and services predominate [source: Wikipedia]"@en,
+        "Una ciudad es un área urbana en la que predominan fundamentalmente la industria y los servicios [fuente: Wikipedia]"@es ;
+    sh:name "Ciudad"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Ciudad> .
+
+<https://astrea.linkeddata.es/shapes#33ade71244c95722076d83efac432778> a sh:NodeShape ;
+    rdfs:label "Community Fee"@en,
+        "Cuota Comunitaria"@es ;
+    sh:description "Amount that a property owner must contribute to the homeowners' community to cover common expenses."@en,
+        "Importe económico que una persona propietaria debe aportar a la comunidad de vecinos para contribuir a los gastos comunes."@es ;
+    sh:name "Community Fee"@en,
+        "Cuota Comunitaria"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#75857906d9368f90a8fce52bccc1297e>,
+        <https://astrea.linkeddata.es/shapes#e98ef32f84d9c31e6b2e77e8db2d55bc> ;
+    sh:targetClass :CuotaComunitaria .
+
+<https://astrea.linkeddata.es/shapes#376464daf2f11ddcf7188f8965c38410> a sh:NodeShape ;
+    rdfs:label "Service"@en,
+        "Servicio"@es ;
+    sh:description "A service contracted by a homeowners' community to cover a common need."@en,
+        "Prestación contratada por una comunidad de vecinos para cubrir una necesidad común."@es ;
+    sh:name "Service"@en,
+        "Servicio"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#71002b36211279f0911e3d920b43b7cc> ;
+    sh:targetClass :Servicio .
+
+<https://astrea.linkeddata.es/shapes#399bb0d6b1abcc8b31fdce1efb053bed> a sh:NodeShape ;
+    rdfs:label "Property owner"@en,
+        "Propietario"@es ;
+    sh:description "Role performed by a person or organization that owns a dwelling, commercial premises or another privately owned unit within a homeowners' community."@en,
+        "Rol ejercido por una persona u organización que posee una vivienda, local u otra unidad privativa perteneciente a una comunidad de vecinos."@es ;
+    sh:name "Property owner"@en,
+        "Propietario"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass :Propietario .
+
+<https://astrea.linkeddata.es/shapes#40612169a65e30242aaf53091ad7f9fd> a sh:NodeShape ;
+    rdfs:label "Community expense"@en,
+        "Gasto Comunitario"@es ;
+    sh:description "Expense associated with the operation, maintenance or management of a homeowners' community."@en,
+        "Gasto asociado al funcionamiento, mantenimiento o gestión de una comunidad de vecinos."@es ;
+    sh:name "Community expense"@en,
+        "Gasto Comunitario"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#5c347821b4afd47c81144c000a58c86f>,
+        <https://astrea.linkeddata.es/shapes#639e95aebc160cd8b62556f36b5df518>,
+        <https://astrea.linkeddata.es/shapes#82cb4733a2ccdbb1209e7764d55fd559> ;
+    sh:targetClass :GastoComunitario .
+
+<https://astrea.linkeddata.es/shapes#69bfc24827569ed9036ecae89a53d3c7> a sh:PropertyShape ;
+    rdfs:isDefinedBy skos: ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path skos:inScheme .
+
+<https://astrea.linkeddata.es/shapes#6bff0e81bd64dd217656aba8cf7d0031> a sh:NodeShape ;
+    rdfs:label "Provider"@en,
+        "Proveedor"@es ;
+    sh:description "Entity that provides a service or supplies a resource to a homeowners' community."@en,
+        "Entidad que presta un servicio o suministra un recurso a una comunidad de vecinos"@es ;
+    sh:name "Provider"@en,
+        "Proveedor"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#2d77eee458f5e6ec1a05c889547e155c>,
+        <https://astrea.linkeddata.es/shapes#79bfc3a7f1ddcd9434df7ab05debf10d> ;
+    sh:targetClass :Proveedor .
+
+<https://astrea.linkeddata.es/shapes#6d0c36167ce06e44eb3f9f66334e6e50> a sh:NodeShape ;
+    rdfs:label "Communal facility"@en,
+        "Instalación Común"@es ;
+    sh:description "Shared space or facility available for use by the residents of a homeowners' community."@en,
+        "Espacio o instalación de uso compartido disponible para las personas residentes de una comunidad de vecinos."@es ;
+    sh:name "Communal facility"@en,
+        "Instalación Común"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#251a2c9157a62b3634fe09506c20ca70>,
+        <https://astrea.linkeddata.es/shapes#3235071102cd238278f38029a4d02352> ;
+    sh:targetClass :InstalacionComun .
+
+<https://astrea.linkeddata.es/shapes#7d31e878918619ad12be68dcc0363395> a sh:NodeShape ;
+    rdfs:label "Organization"@en ;
+    rdfs:isDefinedBy <https://schema.org> ;
+    sh:description "An organization such as a school, NGO, corporation, club, etc."@en,
+        "Una organización como una escuela, una ONG, una corporación, un club, etc."@es ;
+    sh:name "Organization"@en ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass schema:Organization .
+
+<https://astrea.linkeddata.es/shapes#7e8e48e08aa02a98712d25fe835c53ac> a sh:NodeShape ;
+    rdfs:label "Building"@en,
+        "Edificio"@es ;
+    sh:description "Construction that groups the privately owned units and common elements associated with a homeowners' community."@en,
+        "Construcción que agrupa las unidades privativas y los elementos comunes asociados a una comunidad de vecinos."@es ;
+    sh:name "Building"@en,
+        "Edificio"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#2179ef4bb4aa31aa0801d2b654fc67bc>,
+        <https://astrea.linkeddata.es/shapes#2a977f86fda81ae421f16f63a94f05dc>,
+        <https://astrea.linkeddata.es/shapes#2b4c42a8fdc57680b9b1d1b7241f2183>,
+        <https://astrea.linkeddata.es/shapes#33bd56f89fb3171d71bfb5f910199414>,
+        <https://astrea.linkeddata.es/shapes#82acaec87dc0346ba329c03d7edd2282>,
+        <https://astrea.linkeddata.es/shapes#884500e6822cecb81397c715652e7a15>,
+        <https://astrea.linkeddata.es/shapes#90e5cb23f970fba3023c3f5bc327a490>,
+        <https://astrea.linkeddata.es/shapes#a427630fe00360a4de46497ccb877623>,
+        <https://astrea.linkeddata.es/shapes#db2b65d66758af2f815f6ecaa2c1ec93>,
+        <https://astrea.linkeddata.es/shapes#eb19a0398ef4ebec6025dd2f57816616>,
+        <https://astrea.linkeddata.es/shapes#effbcab25f17f2d87f8264bc687249d0>,
+        <https://astrea.linkeddata.es/shapes#fa60ceca6e58173ec839023ae3f44fb1> ;
+    sh:targetClass :Edificio .
+
+<https://astrea.linkeddata.es/shapes#7e8f89992e93ed5391ac47fdc2ac595b> a sh:NodeShape ;
+    rdfs:label "Contracted Service"@en,
+        "Servicio Contratado"@es ;
+    sh:description "Service whose provision has been agreed through a contract with a homeowners' community."@en,
+        "Servicio cuya prestación ha sido acordada mediante un contrato con una comunidad de vecinos."@es ;
+    sh:name "Contracted Service"@en,
+        "Servicio Contratado"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#400c0c7ece1811ca190b3bd081686d9e>,
+        <https://astrea.linkeddata.es/shapes#5911cc47c19660bd52548fb8ab15ab62>,
+        <https://astrea.linkeddata.es/shapes#6270e6c2bca0092c8a99dd51ec8fc15d>,
+        <https://astrea.linkeddata.es/shapes#7b0bfe1e2e051a43edb25849a8570ffe>,
+        <https://astrea.linkeddata.es/shapes#bc246c040f269e41b5f749e63a81fec9>,
+        <https://astrea.linkeddata.es/shapes#bdf170db852f6795a555386559513d1c>,
+        <https://astrea.linkeddata.es/shapes#c14ebf8e03560331862683a8ed31f136> ;
+    sh:targetClass :ServicioContratado .
+
+<https://astrea.linkeddata.es/shapes#8625d553e69bfbb6b55d464da33f24a6> a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass :GastoOrdinario .
+
+<https://astrea.linkeddata.es/shapes#8c9f0a3ef50fe390869f7c693885d425> a sh:NodeShape ;
+    rdfs:label "Feature"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ;
+    sh:description "A discrete spatial phenomenon that a user interacts with or considers unique in the real world."@en,
+        "Un fenómeno espacial discreto con el que un usuario interactúa o que considera único en el mundo real."@es ;
+    sh:name "Feature"@en ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#3348f96caa15fb50d86f0a2231585642> ;
+    sh:targetClass geo:Feature .
+
+<https://astrea.linkeddata.es/shapes#8cf365d749ad3e0e8adb26d324f1e358> a sh:NodeShape ;
+    rdfs:label "President of the homeowners' community"@en,
+        "Presidente de la Comunidad"@es ;
+    sh:description "Community role responsible for representing the homeowners' community and performing the duties associated with its presidency."@en,
+        "Rol comunitario encargado de representar a la comunidad de vecinos y ejercer las funciones asociadas a su presidencia."@es ;
+    sh:name "President of the homeowners' community"@en,
+        "Presidente de la Comunidad"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass :PresidenteComunidad .
+
+<https://astrea.linkeddata.es/shapes#970a52d0d94cd47185d3d51986c6c106> a sh:PropertyShape ;
+    rdfs:label "Relationship between an infrastructure element and the administrative division to which it belongs, including a neighborhood."@en,
+        "belongs To"@en,
+        "Relación entre un elemento de infraestructura y la división administrativa a la cual pertenece, incluido un Barrio."@es,
+        "pertenece a"@es ;
+    rdfs:isDefinedBy <https://edint.es/def/infraestructura#> ;
+    sh:description "Relationship between an infrastructure element and the administrative division to which it belongs, including a neighborhood."@en,
+        "Relación entre un elemento de infraestructura y la división administrativa a la cual pertenece, incluido un Barrio."@es ;
+    sh:name "belongs To"@en,
+        "pertenece a"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:or ( [ sh:class <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio> ] [ sh:class <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Ciudad> ] [ sh:class <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> ] [ sh:class <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio> ] ) ;
+    sh:path <https://edint.es/def/infraestructura#belongsTo> ;
+    sh:targetSubjectsOf <https://edint.es/def/infraestructura#belongsTo> .
+
+<https://astrea.linkeddata.es/shapes#993b6589c994d15205e34fdcbae76687> a sh:NodeShape ;
+    rdfs:label "Distrito"@es ;
+    rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+    sh:description "A district is each of the demarcations into which a territory or population is subdivided to distribute and order the exercise of civil and political rights, or public functions, or administrative services [source: Dictionary of the Royal Spanish Academy 2011]"@en,
+        "Un distrito es cada una de las demarcaciones en que se subdivide un territorio o una población para distribuir y ordenar el ejercicio de los derechos civiles y políticos, o de las funciones públicas, o de los servicios administrativos [fuente: Diccionario de la Real Academia (DRAE) 2011]"@es ;
+    sh:name "Distrito"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> .
+
+<https://astrea.linkeddata.es/shapes#9e81a8547fd8cabc79752e243c8d2b67> a sh:NodeShape ;
+    rdfs:label "Geometry"@en ;
+    rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql> ;
+    sh:description "A coherent, systematic arrangement of geometric points or cells that represents a spatial location, extent or shape."@en,
+        "Un ordenamiento coherente y sistemático de puntos o celdas geométricas que representa una ubicación, extensión o forma espacial"@es ;
+    sh:name "Geometry"@en ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass geo:Geometry .
+
+<https://astrea.linkeddata.es/shapes#9e9cb48c1174c31afed273d1a674e5ba> a sh:NodeShape ;
+    rdfs:label "Person"@en ;
+    rdfs:isDefinedBy <http://schema.org/> ;
+    sh:description "A person (alive, dead, undead, or fictional)."@en,
+        "Una persona (viva, muerta, no muerta o ficticia)."@es ;
+    sh:name "Person"@en ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass schema:Person .
+
+<https://astrea.linkeddata.es/shapes#a773031f6001c66a823a7259ced5595a> a sh:NodeShape ;
+    rdfs:label "Property manager"@en,
+        "Administrador de Fincas"@es ;
+    sh:description "Community role responsible for the administrative and operational management of a homeowners' community."@en,
+        "Rol comunitario responsable de la gestión administrativa y operativa de una comunidad de vecinos."@es ;
+    sh:name "Property manager"@en,
+        "Administrador de Fincas"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass :AdministradorFincas .
+
+<https://astrea.linkeddata.es/shapes#a7ff37312669ce81872cc28a42de7c3f> a sh:NodeShape ;
+    rdfs:label "Heating system"@en,
+        "Sistema de calefacción"@es ;
+    sh:description "System intended to provide heating to a building or its private units."@en,
+        "Sistema destinado a proporcionar calefacción a un edificio o a sus unidades privativas."@es ;
+    sh:name "Heating system"@en,
+        "Sistema de calefacción"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#69a3a4ef5c65c9bcde0b2a67dfe44b48>,
+        <https://astrea.linkeddata.es/shapes#891ca50adb47bc83fe29e4ecf4f3f6cf> ;
+    sh:targetClass :SistemaDeCalefaccion .
+
+<https://astrea.linkeddata.es/shapes#aef1a78016b3598e01dd7671934b50b4> a sh:NodeShape ;
+    rdfs:isDefinedBy skos: ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass skos:ConceptScheme .
+
+<https://astrea.linkeddata.es/shapes#b29c323cc06e9c6c8210c13b868f65d7> a sh:NodeShape ;
+    rdfs:label "Barrio"@es ;
+    rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+    sh:description "A neighborhood is each of the parts into which large towns or their districts are divided [source: Dictionary of the Royal Spanish Academy (RAE) 2011]"@en,
+        "Un barrio es cada una de las partes en que se dividen los pueblos grandes o sus distritos [fuente: Diccionario de la Real Academia (DRAE) 2011]"@es ;
+    sh:name "Barrio"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio> .
+
+<https://astrea.linkeddata.es/shapes#db814d2b74b46f5d533008751fa1a9bf> a sh:NodeShape ;
+    rdfs:label "Community Role"@en,
+        "Rol Comunitario"@es ;
+    sh:description "Function or responsibility performed by a person or organization within a homeowners' community."@en,
+        "Función o responsabilidad desempeñada por una persona u organización dentro de una comunidad de vecinos."@es ;
+    sh:name "Community Role"@en,
+        "Rol Comunitario"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#34aaf955b39c85e19415ad77202da695> ;
+    sh:targetClass :RolComunitario .
+
+<https://astrea.linkeddata.es/shapes#e19803d7608b9d5e3325255d8eeeb23d> a sh:PropertyShape ;
+    rdfs:label "Municipio al que pertenece un fenómeno geográfico o una entidad administrativa"@es,
+        "pertenece al municipio"@es ;
+    rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> ;
+    sh:description "Municipio al que pertenece un fenómeno geográfico o una entidad administrativa"@es ;
+    sh:name "pertenece al municipio"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio> ;
+    sh:targetSubjectsOf <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio> .
+
+<https://astrea.linkeddata.es/shapes#e774df3687c6e84ce88efdf7f75ecdbd> a sh:NodeShape ;
+    rdfs:label "Cadastral Property"@en,
+        "Inmueble Catastral"@es ;
+    rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/catastro> ;
+    sh:description "Real estate property registered in the Cadastre. Can be a premises, dwelling, or any independent use unit within a parcel. A cadastral property may have one or more constructions associated."@en,
+        "Bien inmueble inscrito en el Catastro. Puede ser un local, vivienda, o cualquier unidad de uso independiente dentro de una parcela. Un inmueble catastral puede tener una o más construcciones asociadas."@es ;
+    sh:name "Cadastral Property"@en,
+        "Inmueble Catastral"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralProperty> .
+
+<https://astrea.linkeddata.es/shapes#e7c5f218bb0c40ef53eb50ed69d45a08> a sh:NodeShape ;
+    rdfs:label "Domestic hot water system"@en,
+        "Sistema ACS"@es ;
+    sh:description "System intended to produce and supply domestic hot water to a building or its privately owned units."@en,
+        "Sistema destinado a producir y suministrar agua caliente sanitaria a un edificio o a sus unidades privativas."@es ;
+    sh:name "Domestic hot water system"@en,
+        "Sistema ACS"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#69a3a4ef5c65c9bcde0b2a67dfe44b48>,
+        <https://astrea.linkeddata.es/shapes#891ca50adb47bc83fe29e4ecf4f3f6cf> ;
+    sh:targetClass :SistemaACS .
+
+<https://astrea.linkeddata.es/shapes#eb84c50e4c74697fb0c1c93ba0fa974c> a sh:NodeShape ;
+    rdfs:label "Dirección postal"@es ;
+    rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal> ;
+    sh:description "A postal address in Spain. It is defined as a specialization of the classes vcard:Address, schema:PostalAddress, and locn:Address. In addition to the properties associated with these classes, and defined in their corresponding vocabulary, those defined in the Spanish administrative division vocabularies and the street directory can also be used."@en,
+        "Una dirección postal en España. Se define como una especialización de las clases vcard:Address, schema:PostalAddress y locn:Address Además de las propiedades asociadas a estas clases, y definidas en su correspondiente vocabulario, también se pueden utilizar las definidas en los vocabularios de división administrativa española y en el callejero"@es ;
+    sh:name "Dirección postal"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal> .
+
+<https://astrea.linkeddata.es/shapes#fbbdec372458b6ca648be3b4d8fb667e> a sh:NodeShape ;
+    rdfs:label "Municipio"@es ;
+    rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio>,
+        "A municipality is the local entity defined in Article 140 of the Spanish Constitution and the basic unit of the State's territorial organization according to Article 1 of Law 7/1985, of April 2, Regulating the Bases of Local Government. It has legal personality and full capacity to fulfill its purposes. The territorial boundaries of municipalities are recorded in the Central Cartographic Registry of the National Geographic Institute (IGN). Its name, specified with the property dct:title, is provided by the Registry of Local Entities of the Ministry of Territorial Policy, at http://www.ine.es/nomen2/index.do"@en ;
+    sh:description "Un Municipio es el ente local definido en el artículo 140 de la Constitución española y la entidad básica de la organización territorial del Estado según el artículo 1 de la Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local. Tiene personalidad jurídica y plena capacidad para el cumplimiento de sus fines. La delimitación territorial de Municipio está recogida del REgistro Central de Cartografía del IGN. Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por el Registro de Entidades Locales del Ministerio de Política Territorial, en http://www.ine.es/nomen2/index.do"@es ;
+    sh:name "Municipio"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio> .
+
+<https://astrea.linkeddata.es/shapes#ffeaf0d3664c31215f614a64f5bb45a5> a sh:NodeShape ;
+    rdfs:isDefinedBy skos: ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass skos:Concept .
+
+<https://astrea.linkeddata.es/shapes#00c51c2642b428bb5aed3bf3604b1d76> a sh:PropertyShape ;
+    rdfs:label "Relates a homeowners' community to an associated community fee."@en,
+        "has community fee"@en,
+        "Relaciona una comunidad de vecinos con una cuota comunitaria asociada."@es,
+        "tiene cuota comunitaria"@es ;
+    sh:class :CuotaComunitaria ;
+    sh:description "Relates a homeowners' community to an associated community fee."@en,
+        "Relaciona una comunidad de vecinos con una cuota comunitaria asociada."@es ;
+    sh:name "has community fee"@en,
+        "tiene cuota comunitaria"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :tieneCuotaComunitaria .
+
+<https://astrea.linkeddata.es/shapes#2179ef4bb4aa31aa0801d2b654fc67bc> a sh:PropertyShape ;
+    rdfs:label "Indicates the date on which a renovation was carried out in the building."@en,
+        "renovation date"@en,
+        "Indica la fecha en la que se realizó una reforma en el edificio."@es,
+        "fecha de reforma"@es ;
+    sh:datatype xsd:date ;
+    sh:description "Indicates the date on which a renovation was carried out in the building."@en,
+        "Indica la fecha en la que se realizó una reforma en el edificio."@es ;
+    sh:name "renovation date"@en,
+        "fecha de reforma"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path :fechaReforma ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+<https://astrea.linkeddata.es/shapes#251a2c9157a62b3634fe09506c20ca70> a sh:PropertyShape ;
+    rdfs:label "Indicates the name assigned to a communal facility."@en,
+        "facility name"@en,
+        "Indica el nombre asignado a una instalación común"@es,
+        "nombre de la instalación"@es ;
+    sh:datatype xsd:string ;
+    sh:description "Indicates the name assigned to a communal facility."@en,
+        "Indica el nombre asignado a una instalación común"@es ;
+    sh:name "facility name"@en,
+        "nombre de la instalación"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path :nombreInstalacion ;
+    sh:pattern ".*" .
+
+<https://astrea.linkeddata.es/shapes#2a977f86fda81ae421f16f63a94f05dc> a sh:PropertyShape ;
+    rdfs:label "Indicates the number of floors in a building."@en,
+        "number of floors"@en,
+        "Indica el número de plantas de un edificio"@es,
+        "número de plantas"@es ;
+    sh:datatype xsd:integer ;
+    sh:description "Indicates the number of floors in a building."@en,
+        "Indica el número de plantas de un edificio"@es ;
+    sh:name "number of floors"@en,
+        "número de plantas"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path :numeroDePlantas ;
+    sh:pattern "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#2b4c42a8fdc57680b9b1d1b7241f2183> a sh:PropertyShape ;
+    rdfs:label "Physical address of the item."@en,
+        "address"@en,
+        "Dirección física del elemento"@es ;
+    rdfs:isDefinedBy schema: ;
+    sh:class <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal> ;
+    sh:description "Physical address of the item."@en,
+        "Dirección física del elemento"@es ;
+    sh:name "address"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path schema:address .
+
+<https://astrea.linkeddata.es/shapes#2d77eee458f5e6ec1a05c889547e155c> a sh:PropertyShape ;
+    rdfs:label "Indicates the tax identifier of a provider."@en,
+        "tax identifier"@en,
+        "Indica el identificador fiscal de un proveedor."@es,
+        "identificador fiscal"@es ;
+    sh:datatype xsd:string ;
+    sh:description "Indicates the tax identifier of a provider."@en,
+        "Indica el identificador fiscal de un proveedor."@es ;
+    sh:name "tax identifier"@en,
+        "identificador fiscal"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path :identificadorFiscal ;
+    sh:pattern ".*" .
+
+<https://astrea.linkeddata.es/shapes#3235071102cd238278f38029a4d02352> a sh:PropertyShape ;
+    rdfs:label "Relates a communal facility to the facility type used to classify it."@en,
+        "communal facility type"@en,
+        "Relaciona una instalación común con el tipo de instalación que la clasifica."@es,
+        "tipo de instalación común"@es ;
+    sh:class skos:Concept ;
+    sh:description "Relates a communal facility to the facility type used to classify it."@en,
+        "Relaciona una instalación común con el tipo de instalación que la clasifica."@es ;
+    sh:name "communal facility type"@en,
+        "tipo de instalación común"@es ;
+    sh:node [ a sh:NodeShape ;
+            sh:property [ a sh:PropertyShape ;
+                    sh:hasValue :tipoInstalacion ;
+                    sh:path skos:inScheme ] ] ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :tipoDeInstalacionComun .
+
+<https://astrea.linkeddata.es/shapes#3348f96caa15fb50d86f0a2231585642> a sh:PropertyShape ;
+    rdfs:label "has geometry"@en,
+        "Una representación espacial de un feature determinado."@es,
+        "tiene geometría"@es ;
+    rdfs:isDefinedBy <http://www.opengis.net/spec/geosparql/1.0> ;
+    sh:class geo:Geometry ;
+    sh:description "Una representación espacial de un feature determinado."@es ;
+    sh:name "has geometry"@en,
+        "tiene geometría"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path geo:hasGeometry .
+
+<https://astrea.linkeddata.es/shapes#33bd56f89fb3171d71bfb5f910199414> a sh:PropertyShape ;
+    rdfs:label "Relates a building to a communal facility available to its residents."@en,
+        "has communal facility"@en,
+        "Relaciona un edificio con una instalación común disponible para sus residentes."@es,
+        "dispone de instalación común"@es ;
+    sh:class :InstalacionComun ;
+    sh:description "Relates a building to a communal facility available to its residents."@en,
+        "Relaciona un edificio con una instalación común disponible para sus residentes."@es ;
+    sh:name "has communal facility"@en,
+        "dispone de instalación común"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :disponeDeInstalacionComun .
+
+<https://astrea.linkeddata.es/shapes#34aaf955b39c85e19415ad77202da695> a sh:PropertyShape ;
+    rdfs:label "Relates a community role to the person or organization that performs it."@en,
+        "performed by"@en,
+        "Relaciona un rol comunitario con la persona u organización que lo ejerce."@es,
+        "ejercido por"@es ;
+    sh:description "Relates a community role to the person or organization that performs it."@en,
+        "Relaciona un rol comunitario con la persona u organización que lo ejerce."@es ;
+    sh:name "performed by"@en,
+        "ejercido por"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:or ( [ sh:class schema:Organization ] [ sh:class schema:Person ] ) ;
+    sh:path :ejercidoPor .
+
+<https://astrea.linkeddata.es/shapes#34eaceb85485ec0ca0affa5e4d0d39e1> a sh:PropertyShape ;
+    rdfs:label "Relates a homeowners' community to an associated community role."@en,
+        "has role"@en,
+        "Relaciona una comunidad de vecinos con un rol comunitario asociado."@es,
+        "tiene rol"@es ;
+    sh:class :RolComunitario ;
+    sh:description "Relates a homeowners' community to an associated community role."@en,
+        "Relaciona una comunidad de vecinos con un rol comunitario asociado."@es ;
+    sh:name "has role"@en,
+        "tiene rol"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :tieneRol .
+
+<https://astrea.linkeddata.es/shapes#400c0c7ece1811ca190b3bd081686d9e> a sh:PropertyShape ;
+    rdfs:label "Provides additional notes about a contracted service"@en,
+        "service notes"@en,
+        "Recoge observaciones adicionales sobre un servicio contratado."@es,
+        "observaciones del servicio"@es ;
+    sh:datatype xsd:string ;
+    sh:description "Provides additional notes about a contracted service"@en,
+        "Recoge observaciones adicionales sobre un servicio contratado."@es ;
+    sh:name "service notes"@en,
+        "observaciones del servicio"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path :observacionesServicio ;
+    sh:pattern ".*" .
+
+<https://astrea.linkeddata.es/shapes#5911cc47c19660bd52548fb8ab15ab62> a sh:PropertyShape ;
+    rdfs:label "Relates a contracted service to the modality under which it is provided."@en,
+        "service modality"@en,
+        "Relaciona un servicio contratado con la modalidad bajo la que se presta."@es,
+        "modalidad de servicio"@es ;
+    sh:class skos:Concept ;
+    sh:description "Relates a contracted service to the modality under which it is provided."@en,
+        "Relaciona un servicio contratado con la modalidad bajo la que se presta."@es ;
+    sh:name "service modality"@en,
+        "modalidad de servicio"@es ;
+    sh:node [ a sh:NodeShape ;
+            sh:property [ a sh:PropertyShape ;
+                    sh:hasValue :modalidadServicio ;
+                    sh:path skos:inScheme ] ] ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :modalidadDeServicio .
+
+<https://astrea.linkeddata.es/shapes#5c347821b4afd47c81144c000a58c86f> a sh:PropertyShape ;
+    rdfs:label "Indicates the economic amount associated with an expense."@en,
+        "amount"@en,
+        "Indica el importe económico asociado a un gasto comunitario."@es,
+        "importe"@es ;
+    sh:datatype xsd:decimal ;
+    sh:description "Indicates the economic amount associated with an expense."@en,
+        "Indica el importe económico asociado a un gasto comunitario."@es ;
+    sh:name "amount"@en,
+        "importe"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path :importe ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)" .
+
+<https://astrea.linkeddata.es/shapes#6270e6c2bca0092c8a99dd51ec8fc15d> a sh:PropertyShape ;
+    rdfs:label "Relates a contracted service to the contract that governs its provision."@en,
+        "has contract"@en,
+        "Relaciona un servicio contratado con el contrato que regula su prestación."@es,
+        "tiene contrato"@es ;
+    sh:class :Contrato ;
+    sh:description "Relates a contracted service to the contract that governs its provision."@en,
+        "Relaciona un servicio contratado con el contrato que regula su prestación."@es ;
+    sh:name "has contract"@en,
+        "tiene contrato"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :tieneContrato .
+
+<https://astrea.linkeddata.es/shapes#639e95aebc160cd8b62556f36b5df518> a sh:PropertyShape ;
+    rdfs:label "It links a community expense to the contracted service it corresponds to."@en,
+        "corresponds to contracted service"@en,
+        "Relaciona un gasto de la comunidad con el servicio contratado al que corresponde."@es,
+        "corresponde a servicio contratado"@es ;
+    sh:class :ServicioContratado ;
+    sh:description "It links a community expense to the contracted service it corresponds to."@en,
+        "Relaciona un gasto de la comunidad con el servicio contratado al que corresponde."@es ;
+    sh:name "corresponds to contracted service"@en,
+        "corresponde a servicio contratado"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :correspondeAServicioContratado .
+
+<https://astrea.linkeddata.es/shapes#71002b36211279f0911e3d920b43b7cc> a sh:PropertyShape ;
+    rdfs:label "Relates a service to the service type used to classify it"@en,
+        "has service type"@en,
+        "Relaciona un servicio con el tipo de servicio que lo clasifica."@es,
+        "tiene tipo de servicio"@es ;
+    sh:class skos:Concept ;
+    sh:description "Relates a service to the service type used to classify it"@en,
+        "Relaciona un servicio con el tipo de servicio que lo clasifica."@es ;
+    sh:name "has service type"@en,
+        "tiene tipo de servicio"@es ;
+    sh:node [ a sh:NodeShape ;
+            sh:property [ a sh:PropertyShape ;
+                    sh:hasValue :tipoServicio ;
+                    sh:path skos:inScheme ] ] ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :tieneTipoDeServicio .
+
+<https://astrea.linkeddata.es/shapes#75857906d9368f90a8fce52bccc1297e> a sh:PropertyShape ;
+    rdfs:label "Indicates how often a community fee must be paid"@en,
+        "periodicity"@en,
+        "Indica la periodicidad con la que debe abonarse una cuota comunitaria."@es,
+        "periodicidad"@es ;
+    sh:datatype xsd:string ;
+    sh:description "Indicates how often a community fee must be paid"@en,
+        "Indica la periodicidad con la que debe abonarse una cuota comunitaria."@es ;
+    sh:name "periodicity"@en,
+        "periodicidad"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path :periodicidad ;
+    sh:pattern ".*" .
+
+<https://astrea.linkeddata.es/shapes#79bfc3a7f1ddcd9434df7ab05debf10d> a sh:PropertyShape ;
+    rdfs:label "It indicates the name of the service provider."@en,
+        "provider name"@en,
+        "Indica el nombre del proveedor del servicio contratado."@es,
+        "nombre del proveedor"@es ;
+    sh:datatype xsd:string ;
+    sh:description "It indicates the name of the service provider."@en,
+        "Indica el nombre del proveedor del servicio contratado."@es ;
+    sh:name "provider name"@en,
+        "nombre del proveedor"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path :nombreProveedor ;
+    sh:pattern ".*" .
+
+<https://astrea.linkeddata.es/shapes#7b0bfe1e2e051a43edb25849a8570ffe> a sh:PropertyShape ;
+    rdfs:label "Relates a contracted service to the provider responsible for delivering it."@en,
+        "provided by"@en,
+        "Relaciona un servicio contratado con el proveedor encargado de prestarlo."@es,
+        "prestado por"@es ;
+    sh:class :Proveedor ;
+    sh:description "Relates a contracted service to the provider responsible for delivering it."@en,
+        "Relaciona un servicio contratado con el proveedor encargado de prestarlo."@es ;
+    sh:name "provided by"@en,
+        "prestado por"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :prestadoPor .
+
+<https://astrea.linkeddata.es/shapes#82acaec87dc0346ba329c03d7edd2282> a sh:PropertyShape ;
+    rdfs:label "Relates a building to the cadastral property that represents it."@en,
+        "has cadastral property"@en,
+        "Relaciona un edificio con el inmueble catastral que lo representa."@es,
+        "tiene inmueble"@es ;
+    sh:class <http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralProperty> ;
+    sh:description "Relates a building to the cadastral property that represents it."@en,
+        "Relaciona un edificio con el inmueble catastral que lo representa."@es ;
+    sh:name "has cadastral property"@en,
+        "tiene inmueble"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :tieneInmueble .
+
+<https://astrea.linkeddata.es/shapes#82cb4733a2ccdbb1209e7764d55fd559> a sh:PropertyShape ;
+    rdfs:label "Indicates the concept or purpose associated with an expense."@en,
+        "expense concept"@en,
+        "Indica el concepto o motivo asociado a un gasto comunitario."@es,
+        "concepto del gasto"@es ;
+    sh:datatype xsd:string ;
+    sh:description "Indicates the concept or purpose associated with an expense."@en,
+        "Indica el concepto o motivo asociado a un gasto comunitario."@es ;
+    sh:name "expense concept"@en,
+        "concepto del gasto"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path :conceptoGasto ;
+    sh:pattern ".*" .
+
+<https://astrea.linkeddata.es/shapes#884500e6822cecb81397c715652e7a15> a sh:PropertyShape ;
+    rdfs:label "Indicates the construction date of a building."@en,
+        "construction date"@en,
+        "Indica la fecha de construcción de un edificio."@es,
+        "fecha de construcción"@es ;
+    sh:datatype xsd:date ;
+    sh:description "Indicates the construction date of a building."@en,
+        "Indica la fecha de construcción de un edificio."@es ;
+    sh:name "construction date"@en,
+        "fecha de construcción"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path :fechaConstruccion ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+<https://astrea.linkeddata.es/shapes#90e5cb23f970fba3023c3f5bc327a490> a sh:PropertyShape ;
+    rdfs:label "Relates a building to its cadastral reference."@en,
+        "has cadastral reference"@en,
+        "Relaciona un edificio con su referencia catastral."@es,
+        "tiene referencia catastral"@es ;
+    sh:class <http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralReference> ;
+    sh:description "Relates a building to its cadastral reference."@en,
+        "Relaciona un edificio con su referencia catastral."@es ;
+    sh:name "has cadastral reference"@en,
+        "tiene referencia catastral"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :tieneReferenciaCatastral .
+
+<https://astrea.linkeddata.es/shapes#a427630fe00360a4de46497ccb877623> a sh:PropertyShape ;
+    rdfs:label "Indicates the number of dwellings in a building"@en,
+        "number of dwellings"@en,
+        "Indica el número de viviendas existente en un edificio."@es,
+        "número de viviendas"@es ;
+    sh:datatype xsd:integer ;
+    sh:description "Indicates the number of dwellings in a building"@en,
+        "Indica el número de viviendas existente en un edificio."@es ;
+    sh:name "number of dwellings"@en,
+        "número de viviendas"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path :numeroDeViviendas ;
+    sh:pattern "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#bc246c040f269e41b5f749e63a81fec9> a sh:PropertyShape ;
+    rdfs:label "Relates a service to the communal facility on which it is provided or acts."@en,
+        "covers communal facility"@en,
+        "Relaciona un servicio con la instalación común sobre la que se presta o actúa."@es,
+        "cubre instalación común"@es ;
+    sh:class :InstalacionComun ;
+    sh:description "Relates a service to the communal facility on which it is provided or acts."@en,
+        "Relaciona un servicio con la instalación común sobre la que se presta o actúa."@es ;
+    sh:name "covers communal facility"@en,
+        "cubre instalación común"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :cubreInstalacionComun .
+
+<https://astrea.linkeddata.es/shapes#bdf170db852f6795a555386559513d1c> a sh:PropertyShape ;
+    rdfs:label "Relates a contracted service to the service it corresponds to"@en,
+        "corresponds to service"@en,
+        "Relaciona un servicio contratado con el servicio al que corresponde"@es,
+        "corresponde a servicio"@es ;
+    sh:class :Servicio ;
+    sh:description "Relates a contracted service to the service it corresponds to"@en,
+        "Relaciona un servicio contratado con el servicio al que corresponde"@es ;
+    sh:name "corresponds to service"@en,
+        "corresponde a servicio"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :correspondeAServicio .
+
+<https://astrea.linkeddata.es/shapes#c14ebf8e03560331862683a8ed31f136> a sh:PropertyShape ;
+    rdfs:label "Relates a contracted service to the frequency at which it is provided."@en,
+        "has service frequency"@en,
+        "Relaciona un servicio contratado con la frecuencia con la que se presta."@es,
+        "tiene frecuencia de servicio"@es ;
+    sh:class skos:Concept ;
+    sh:description "Relates a contracted service to the frequency at which it is provided."@en,
+        "Relaciona un servicio contratado con la frecuencia con la que se presta."@es ;
+    sh:name "has service frequency"@en,
+        "tiene frecuencia de servicio"@es ;
+    sh:node [ a sh:NodeShape ;
+            sh:property [ a sh:PropertyShape ;
+                    sh:hasValue :frecuenciaServicio ;
+                    sh:path skos:inScheme ] ] ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :tieneFrecuenciaDeServicio .
+
+<https://astrea.linkeddata.es/shapes#cb689cda342344b2b8580204f86069c1> a sh:PropertyShape ;
+    rdfs:label "Relates a homeowners' community to the buildings that compose it"@en,
+        "composed of"@en,
+        "Relaciona una comunidad de vecinos con los edificios que la conforman."@es,
+        "formado por"@es ;
+    sh:class :Edificio ;
+    sh:description "Relates a homeowners' community to the buildings that compose it"@en,
+        "Relaciona una comunidad de vecinos con los edificios que la conforman."@es ;
+    sh:name "composed of"@en,
+        "formado por"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :formadaPor .
+
+<https://astrea.linkeddata.es/shapes#d95daad30f3ae6edf3f3d37c0ac09922> a sh:PropertyShape ;
+    rdfs:label "Relates a homeowners' community to an associated community expense"@en,
+        "has community expense"@en,
+        "Relaciona una comunidad de vecinos con un gasto comunitario asociado."@es,
+        "tiene gasto comunitario"@es ;
+    sh:class :GastoComunitario ;
+    sh:description "Relates a homeowners' community to an associated community expense"@en,
+        "Relaciona una comunidad de vecinos con un gasto comunitario asociado."@es ;
+    sh:name "has community expense"@en,
+        "tiene gasto comunitario"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :tieneGastoComunitario .
+
+<https://astrea.linkeddata.es/shapes#db2b65d66758af2f815f6ecaa2c1ec93> a sh:PropertyShape ;
+    rdfs:label "Indicates the energy rating assigned to a building."@en,
+        "energy rating"@en,
+        "Indica la calificación energética asignada a un edificio."@es,
+        "calificación energética"@es ;
+    sh:datatype xsd:string ;
+    sh:description "Indicates the energy rating assigned to a building."@en,
+        "Indica la calificación energética asignada a un edificio."@es ;
+    sh:name "energy rating"@en,
+        "calificación energética"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path :calificacionEnergetica ;
+    sh:pattern ".*" .
+
+<https://astrea.linkeddata.es/shapes#e98ef32f84d9c31e6b2e77e8db2d55bc> a sh:PropertyShape ;
+    rdfs:label "Indicates the total amount corresponding to a community fee."@en,
+        "total amount"@en,
+        "Indica el importe total correspondiente a una cuota comunitaria."@es,
+        "importe total"@es ;
+    sh:datatype xsd:decimal ;
+    sh:description "Indicates the total amount corresponding to a community fee."@en,
+        "Indica el importe total correspondiente a una cuota comunitaria."@es ;
+    sh:name "total amount"@en,
+        "importe total"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path :importeTotal ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)" .
+
+<https://astrea.linkeddata.es/shapes#eb19a0398ef4ebec6025dd2f57816616> a sh:PropertyShape ;
+    rdfs:label "Relates a building to its domestic hot water system."@en,
+        "has domestic hot water system"@en,
+        "Relaciona un edificio con su sistema de agua caliente sanitaria."@es,
+        "tiene sistema de ACS"@es ;
+    sh:class :SistemaACS ;
+    sh:description "Relates a building to its domestic hot water system."@en,
+        "Relaciona un edificio con su sistema de agua caliente sanitaria."@es ;
+    sh:name "has domestic hot water system"@en,
+        "tiene sistema de ACS"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :tieneSistemaDeACS .
+
+<https://astrea.linkeddata.es/shapes#effbcab25f17f2d87f8264bc687249d0> a sh:PropertyShape ;
+    rdfs:label "Indicates whether a building has a lift"@en,
+        "has lift"@en,
+        "Indica si un edificio dispone de ascensor"@es,
+        "tiene ascensor"@es ;
+    sh:datatype xsd:boolean ;
+    sh:description "Indicates whether a building has a lift"@en,
+        "Indica si un edificio dispone de ascensor"@es ;
+    sh:name "has lift"@en,
+        "tiene ascensor"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path :tieneAscensor ;
+    sh:pattern "true|false|0|1" .
+
+<https://astrea.linkeddata.es/shapes#fa60ceca6e58173ec839023ae3f44fb1> a sh:PropertyShape ;
+    rdfs:label "Relates a building to its heating system."@en,
+        "has heating system"@en,
+        "Relaciona un edificio con su sistema de calefacción."@es,
+        "tiene sistema de calefacción"@es ;
+    sh:class :SistemaDeCalefaccion ;
+    sh:description "Relates a building to its heating system."@en,
+        "Relaciona un edificio con su sistema de calefacción."@es ;
+    sh:name "has heating system"@en,
+        "tiene sistema de calefacción"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :tieneSistemaDeCalefaccion .
+
+<https://astrea.linkeddata.es/shapes#69a3a4ef5c65c9bcde0b2a67dfe44b48> a sh:PropertyShape ;
+    rdfs:label "Relates a thermal system to the modality through which heating or domestic hot water is supplied."@en,
+        "supply modality"@en,
+        "Relaciona un sistema térmico con la modalidad mediante la que se suministra calefacción o agua caliente sanitaria."@es,
+        "modalidad de suministro"@es ;
+    sh:class skos:Concept ;
+    sh:description "Relates a thermal system to the modality through which heating or domestic hot water is supplied."@en,
+        "Relaciona un sistema térmico con la modalidad mediante la que se suministra calefacción o agua caliente sanitaria."@es ;
+    sh:name "supply modality"@en,
+        "modalidad de suministro"@es ;
+    sh:node [ a sh:NodeShape ;
+            sh:property [ a sh:PropertyShape ;
+                    sh:hasValue :modalidadSuministro ;
+                    sh:path skos:inScheme ] ] ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :modalidadDeSuministro .
+
+<https://astrea.linkeddata.es/shapes#891ca50adb47bc83fe29e4ecf4f3f6cf> a sh:PropertyShape ;
+    rdfs:label "Relates an energy system to the type of energy source it uses."@en,
+        "energy source type"@en,
+        "Relaciona un sistema energético con el tipo de fuente energética que utiliza."@es,
+        "tipo de fuente energética"@es ;
+    sh:class skos:Concept ;
+    sh:description "Relates an energy system to the type of energy source it uses."@en,
+        "Relaciona un sistema energético con el tipo de fuente energética que utiliza."@es ;
+    sh:name "energy source type"@en,
+        "tipo de fuente energética"@es ;
+    sh:node [ a sh:NodeShape ;
+            sh:property [ a sh:PropertyShape ;
+                    sh:hasValue :tipoFuenteEnergetica ;
+                    sh:path skos:inScheme ] ] ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :tipoDeFuenteEnergetica .
+
+[] rdf:first [ sh:class schema:Organization ;
+            sh:path :ejercidoPor ] ;
+    rdf:rest ( [ sh:class schema:Person ;
+                sh:path :ejercidoPor ] ) .
+
+[] rdf:first [ sh:class <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio> ;
+            sh:path <https://edint.es/def/infraestructura#belongsTo> ] ;
+    rdf:rest ( [ sh:class <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Ciudad> ;
+                sh:path <https://edint.es/def/infraestructura#belongsTo> ] [ sh:class <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> ;
+                sh:path <https://edint.es/def/infraestructura#belongsTo> ] [ sh:class <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio> ;
+                sh:path <https://edint.es/def/infraestructura#belongsTo> ] ) .
+
